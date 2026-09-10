@@ -1,0 +1,89 @@
+import { z } from "zod";
+export type Fetcher = typeof fetch;
+export class IntegrationError extends Error {}
+export class ReadOnlyHttp {
+  calls = 0;
+  retries = 0;
+  constructor(private fetcher: Fetcher = fetch) {}
+  async json<T>(
+    url: string,
+    headers: Record<string, string>,
+    schema: z.ZodType<T>,
+    queryBody?: unknown,
+  ): Promise<T> {
+    const target = new URL(url);
+    const readQuery =
+      (target.hostname === "searchconsole.googleapis.com" &&
+        target.pathname.endsWith("/searchAnalytics/query")) ||
+      (["us.posthog.com", "eu.posthog.com", "app.posthog.com"].includes(
+        target.hostname,
+      ) &&
+        /^\/api\/projects\/\d+\/query\/$/.test(target.pathname));
+    const allowed = [
+      "api.stripe.com",
+      "api.github.com",
+      "api.vercel.com",
+      "searchconsole.googleapis.com",
+      "us.posthog.com",
+      "eu.posthog.com",
+      "app.posthog.com",
+    ];
+    if (
+      target.protocol !== "https:" ||
+      target.username ||
+      target.password ||
+      !allowed.includes(target.hostname) ||
+      (queryBody !== undefined && !readQuery)
+    )
+      throw new IntegrationError("Read-only request policy rejected endpoint");
+    for (let attempt = 0; attempt < 2; attempt++) {
+      this.calls++;
+      let response: Response;
+      try {
+        response = await this.fetcher(url, {
+          method: queryBody === undefined ? "GET" : "POST",
+          headers: {
+            ...headers,
+            ...(queryBody === undefined
+              ? {}
+              : { "Content-Type": "application/json" }),
+          },
+          body: queryBody === undefined ? undefined : JSON.stringify(queryBody),
+          signal: AbortSignal.timeout(20_000),
+          redirect: "error",
+          cache: "no-store",
+        });
+      } catch {
+        throw new IntegrationError(
+          `Network request failed for ${target.hostname}`,
+        );
+      }
+      if (
+        (response.status === 429 || response.status >= 500) &&
+        attempt === 0
+      ) {
+        this.retries++;
+        await new Promise((r) => setTimeout(r, 250));
+        continue;
+      }
+      if (!response.ok)
+        throw new IntegrationError(
+          `${target.hostname} returned HTTP ${response.status}`,
+        );
+      try {
+        return schema.parse(await response.json());
+      } catch {
+        throw new IntegrationError(
+          `${target.hostname} returned an unexpected response shape`,
+        );
+      }
+    }
+    throw new IntegrationError("Read request failed after retry");
+  }
+}
+export function required(env: Record<string, string | undefined>, key: string) {
+  const value = env[key];
+  if (!value) throw new IntegrationError(`Missing configuration: ${key}`);
+  return value;
+}
+export const bearer = (token: string) => ({ Authorization: `Bearer ${token}` });
