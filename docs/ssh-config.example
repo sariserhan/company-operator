@@ -1,0 +1,9 @@
+# On your MAC: add these options inside the existing Host headless block
+# in ~/.ssh/config. Keep your existing HostName, User and IdentityFile.
+# Replace the old 4000 -> 3000 forwarding rule if one exists.
+Host headless
+    LocalForward localhost:3000 127.0.0.1:3000
+    LocalForward 127.0.0.1:3210 127.0.0.1:3210
+    ExitOnForwardFailure yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3

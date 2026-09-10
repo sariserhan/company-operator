@@ -45,3 +45,8 @@
 - Use a standard local scaffold and a bounded business pipeline, without hosted scaffold telemetry, chat/agent infrastructure, or multi-agent hierarchy.
 - Never fabricate missing data or silently use demonstration metrics. Successful fixture tests and the deliberately failed browser run are distinguished from live acceptance.
 - Source setup and metric semantics are documented in README.md and .env.example. Credentials never enter source control or client bundles.
+
+## Headless development handoff
+
+- Added a reusable Mac SSH configuration example and everyday startup instructions in README.md. Preserve localhost:3000 for the browser and Better Auth; also forward Convex port 3210. Authentication proxy port 3211 stays on Linux.
+- SSH configuration syntax checked with `ssh -G`; no server was started and no Mac configuration was modified from Linux.

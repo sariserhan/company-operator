@@ -16,6 +16,50 @@ npm run dev
 
 Convex writes its two public connection URLs to `.env.local`. Open http://localhost:3000. A cloud Convex development deployment can be used instead with `npx convex dev`. No cloud deployment or Vercel publishing is required for local operation.
 
+## Mac browser with a headless Linux server
+
+Keep the browser URL and authentication origin identical: `http://localhost:3000`.
+On your **Mac**, add the options from [docs/ssh-config.example](docs/ssh-config.example)
+inside your existing `Host headless` entry in `~/.ssh/config`. Preserve its actual
+`HostName`, `User` and key settings. Replace an existing 4000-to-3000 forwarding
+rule; do not duplicate the same forward.
+
+```sshconfig
+Host headless
+    LocalForward localhost:3000 127.0.0.1:3000
+    LocalForward 127.0.0.1:3210 127.0.0.1:3210
+    ExitOnForwardFailure yes
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+```
+
+Each time, connect from the Mac with `ssh headless`. This opens your normal remote
+shell and the two tunnels. Keep this connection open. An additional SSH terminal
+can use `ssh -o ClearAllForwardings=yes headless` to avoid trying to bind the same
+local ports twice. Alternatively, use `ssh -N headless` as a dedicated tunnel and
+open your working SSH sessions with `ClearAllForwardings=yes`.
+
+On Linux, run `npx convex dev` and `npm run dev` in separate terminals as above.
+Then open **http://localhost:3000 on the Mac**. Forward 3210 too: the browser uses
+it for Convex's HTTP/WebSocket connection. Port 3211 remains server-local because
+Next.js proxies the authentication requests to it.
+
+Keep these settings:
+
+- Convex backend environment: `SITE_URL=http://localhost:3000`.
+- Linux `.env.local`: `NEXT_PUBLIC_CONVEX_URL=http://127.0.0.1:3210` and
+  `NEXT_PUBLIC_CONVEX_SITE_URL=http://127.0.0.1:3211`.
+
+If a forwarded port is occupied, SSH fails instead of silently leaving the tunnel
+unavailable. Stop the old tunnel or the process occupying the Mac port. If Next.js
+reports a port other than 3000, resolve that conflict before continuing. Reconnect
+SSH after a dropped connection; keepalives detect failure but do not reconnect.
+These settings establish tunnels, not the app processes themselves.
+
+The Mac SSH configuration cannot be installed from this Linux workspace; apply
+that one-time edit on the Mac. See the [OpenSSH configuration reference](https://man.openbsd.org/ssh_config)
+for the forwarding and keepalive options.
+
 ## Authentication
 
 Set these variables on the **Convex backend**, using `npx convex env set NAME VALUE`:
