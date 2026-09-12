@@ -32,23 +32,67 @@ export class ReadOnlyHttp {
       target.protocol !== "https:" ||
       target.username ||
       target.password ||
-      !allowed.includes(target.hostname) ||
+      !(
+        allowed.includes(target.hostname) ||
+        (["visitorping.com", "www.visitorping.com"].includes(target.hostname) &&
+          target.pathname === "/api/operator/analytics" &&
+          !target.port)
+      ) ||
       (queryBody !== undefined && !readQuery)
     )
       throw new IntegrationError("Read-only request policy rejected endpoint");
+    return this.request(
+      url,
+      headers,
+      schema,
+      queryBody === undefined ? undefined : JSON.stringify(queryBody),
+      "application/json",
+    );
+  }
+  // Credential exchange is separate from business-data requests: this exact
+  // endpoint can only renew a Google OAuth token, never mutate business data.
+  async refreshGoogleToken(
+    clientId: string,
+    clientSecret: string,
+    refreshToken: string,
+  ) {
+    const result = await this.request(
+      "https://oauth2.googleapis.com/token",
+      {},
+      z.object({
+        access_token: z.string().min(1),
+        expires_in: z.number().positive(),
+        token_type: z.literal("Bearer"),
+      }),
+      new URLSearchParams({
+        client_id: clientId,
+        client_secret: clientSecret,
+        refresh_token: refreshToken,
+        grant_type: "refresh_token",
+      }).toString(),
+      "application/x-www-form-urlencoded",
+    );
+    return result.access_token;
+  }
+  private async request<T>(
+    url: string,
+    headers: Record<string, string>,
+    schema: z.ZodType<T>,
+    body: string | undefined,
+    contentType: string,
+  ): Promise<T> {
+    const target = new URL(url);
     for (let attempt = 0; attempt < 2; attempt++) {
       this.calls++;
       let response: Response;
       try {
         response = await this.fetcher(url, {
-          method: queryBody === undefined ? "GET" : "POST",
+          method: body === undefined ? "GET" : "POST",
           headers: {
             ...headers,
-            ...(queryBody === undefined
-              ? {}
-              : { "Content-Type": "application/json" }),
+            ...(body === undefined ? {} : { "Content-Type": contentType }),
           },
-          body: queryBody === undefined ? undefined : JSON.stringify(queryBody),
+          body,
           signal: AbortSignal.timeout(20_000),
           redirect: "error",
           cache: "no-store",

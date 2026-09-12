@@ -78,6 +78,25 @@ describe("evidence and normalization", () => {
     b.recommendedExperiment.baseline = 0.9;
     expect(() => validateAnalysis(b, fixtureSnapshot())).toThrow("baseline");
   });
+  it("distinguishes baseline key, metric name and value mismatches", () => {
+    const snapshot = fixtureSnapshot();
+    const a = fixtureAnalysis();
+    a.recommendedExperiment.baselineEvidence = "absent";
+    expect(() => validateAnalysis(a, snapshot)).toThrow(
+      "baselineEvidence must exactly match",
+    );
+    const b = fixtureAnalysis();
+    b.recommendedExperiment.successMetric = "Human-readable label";
+    expect(() => validateAnalysis(b, snapshot)).toThrow(
+      "successMetric must exactly match",
+    );
+    const c = fixtureAnalysis();
+    c.recommendedExperiment.baseline = 42;
+    expect(() => validateAnalysis(c, snapshot)).toThrow("baseline must equal");
+    c.recommendedExperiment.baseline = null;
+    c.recommendedExperiment.baselineEvidence = null;
+    expect(() => validateAnalysis(c, snapshot)).not.toThrow();
+  });
   it("rejects invalid hypothesis links and non-improving targets", () => {
     const a = fixtureAnalysis();
     a.hypotheses[0].observationIndexes = [42];
@@ -218,4 +237,28 @@ it("uses Anthropic strict JSON and configured cost rates", async () => {
     "output_config.format.type",
     "json_schema",
   );
+});
+it("reports exhausted OpenAI credit without leaking raw provider errors or retrying", async () => {
+  const fetcher = vi.fn(async () =>
+    Response.json(
+      {
+        error: {
+          type: "insufficient_quota",
+          code: "credit_balance_exhausted",
+          message: "secret-sensitive-response",
+        },
+      },
+      { status: 429 },
+    ),
+  );
+  const provider = new OpenAIProvider(
+    "fixture",
+    { OPENAI_API_KEY: "fixture" },
+    vi.fn(),
+    fetcher,
+  );
+  await expect(
+    provider.generate("test", "test", {}, z.object({ ok: z.boolean() })),
+  ).rejects.toThrow("OpenAI API credit or quota is exhausted");
+  expect(fetcher).toHaveBeenCalledTimes(1);
 });

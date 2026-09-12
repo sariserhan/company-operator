@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-11T03:05:45.745Z",
+  "to": "bill@bmecom.com",
+  "source": "https://www.bmecom.com/",
+  "status": 200,
+  "accepted": true,
+  "id": "6bcae2bb-e432-4d33-91ef-9c5a9a39dde4",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:06:24.638Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

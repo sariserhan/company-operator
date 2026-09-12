@@ -1,0 +1,16 @@
+Hello,
+
+I found the Wix forum thread linking your website about losing live visitor notifications after switching to Smart Chat. A June reply says Wix added a New Visitor automation trigger, so the native option may already solve it:
+https://forum.wixstudio.com/t/live-site-visitor-notifications-not-working/77236
+
+Did that restore the alerts you needed? I am particularly interested in what you do differently when a website visit arrives.
+
+I built VisitorPing, a separate live visitor dashboard with iPhone alerts that does not require adding a chat widget. If you still need an alternative, here is a sample demo:
+https://visitorping.com/demo?utm_source=architectural_glazing&utm_medium=personal_email&utm_campaign=expressed_need
+
+It requires a tracking script. Starter has a 14-day trial with no card required, then US$19/month if you continue. If the Wix solution already works, there is no reason to switch just for the same alert.
+
+A short reply about what was useful or still missing would help. If this is not relevant, reply “no thanks” and I will not follow up.
+
+VisitorPing
+partners@visitorping.com

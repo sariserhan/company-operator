@@ -1,0 +1,14 @@
+{
+  "recordedAt": "2026-09-11T03:41:42.242Z",
+  "cutoff": "2026-09-11T03:07:04.537Z",
+  "reason": "Owner explicitly confirmed all workspaces in the reported baseline belong to them; exclude these fixed IDs, not future accounts.",
+  "organizationIds": [
+    "rUfXyoPMGtGKarTgoaSxODiChsBKjkqb",
+    "5xwG9WQuibFfjKO0UkOJ4gfXYwGNYAfd",
+    "8QOfG0vXinWTJ0dZuisprTokMrNF51gk",
+    "r2EdBsTaLvdpJ50Dqddyu6hncpnwIt9X",
+    "nw8HgHtQIU98ZH6JqwYcWhCSERO1BzMC",
+    "sgCO0fTVZ2wyxYzKktt05JEjOcooHJKb",
+    "tOCRrPVRxrIxTbLsjjHr8agXNNXgIKa5"
+  ]
+}

@@ -1,6 +1,9 @@
 import type { Id } from "./_generated/dataModel";
 import { v } from "convex/values";
-import { paginationOptsValidator } from "convex/server";
+import {
+  paginationOptsValidator,
+  paginationResultValidator,
+} from "convex/server";
 import { query, internalMutation } from "./_generated/server";
 import { ownedCompany } from "./access";
 import { analysisSchema, critiqueSchema } from "../lib/ai/schemas";
@@ -160,11 +163,7 @@ export const list = query({
     table: tableV,
     paginationOpts: paginationOptsValidator,
   },
-  returns: v.object({
-    page: v.array(v.string()),
-    isDone: v.boolean(),
-    continueCursor: v.string(),
-  }),
+  returns: paginationResultValidator(v.string()),
   handler: async (ctx, { companyId, table, paginationOpts }) => {
     await ownedCompany(ctx, companyId);
     const rows = await ctx.db
@@ -176,9 +175,8 @@ export const list = query({
         numItems: Math.min(paginationOpts.numItems, 50),
       });
     return {
+      ...rows,
       page: rows.page.map((r) => JSON.stringify(r)),
-      isDone: rows.isDone,
-      continueCursor: rows.continueCursor,
     };
   },
 });

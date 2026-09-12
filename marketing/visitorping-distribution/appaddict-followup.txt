@@ -1,0 +1,19 @@
+Subject: VisitorPing review access
+
+Hi Lou,
+
+Thanks for the details. I'd be happy to provide 30 days of complimentary Pro access for your review, starting when you're ready to test rather than while the app waits in your queue.
+
+When you're ready, create your account at https://visitorping.com/signup and reply with the email used for it. I'll arrange the review access and confirm once it is active. No purchase or positive review is required, and I understand there is no guarantee of coverage or a draft before publication.
+
+The iPhone app is here:
+https://apps.apple.com/us/app/visitorping-website-doorbell/id6802170891
+
+The core test is to connect a website you control, install its tracker, pair the iPhone app, and open that site from another browser to see the visit and notification. The public preview at https://visitorping.com/demo uses clearly labeled sample data; it is separate from that real-device test.
+
+If you'd prefer to wait until the app reaches your queue, that's completely fine. Reply when you're ready and we'll start from there.
+
+Thanks,
+Serhan Sari
+VisitorPing
+partners@visitorping.com

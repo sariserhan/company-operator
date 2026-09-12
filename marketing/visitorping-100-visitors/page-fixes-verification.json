@@ -1,0 +1,32 @@
+{
+  "verifiedAt": "2026-09-11T00:07:47.283568+00:00",
+  "productionUrl": "https://visitorping.com",
+  "commit": "38bb80cc6221e6be140de85637a18d151767b7ec",
+  "deploymentId": "dpl_D1iaRv5UAy4bHSe3Mv9SKDpv32z3",
+  "deploymentState": "READY",
+  "pages": [
+    "/",
+    "/demo"
+  ],
+  "viewports": [
+    "1440x900",
+    "390x844",
+    "320x740"
+  ],
+  "checks": {
+    "localProductionBuild": "passed",
+    "targetedLint": "passed",
+    "liveBrowserInteractions": "passed",
+    "javascriptErrors": 0,
+    "horizontalOverflow": false,
+    "sampleVisits": 3,
+    "mute": "passed",
+    "journeyDialog": "passed",
+    "homepageSimulation": "passed",
+    "stableHomepageHeadline": "passed",
+    "setupLinkHttpStatus": 200
+  },
+  "testTraffic": "POST telemetry blocked; codex verification UTM labels",
+  "rollbackDeployment": "dpl_4jN95DWq43q69WXWY61irQQqu3aq",
+  "scope": "Homepage messaging, pricing presentation, demo flow, mobile notification preview layout. No acquisition lift claimed."
+}

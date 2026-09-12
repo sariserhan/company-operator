@@ -1,0 +1,5 @@
+FILE: UNINSTALL.md
+[{"line":0,"column":0,"type":"WARNING","code":"unexpected_markdown_file","message":"Unexpected markdown file \"UNINSTALL.md\" detected in plugin root. Only specific markdown files are expected in production plugins.","docs":""}]
+
+FILE: includes/class-visitorping-publisher.php
+[{"line":78,"column":13,"type":"WARNING","code":"WordPress.DB.SlowDBQuery.slow_db_query_meta_key","message":"Detected usage of meta_key, possible slow query.","docs":""},{"line":79,"column":13,"type":"WARNING","code":"WordPress.DB.SlowDBQuery.slow_db_query_meta_value","message":"Detected usage of meta_value, possible slow query.","docs":""}]

@@ -1,0 +1,21 @@
+{
+  "name": "VisitorPing",
+  "url": "https://visitorping.com/",
+  "tagline": "Live website visitor dashboard and instant iPhone visitor alerts",
+  "category": "SaaS",
+  "description": "VisitorPing helps website owners see visitors as they arrive through a live website dashboard and iPhone notifications. It is for small businesses, SaaS founders, online stores, and other website owners who want to notice visits without keeping an analytics dashboard open. Plans start at $19 per month with a 14-day trial. VisitorPing is a paid subscription product, not a permanently free service.",
+  "origin": "VisitorPing was built to help website owners notice visits instantly without having to watch a dashboard. It brings live visitor activity to a website dashboard and iPhone notifications.",
+  "status": "Live",
+  "pricing": "Subscription",
+  "founder": "Serhan Sari",
+  "email": "partners@visitorping.com",
+  "bio": "Serhan Sari is the founder of VisitorPing. He is building a way for website owners to see their visitors instantly through a live dashboard or iPhone notification.",
+  "twitter": "@serhansarii",
+  "heard": "AI Assistant",
+  "newsletter": false,
+  "termsAccepted": true,
+  "termsReviewed": [
+    "https://launchfree.io/terms.html",
+    "https://launchfree.io/privacy.html"
+  ]
+}

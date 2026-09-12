@@ -1,0 +1,9 @@
+VisitorPing: Website Doorbell is an iPhone companion for people who run websites and want to notice visits while they are away from their desk. It works with the VisitorPing web service: an owner installs the website tracker, connects their site, and uses the dashboard or iPhone app to follow incoming activity.
+
+The iPhone app includes Live Radar across connected websites, visitor filters, page-by-page journeys, and configurable push alerts. An owner can inspect the page a visitor is viewing and the recorded traffic source instead of repeatedly opening a desktop analytics dashboard. The notification feature is intended to make existing activity visible; installing VisitorPing does not itself generate traffic or guarantee sales.
+
+The app is available on the App Store for iPhone and requires iOS 16.4 or later. Its first public release was August 24, 2026; version 1.0.1 was released September 4. This is a submission of an existing app, not a claim that it launched today.
+
+The companion app connects to a paid VisitorPing service. Website plans start at $19 per month, with an existing 14-day Starter trial. There is no permanent free website-tracking tier. We are not promising an unrestricted NFR license in this submission.
+
+An interactive preview is available at https://visitorping.com/demo. It is clearly labeled as example data and simulates a notification in the browser; it is not footage of an actual iPhone push. Product and pricing details are at https://visitorping.com/. Submitted by Serhan Sari, the maker of VisitorPing; partners@visitorping.com reaches me for review questions.

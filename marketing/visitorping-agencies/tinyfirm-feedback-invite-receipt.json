@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-11T03:05:45.632Z",
+  "to": "contact@tinyfirm.dev",
+  "source": "https://tinyfirm.dev/",
+  "status": 200,
+  "accepted": true,
+  "id": "07ca26a2-cfec-49c1-a203-7bfa983b6050",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:06:24.500Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

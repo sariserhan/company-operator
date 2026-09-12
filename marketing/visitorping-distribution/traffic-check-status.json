@@ -1,0 +1,6 @@
+{
+  "status": "unverified",
+  "reason": "Local database configuration has neither a usable marketing-site key nor an exact VisitorPing domain match. No current-day production traffic count established.",
+  "acquisitionOutcome": "No traffic attributable to the submitted directory proposals has been verified.",
+  "nextDistributionDependency": "Authenticated social publishing session to reach and respond to people immediately; directory proposals remain pending."
+}

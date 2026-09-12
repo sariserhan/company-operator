@@ -35,22 +35,22 @@ export function fixtureSnapshot() {
       integration("stripe", [
         makeMetric("stripe", "mrr", 228, "USD", now, now, now, "Gross MRR"),
       ]),
-      integration("posthog", [
+      integration("visitorping", [
         makeMetric(
-          "posthog",
+          "visitorping",
           "signup_completed_cohort",
           38,
-          "people",
+          "workspaces",
           start,
           now,
           now,
           "Signup cohort",
         ),
         makeMetric(
-          "posthog",
+          "visitorping",
           "tracking_installed_cohort",
           9,
-          "people",
+          "workspaces",
           start,
           now,
           now,
@@ -71,14 +71,14 @@ export function fixtureAnalysis(): CompanyAnalysis {
     executiveSummary: "Activation is the current observed constraint.",
     currentBottleneck: {
       area: "activation",
-      statement: "9 of 38 signup-cohort users installed tracking.",
+      statement: "9 of 38 new-workspace cohort members installed tracking.",
       evidence: [snapshot.metrics[1].key, snapshot.metrics[2].key],
       severity: 0.8,
       confidence: 0.7,
     },
     observations: [
       {
-        statement: "9 of 38 signup-cohort users installed tracking.",
+        statement: "9 of 38 new-workspace cohort members installed tracking.",
         evidence: [snapshot.metrics[1].key, snapshot.metrics[2].key],
         importance: 0.9,
       },

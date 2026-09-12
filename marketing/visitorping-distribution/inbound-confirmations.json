@@ -1,0 +1,26 @@
+{
+  "source": "Messages supplied by the user",
+  "appaddict": {
+    "status": "acknowledged_by_reviewer",
+    "reviewGuaranteed": false,
+    "requestedNextStep": "Working copy or license if paid; can supply now or when reviewer is ready",
+    "senderAddress": "lou@appaddict.app",
+    "followup": "appaddict-followup.txt",
+    "followupSent": true,
+    "accessIssued": false,
+    "proposedReviewAccess": {
+      "plan": "pro",
+      "days": 30,
+      "starts": "When reviewer is ready and account is verified",
+      "positiveReviewRequired": false
+    },
+    "followupReceipt": "appaddict-followup-receipt.json"
+  },
+  "launchfree": {
+    "status": "review_queue_confirmed",
+    "publicationVerified": false,
+    "replyNeeded": false,
+    "nextEvidence": "Approval email and working listing URL",
+    "senderAddress": "hello@launchfree.io"
+  }
+}

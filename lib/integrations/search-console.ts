@@ -6,7 +6,7 @@ import {
   type Env,
   type Metric,
 } from "../business/types";
-import { bearer, required, ReadOnlyHttp } from "./http";
+import { bearer, required, ReadOnlyHttp, IntegrationError } from "./http";
 const row = z.object({
   keys: z.array(z.string()).optional(),
   clicks: z.number(),
@@ -19,8 +19,26 @@ export async function collectSearchConsole(
   http: ReadOnlyHttp,
   now: number,
 ) {
-  const token = required(env, "GOOGLE_ACCESS_TOKEN"),
-    site = required(env, "GOOGLE_SEARCH_CONSOLE_SITE");
+  const site = required(env, "GOOGLE_SEARCH_CONSOLE_SITE");
+  const refreshKeys = [
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_CLIENT_SECRET",
+    "GOOGLE_REFRESH_TOKEN",
+  ] as const;
+  const hasRefreshConfig = refreshKeys.some((key) => Boolean(env[key]));
+  if (hasRefreshConfig && !refreshKeys.every((key) => Boolean(env[key])))
+    throw new IntegrationError(
+      `Incomplete Google renewal configuration: ${refreshKeys.filter((key) => !env[key]).join(", ")}`,
+    );
+  // Renew once per collection; do not persist access tokens or silently fall
+  // back to an old manual token after revoked/invalid renewal credentials.
+  const token = hasRefreshConfig
+    ? await http.refreshGoogleToken(
+        required(env, "GOOGLE_CLIENT_ID"),
+        required(env, "GOOGLE_CLIENT_SECRET"),
+        required(env, "GOOGLE_REFRESH_TOKEN"),
+      )
+    : required(env, "GOOGLE_ACCESS_TOKEN");
   const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(site)}/searchAnalytics/query`;
   const metrics: Metric[] = [],
     context: string[] = [];
@@ -99,10 +117,17 @@ export async function collectSearchConsole(
   return {
     metrics,
     context,
-    missingInformation: metrics.length
-      ? [
-          "Search Console data is delayed three days; top queries/pages are samples.",
-        ]
-      : ["UNKNOWN: Search Console returned no final data."],
+    missingInformation: [
+      ...(!hasRefreshConfig
+        ? [
+            "Search Console uses a temporary access token. Configure GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, and GOOGLE_REFRESH_TOKEN for automatic renewal.",
+          ]
+        : []),
+      ...(metrics.length
+        ? [
+            "Search Console data is delayed three days; top queries/pages are samples.",
+          ]
+        : ["UNKNOWN: Search Console returned no final data."]),
+    ],
   };
 }

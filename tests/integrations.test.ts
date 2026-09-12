@@ -105,3 +105,161 @@ it("collects sequential signup cohort using query-only POST", async () => {
       .map((m) => m.value),
   ).toEqual([9, 9]);
 });
+
+import { collectSearchConsole } from "../lib/integrations/search-console";
+import { collectVisitorping } from "../lib/integrations/visitorping";
+import { integrationConfiguration } from "../lib/integrations";
+import { windowPeriod } from "../lib/business/types";
+
+it("renews Google once per collection and uses the new token on all reads", async () => {
+  let renewals = 0,
+    reads = 0;
+  const fetcher: typeof fetch = vi.fn(async (url, init) => {
+    if (String(url) === "https://oauth2.googleapis.com/token") {
+      renewals++;
+      expect(init?.method).toBe("POST");
+      expect(init?.redirect).toBe("error");
+      const params = new URLSearchParams(String(init?.body));
+      expect(params.get("grant_type")).toBe("refresh_token");
+      expect(params.get("refresh_token")).toBe("refresh-fixture");
+      return Response.json({
+        access_token: "renewed",
+        expires_in: 3600,
+        token_type: "Bearer",
+      });
+    }
+    reads++;
+    expect(new Headers(init?.headers).get("Authorization")).toBe(
+      "Bearer renewed",
+    );
+    return Response.json({
+      rows: [{ clicks: 3, impressions: 600, ctr: 0.005, position: 82 }],
+    });
+  });
+  const http = new ReadOnlyHttp(fetcher);
+  await collectSearchConsole(
+    {
+      GOOGLE_ACCESS_TOKEN: "expired",
+      GOOGLE_CLIENT_ID: "client",
+      GOOGLE_CLIENT_SECRET: "secret",
+      GOOGLE_REFRESH_TOKEN: "refresh-fixture",
+      GOOGLE_SEARCH_CONSOLE_SITE: "sc-domain:visitorping.com",
+    },
+    http,
+    now,
+  );
+  expect(renewals).toBe(1);
+  expect(reads).toBe(6);
+  expect(http.calls).toBe(7);
+});
+it("fails safely on incomplete or revoked Google renewal without leaking credentials", async () => {
+  const env = {
+    GOOGLE_ACCESS_TOKEN: "old",
+    GOOGLE_CLIENT_ID: "client",
+    GOOGLE_SEARCH_CONSOLE_SITE: "sc-domain:visitorping.com",
+  };
+  const fetcher = vi.fn(
+    async () => new Response("sensitive-refresh-token", { status: 400 }),
+  );
+  await expect(
+    collectSearchConsole(env, new ReadOnlyHttp(fetcher), now),
+  ).rejects.toThrow("Incomplete Google renewal");
+  expect(fetcher).not.toHaveBeenCalled();
+  await expect(
+    collectSearchConsole(
+      {
+        ...env,
+        GOOGLE_CLIENT_SECRET: "secret",
+        GOOGLE_REFRESH_TOKEN: "refresh",
+      },
+      new ReadOnlyHttp(fetcher),
+      now,
+    ),
+  ).rejects.toThrow("oauth2.googleapis.com returned HTTP 400");
+  expect(fetcher).toHaveBeenCalledTimes(1);
+  expect(
+    integrationConfiguration(env).find((x) => x.source === "search_console")
+      ?.configured,
+  ).toBe(false);
+});
+it("does not expose OAuth exchange as an arbitrary POST capability", async () => {
+  const fetcher = vi.fn();
+  await expect(
+    new ReadOnlyHttp(fetcher).json(
+      "https://oauth2.googleapis.com/token",
+      {},
+      z.unknown(),
+      {},
+    ),
+  ).rejects.toThrow("policy");
+  expect(fetcher).not.toHaveBeenCalled();
+});
+function nativeResponse() {
+  return {
+    schemaVersion: 1,
+    capturedAt: now,
+    siteDomain: "visitorping.com",
+    periods: [false, true].map((previous) => ({
+      ...windowPeriod(now, 7, previous),
+      websiteVisitors: 50,
+      websiteSessions: 70,
+      newWorkspaces: 10,
+      activatedNewWorkspaces: 3,
+      checkoutStartedWorkspaces: 2,
+      subscriptionStartedWorkspaces: 1,
+    })),
+  };
+}
+it("collects native website traffic separately from workspace cohorts", async () => {
+  const fetcher: typeof fetch = vi.fn(async (_url, init) => {
+    expect(init?.method).toBe("GET");
+    return Response.json(nativeResponse());
+  });
+  const result = await collectVisitorping(
+    { VISITORPING_ANALYTICS_TOKEN: "fixture" },
+    new ReadOnlyHttp(fetcher),
+    now,
+  );
+  expect(result.metrics).toHaveLength(12);
+  expect(
+    result.metrics.find((m) => m.metric === "signup_completed_cohort")?.unit,
+  ).toBe("workspaces");
+  expect(result.metrics.every((m) => m.source === "visitorping")).toBe(true);
+});
+it("rejects native credential exfiltration, stale data, mismatched periods and impossible cohorts", async () => {
+  const fetcher = vi.fn();
+  await expect(
+    collectVisitorping(
+      {
+        VISITORPING_ANALYTICS_TOKEN: "fixture",
+        VISITORPING_ANALYTICS_URL:
+          "https://api.github.com/api/operator/analytics",
+      },
+      new ReadOnlyHttp(fetcher),
+      now,
+    ),
+  ).rejects.toThrow("Invalid VisitorPing");
+  expect(fetcher).not.toHaveBeenCalled();
+  const fixtures = [
+    { ...nativeResponse(), capturedAt: now - 600_000 },
+    {
+      ...nativeResponse(),
+      periods: [nativeResponse().periods[0], nativeResponse().periods[0]],
+    },
+    {
+      ...nativeResponse(),
+      periods: nativeResponse().periods.map((p) => ({
+        ...p,
+        activatedNewWorkspaces: 11,
+      })),
+    },
+  ];
+  for (const fixture of fixtures)
+    await expect(
+      collectVisitorping(
+        { VISITORPING_ANALYTICS_TOKEN: "fixture" },
+        new ReadOnlyHttp(vi.fn(async () => Response.json(fixture))),
+        now,
+      ),
+    ).rejects.toThrow();
+});

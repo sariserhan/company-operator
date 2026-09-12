@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-10T17:21:22.065Z",
+  "purpose": "Owner-requested email service verification",
+  "recipient": "Configured OPERATOR_EMAIL",
+  "httpStatus": 200,
+  "id": "a851cfc9-f197-48d3-8a68-809c89ec8350",
+  "status": "accepted_by_resend",
+  "error": null,
+  "deliveryCheck": {
+    "at": "2026-09-10T17:21:37.818Z",
+    "httpStatus": 200,
+    "lastEvent": "delivered"
+  }
+}

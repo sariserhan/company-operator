@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:15.668Z",
+  "name": "Matthew Temple Consulting",
+  "to": "hello@matthewtemple.co.uk",
+  "source": "https://matthewtemple.co.uk/services/website-care-plans/",
+  "status": 200,
+  "accepted": true,
+  "id": "4244b7fb-b070-44f2-843b-b7bb6cc6b404",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:17.774Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

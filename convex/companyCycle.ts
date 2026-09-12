@@ -5,11 +5,12 @@ import { internal } from "./_generated/api";
 import { operator } from "./access";
 import {
   collectIntegrations,
-  integrationRequirements,
+  integrationConfiguration,
 } from "../lib/integrations";
 import { normalizeSnapshot } from "../lib/business/metrics";
 import { analyzeCompany } from "../lib/business/analysis";
 import { OpenAIProvider } from "../lib/ai/openai";
+import { GatewayProvider } from "../lib/ai/gateway";
 import { AnthropicProvider } from "../lib/ai/anthropic";
 import { ProviderError } from "../lib/ai/provider";
 import { metricSchema } from "../lib/business/types";
@@ -49,7 +50,11 @@ export const runCompanyCycle = internalAction({
         return null;
       }
       const Provider =
-        context.provider === "openai" ? OpenAIProvider : AnthropicProvider;
+        context.provider === "vercel_gateway"
+          ? GatewayProvider
+          : context.provider === "openai"
+            ? OpenAIProvider
+            : AnthropicProvider;
       const provider = new Provider(
         context.model,
         process.env,
@@ -99,10 +104,6 @@ export const configuration = action({
   ),
   handler: async (ctx) => {
     await operator(ctx);
-    return Object.entries(integrationRequirements).map(([source, keys]) => ({
-      source,
-      configured: keys.every((key) => Boolean(process.env[key])),
-      missing: keys.filter((key) => !process.env[key]),
-    }));
+    return integrationConfiguration(process.env);
   },
 });

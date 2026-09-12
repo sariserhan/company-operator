@@ -9,6 +9,14 @@ export const authComponent = createClient<DataModel>(components.betterAuth);
 export const createAuth = (ctx: GenericCtx<DataModel>) =>
   betterAuth({
     baseURL: process.env.SITE_URL ?? "http://localhost:3000",
+    trustedOrigins: [
+      process.env.SITE_URL ?? "http://localhost:3000",
+      ...((process.env.SITE_URL ?? "http://localhost:3000").startsWith(
+        "http://localhost:",
+      )
+        ? ["http://localhost:3000", "http://localhost:4000"]
+        : []),
+    ],
     secret: process.env.BETTER_AUTH_SECRET,
     database: authComponent.adapter(ctx),
     emailAndPassword: {

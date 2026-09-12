@@ -572,42 +572,46 @@ function Integrations({ companyId }: { companyId: Id<"companies"> }) {
             </tr>
           </thead>
           <tbody>
-            {["stripe", "posthog", "search_console", "github", "vercel"].map(
-              (source) => {
-                const configured = config?.find((c) => c.source === source),
-                  result = snapshot?.integrations.find(
-                    (i) => i.source === source,
-                  );
-                return (
-                  <tr key={source}>
-                    <td>{source.replace("_", " ")}</td>
-                    <td>
-                      {configured
-                        ? configured.configured
-                          ? "Configured"
-                          : "Missing credentials"
-                        : "Not checked"}
-                    </td>
-                    <td>
-                      {result ? (
-                        <>
-                          <Badge variant="secondary">{result.status}</Badge>
-                          <p className="muted text-xs">
-                            {result.calls} calls · {result.durationMs} ms
-                          </p>
-                        </>
-                      ) : (
-                        "Not collected"
-                      )}
-                    </td>
-                    <td className="text-xs">
-                      {configured?.missing.join(", ") ||
-                        "Set credentials in the Convex environment."}
-                    </td>
-                  </tr>
+            {[
+              "stripe",
+              "visitorping",
+              "search_console",
+              "github",
+              "vercel",
+            ].map((source) => {
+              const configured = config?.find((c) => c.source === source),
+                result = snapshot?.integrations.find(
+                  (i) => i.source === source,
                 );
-              },
-            )}
+              return (
+                <tr key={source}>
+                  <td>{source.replace("_", " ")}</td>
+                  <td>
+                    {configured
+                      ? configured.configured
+                        ? "Configured"
+                        : "Missing credentials"
+                      : "Not checked"}
+                  </td>
+                  <td>
+                    {result ? (
+                      <>
+                        <Badge variant="secondary">{result.status}</Badge>
+                        <p className="muted text-xs">
+                          {result.calls} calls · {result.durationMs} ms
+                        </p>
+                      </>
+                    ) : (
+                      "Not collected"
+                    )}
+                  </td>
+                  <td className="text-xs">
+                    {configured?.missing.join(", ") ||
+                      "Set credentials in the Convex environment."}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -618,10 +622,9 @@ function Integrations({ companyId }: { companyId: Id<"companies"> }) {
           records collection errors.
         </p>
         <p>
-          Use a Stripe restricted read-only key, a PostHog personal key with
-          query permissions, Google Search Console read-only OAuth scope, GitHub
-          repository read permissions, and a Vercel token with minimum available
-          scope.
+          Use a Stripe restricted read-only key, a VisitorPing analytics service
+          token, Google Search Console read-only OAuth scope, GitHub repository
+          read permissions, and a Vercel token with minimum available scope.
         </p>
         <p>
           Credentials are configured in the backend environment. See
@@ -659,7 +662,8 @@ function SettingsView({ companyId }: { companyId: Id<"companies"> }) {
               target: Number(form.get("target")),
               currency: "USD",
               direction: "increase",
-              provider: String(form.get("provider")) as "openai" | "anthropic",
+              provider: String(form.get("provider")) as
+                "openai" | "anthropic" | "vercel_gateway",
               model: String(form.get("model")),
             });
             setMessage("Settings saved. They apply to the next run.");
@@ -703,6 +707,7 @@ function SettingsView({ companyId }: { companyId: Id<"companies"> }) {
             >
               <option value="openai">OpenAI</option>
               <option value="anthropic">Anthropic</option>
+              <option value="vercel_gateway">Vercel AI Gateway</option>
             </select>
           </Field>
           <Field>
@@ -711,15 +716,16 @@ function SettingsView({ companyId }: { companyId: Id<"companies"> }) {
               id="model"
               name="model"
               defaultValue={settings.model}
-              pattern="[a-zA-Z0-9._:\-]+"
+              pattern="[a-zA-Z0-9._:\/\-]+"
               required
             />
           </Field>
         </FieldGroup>
         <p className="muted">
           The model must support structured JSON output. Configure its API key
-          and token pricing in the Convex environment; unknown pricing stays
-          unknown.
+          in the Convex environment. Gateway model IDs use provider/model, such
+          as anthropic/claude-sonnet-4.6. Gateway-reported costs are recorded;
+          other providers need configured token pricing.
         </p>
         <Button className="self-start" disabled={busy}>
           {busy ? "Saving…" : "Save settings"}

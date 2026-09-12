@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-11",
+  "wordpress": {
+    "directoryStatus": "WordPress.org API returned 404 Plugin not found",
+    "connectorVersion": "1.3.1",
+    "distribution": "Direct ZIP live and byte-matched to the tested build",
+    "downloadUrl": "https://visitorping.com/downloads/visitorping-wordpress.zip",
+    "guideUrl": "https://visitorping.com/guides/how-to-track-visitors-on-wordpress",
+    "checks": [
+      "14 platform artifact checks",
+      "ZIP integrity and source byte match",
+      "desktop and mobile browser downloads",
+      "lint and TypeScript"
+    ],
+    "limitations": [
+      "No PHP/WordPress runtime available in this environment",
+      "Directory submission requires WordPress.org account access and review"
+    ]
+  },
+  "appStore": {
+    "liveVersion": "1.0.1",
+    "appId": "6802170891",
+    "metadataPrepared": "apps/mobile/app-store/metadata.md",
+    "audit": "apps/mobile/app-store/discovery-audit.md",
+    "remoteChanges": false,
+    "blocker": "App Store Connect API credentials not configured; available Apple keys are sign-in credentials"
+  },
+  "releaseSha": "fcc4ad20eab66814ca2e6148e4a4a643d0fdbc37",
+  "spendUsd": 0,
+  "productionVerification": {
+    "at": "2026-09-11T04:33:03.169Z",
+    "downloadStatus": 200,
+    "bytes": 19913,
+    "sha256": "47929a3be413ed5928140bc89a068de303c3ac6fc26df27d37127502989b9399",
+    "guideStatus": 200,
+    "guideLinkVerified": true,
+    "releaseSha": "fcc4ad20eab66814ca2e6148e4a4a643d0fdbc37"
+  }
+}

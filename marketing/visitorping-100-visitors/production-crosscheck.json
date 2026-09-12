@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-10T22:31:48.909Z",
+  "productionEndpoint": "visitorping.com/api/operator/analytics",
+  "period": {
+    "start": 1788393600000,
+    "end": 1788998400000
+  },
+  "endpointVisitors": 65,
+  "endpointSessions": 81,
+  "databaseVisitors": 0,
+  "databaseSessions": 0,
+  "matches": true,
+  "primaryMatches": false,
+  "backupVisitors": 65,
+  "backupSessions": 81,
+  "backupMatches": true,
+  "selectedTarget": "backup"
+}

@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-11T17:48:25.291Z",
+  "url": "https://visitorping.com/guides/real-time-website-visitor-notifications",
+  "commit": "d32f11b",
+  "status": "Live",
+  "searchBaseline": [
+    {
+      "keys": [
+        "visitor notification",
+        "https://visitorping.com/guides/real-time-website-visitor-notifications"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "keys": [
+        "website visitor alert",
+        "https://visitorping.com/guides/real-time-website-visitor-notifications"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 96
+    }
+  ],
+  "searchPeriod": {
+    "startDate": "2026-08-11",
+    "endDate": "2026-09-08",
+    "dataState": "final",
+    "type": "web",
+    "dimensions": [
+      "query",
+      "page"
+    ],
+    "rowLimit": 1000
+  },
+  "qa": {
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "typescript": "passed",
+    "eslint": "passed",
+    "browserErrors": 0,
+    "overflow": false,
+    "defaultCtaRegression": "passed"
+  },
+  "signupSurface": "notifications-guide",
+  "independentWorkspacesAtRelease": 0,
+  "spendUsd": 0,
+  "verifiedAt": "2026-09-11T17:50:24.395Z"
+}

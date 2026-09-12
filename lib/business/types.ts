@@ -2,6 +2,7 @@ import { z } from "zod";
 export const sourceSchema = z.enum([
   "stripe",
   "posthog",
+  "visitorping",
   "search_console",
   "github",
   "vercel",

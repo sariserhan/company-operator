@@ -1,0 +1,21 @@
+{
+  "url": "https://visitorping.com/demo",
+  "capturedAt": "2026-09-10T20:45:21.662Z",
+  "frames": 100,
+  "fps": 10,
+  "width": 1080,
+  "height": 1350,
+  "wallMs": 9953,
+  "alertVerified": true,
+  "kind": "Actual browser interaction with simulated public demo data; no real mobile push delivery is shown.",
+  "output": "public/campaigns/visitorping-launch/assets/visitorping-interactive-demo.mp4",
+  "durationSeconds": 10,
+  "encodedFps": 30,
+  "decodedFrames": 300,
+  "audio": false,
+  "codec": "H264",
+  "pixelFormat": "yuv420p",
+  "faststart": true,
+  "bytes": 201480,
+  "verification": "Decoded 300 frames without errors. Inspected active-alert frame: simulation disclosure and Example data label visible."
+}

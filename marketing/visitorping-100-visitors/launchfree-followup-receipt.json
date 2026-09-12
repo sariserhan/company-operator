@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-11T02:03:32.732Z",
+  "status": 200,
+  "accepted": true,
+  "id": "9aa79ab3-563d-4a79-90b3-5a8fc3f3bbc4",
+  "to": "hello@launchfree.io",
+  "logoVerified": true,
+  "deliveryCheck": {
+    "at": "2026-09-11T02:04:33.850Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

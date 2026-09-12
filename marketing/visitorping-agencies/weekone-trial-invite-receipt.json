@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:13.313Z",
+  "name": "Week One Sites",
+  "to": "hello@weekonesites.com",
+  "source": "https://weekonesites.com/services",
+  "status": 200,
+  "accepted": true,
+  "id": "11053167-fcbc-4053-aec2-bbbe56347271",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:15.641Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

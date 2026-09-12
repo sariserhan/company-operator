@@ -1,0 +1,163 @@
+{
+  "capturedAt": "2026-09-12T18:16:32.464Z",
+  "start": "2026-09-10T22:26:53.000Z",
+  "target": 100,
+  "siteDomain": "visitorping.com",
+  "productionTargetVerified": true,
+  "productionSource": "Recorded backup; matches live endpoint historical aggregates on this check",
+  "total_tracked_visitors": 111,
+  "excluded_test_visitors": 0,
+  "classifier_human_browser_ids": 0,
+  "browser_shaped_visitor_ids": 85,
+  "bot_visitors": 26,
+  "unknown_visitors": 0,
+  "campaign_browser_ids": 64,
+  "measurementVersion": 2,
+  "activation": {
+    "capturedAt": "2026-09-12T18:16:33.590Z",
+    "productionVerified": true,
+    "scope": "candidate_external_workspaces_excluding_owner_baseline",
+    "workspaces": 0,
+    "email_verified": 0,
+    "site_added": 0,
+    "tracker_verified": 0,
+    "first_browser_visit": 0,
+    "notification_accepted_or_delivered": 0,
+    "limitation": "Independent lifetime stages, not a campaign cohort or proof of real people. Excludes the owner-confirmed baseline and application internal-account exclusions. New unmatched workspaces require review before being called customers."
+  },
+  "rawActivationLabel": "Product endpoint does not yet include owner-confirmed workspace exclusions; campaign uses corrected counts.",
+  "signupFunnel": [
+    {
+      "source": "github",
+      "event_type": "demo_interaction",
+      "browser_ids": 2,
+      "events": 10
+    },
+    {
+      "source": "unattributed",
+      "event_type": "demo_interaction",
+      "browser_ids": 2,
+      "events": 8
+    }
+  ],
+  "signupFunnelLimitations": "Optional browser telemetry, not verified people. signup_accepted means email signup accepted pending verification; OAuth starts are not completed signups. Missing events may reflect blocked tracking or unreleased instrumentation.",
+  "verifiedRealPeople": null,
+  "trafficQuality": {
+    "browser_ua_only_ids": 85,
+    "cloud_or_security_network_ids_for_review": 51,
+    "network_review_ids_without_demo_or_multiple_pages": 50,
+    "demo_interaction_browser_ids": 4,
+    "multiple_page_browser_ids": 7
+  },
+  "campaignSources": [
+    {
+      "source": "github",
+      "bot_classification": "likely_human",
+      "visitors": 61
+    },
+    {
+      "source": "appscout",
+      "bot_classification": "likely_human",
+      "visitors": 2
+    },
+    {
+      "source": "temple",
+      "bot_classification": "likely_human",
+      "visitors": 1
+    }
+  ],
+  "githubShowcases": [
+    {
+      "showcase": "github_post_unknown",
+      "visitors": 17,
+      "visitors_with_multiple_pages": 1
+    },
+    {
+      "showcase": "neon_feature",
+      "visitors": 13,
+      "visitors_with_multiple_pages": 0
+    },
+    {
+      "showcase": "tailwind_mobile",
+      "visitors": 10,
+      "visitors_with_multiple_pages": 0
+    },
+    {
+      "showcase": "shadcn_ui",
+      "visitors": 8,
+      "visitors_with_multiple_pages": 2
+    },
+    {
+      "showcase": "nextjs",
+      "visitors": 6,
+      "visitors_with_multiple_pages": 0
+    },
+    {
+      "showcase": "drizzle",
+      "visitors": 4,
+      "visitors_with_multiple_pages": 0
+    },
+    {
+      "showcase": "betterauth_mobile",
+      "visitors": 3,
+      "visitors_with_multiple_pages": 0
+    }
+  ],
+  "githubEngagementEvents": [
+    {
+      "event_type": "page_view",
+      "events": 66,
+      "visitors": 61
+    },
+    {
+      "event_type": "web_vital",
+      "events": 37,
+      "visitors": 18
+    },
+    {
+      "event_type": "page_duration",
+      "events": 21,
+      "visitors": 20
+    },
+    {
+      "event_type": "page_hidden",
+      "events": 17,
+      "visitors": 17
+    },
+    {
+      "event_type": "demo_interaction",
+      "events": 10,
+      "visitors": 2
+    },
+    {
+      "event_type": "scroll_depth",
+      "events": 2,
+      "visitors": 2
+    },
+    {
+      "event_type": "outbound_click",
+      "events": 2,
+      "visitors": 2
+    }
+  ],
+  "demoInteractionVisitorsBySource": [
+    {
+      "source": "github",
+      "visitors": 2
+    },
+    {
+      "source": "unattributed",
+      "visitors": 2
+    }
+  ],
+  "spendUsd": 0,
+  "limitations": [
+    "Previous estimated_human_visitors figures were browser-shaped identifiers, not validated human traffic; they must not be used as real-person goal progress.",
+    "Cloud/security network ownership flags review only: proxies and cloud browsers can carry genuine users. Interaction and multi-page counts also do not prove distinct people.",
+    "Browser identifiers approximate people; no exact person deduplication is possible.",
+    "Likely-human classification can be based only on a browser-shaped user agent. It is not definitive proof of a person.",
+    "Known labeled QA checks are excluded. After campaign start our agents must avoid tracked browser visits to VisitorPing, or label them codex_verification.",
+    "Distinct counts in classification buckets can overlap; do not sum them."
+  ],
+  "goalComplete": false
+}

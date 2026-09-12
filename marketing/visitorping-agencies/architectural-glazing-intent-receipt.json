@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T04:06:44.634Z",
+  "to": "Louis@architectural-glazing.co.uk",
+  "source": "https://forum.wixstudio.com/t/live-site-visitor-notifications-not-working/77236",
+  "contactSource": "https://www.architectural-glazing.co.uk/",
+  "status": 200,
+  "accepted": true,
+  "id": "6f672b92-896e-461b-814d-a8441565db72",
+  "deliveryCheck": {
+    "at": "2026-09-11T04:07:24.472Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

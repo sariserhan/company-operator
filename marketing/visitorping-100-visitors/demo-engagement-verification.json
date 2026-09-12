@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-09-11T01:25:09.440130+00:00",
+  "commit": "7ed85ed95c483a3268b76156364dded20aa06952",
+  "deploymentId": "dpl_Ab5XB6tnHrLbfBAJveUSsDw9EG2a",
+  "deploymentState": "READY",
+  "publicSite": "https://visitorping.com",
+  "event": "demo_interaction",
+  "checks": [
+    "targeted lint passed",
+    "TypeScript passed",
+    "Vercel production build ready",
+    "live homepage and demo dispatch correct event to stub tracker",
+    "both pages still work with absent or throwing tracker"
+  ],
+  "limitations": [
+    "QA telemetry blocked; no test visits added to the acquisition goal",
+    "Browser event dispatch verified; no test event persisted to production",
+    "Human goal remains unfulfilled"
+  ]
+}

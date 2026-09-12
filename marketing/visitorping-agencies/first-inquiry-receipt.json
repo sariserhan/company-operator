@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-10T17:07:14.154Z",
+  "agency": "Web Design Pros 365",
+  "route": "https://www.webdesignpros365.com/contact?topic=partnership",
+  "responses": [
+    {
+      "url": "https://www.webdesignpros365.com/api/contact",
+      "status": 200
+    }
+  ],
+  "confirmation": [],
+  "status": "submitted_http_200",
+  "replyInbox": "configured OPERATOR_EMAIL; not connected for reading",
+  "delivery_verified": false,
+  "note": "Browser submitted once; contact API returned HTTP 200. No explicit success message or recipient delivery was captured. Cookie text excluded as unrelated."
+}

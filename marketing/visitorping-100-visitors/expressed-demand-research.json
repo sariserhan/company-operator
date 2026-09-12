@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-11T04:07:00Z",
+  "sources": [
+    {
+      "source": "https://www.reddit.com/r/Wordpress/comments/1q155sk/notifications_for_visits/",
+      "date": "2026-01-01",
+      "need": "Low-traffic blog owner wants alerts for visits to four pages.",
+      "status": "Research evidence only; older post, no Reddit publishing access; willingness to pay unknown."
+    },
+    {
+      "source": "https://www.reddit.com/r/Wordpress/comments/16aeda3",
+      "date": "2023-09-05",
+      "need": "Wix-to-WordPress user misses app visitor alerts.",
+      "status": "Historical migration use case; not a current lead."
+    },
+    {
+      "source": "https://www.reddit.com/r/ecommerce/comments/y44uxz",
+      "date": "2022-10-14",
+      "need": "Store owner wants live visits and pages alongside existing analytics and chat.",
+      "status": "Historical need with free alternatives discussed; not contacted."
+    },
+    {
+      "source": "https://www.reddit.com/r/WIX/comments/1v0xp4x/visitor_notification/",
+      "date": "2026-07-19",
+      "need": "Visitor notifications stopped after removing Wix Chat.",
+      "status": "Resolved July 21 by reinstalling native app; do not pitch as unresolved."
+    },
+    {
+      "source": "https://forum.wixstudio.com/t/live-site-visitor-notifications-not-working/77236",
+      "date": "2026-03-24",
+      "need": "Architectural Glazing requested restoration of visitor alerts.",
+      "status": "Native workaround posted June 25; contextual email sent acknowledging it, not claiming an outage."
+    },
+    {
+      "source": "https://support.wix.com/en/article/wix-owner-app-request-receiving-live-site-visitor-notifications-without-having-wix-chat",
+      "date": "checked 2026-09-11",
+      "need": "Official request for arrival alerts without installing chat.",
+      "status": "Market-gap evidence, not an identifiable prospect or proof of willingness to pay."
+    }
+  ],
+  "decision": "Test alerts without chat and migration familiarity; do not sell outdated Wix problems as still broken.",
+  "actions": {
+    "contextualEmailsSent": 1,
+    "xQuestionScheduledUtc": "2026-09-12T13:00:00Z"
+  },
+  "verifiedNewCustomers": 0
+}

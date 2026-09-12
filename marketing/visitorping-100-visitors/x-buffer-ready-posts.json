@@ -1,0 +1,46 @@
+{
+  "status": "two_published_four_scheduled",
+  "plan": "Buffer Free only; no paid trial or upgrade",
+  "posts": [
+    {
+      "order": 1,
+      "spacing": "First available after account connection",
+      "text": "I built a doorbell for websites: see visits live and get iPhone alerts. Try the sample visitor buttons here\u2014no signup needed. The demo uses simulated visits.\n\nhttps://visitorping.com/demo?utm_source=x&utm_medium=organic_social&utm_campaign=first_100_visitors&utm_content=doorbell_video",
+      "media": "public/campaigns/visitorping-launch/assets/visitorping-interactive-demo.mp4",
+      "status": "published",
+      "url": "https://x.com/serhansarii/status/2098188980927770663"
+    },
+    {
+      "order": 2,
+      "spacing": "At least24 hours after first post",
+      "text": "Wondering which analytics scripts a website appears to load? I added a free tracking detector to VisitorPing. It checks public-page signatures; scripts loaded only after consent or interaction may not appear.\n\nhttps://visitorping.com/tools/tracking-detector?utm_source=x&utm_medium=organic_social&utm_campaign=first_100_visitors&utm_content=tracking_tool",
+      "status": "published",
+      "url": "https://x.com/serhansarii/status/2098217772572442675"
+    },
+    {
+      "order": 3,
+      "spacing": "At least24 hours after second post",
+      "text": "A visit from Google Maps, a pricing-page visit, a returning visitor: I put all three into an interactive VisitorPing demo. Which would you want your phone to alert you about?\n\nhttps://visitorping.com/demo?utm_source=x&utm_medium=organic_social&utm_campaign=first_100_visitors&utm_content=alert_question",
+      "status": "scheduled",
+      "scheduledAt": "2026-09-12T23:30:00Z"
+    },
+    {
+      "order": 4,
+      "status": "scheduled",
+      "scheduledAt": "2026-09-13T23:30:00Z",
+      "text": "Run a WordPress site? I put the VisitorPing installation steps here. See how to connect your site to the live visitor dashboard. The service has a 14-day trial; the guide is free to read.\n\nhttps://visitorping.com/guides/how-to-track-visitors-on-wordpress?utm_source=x&utm_medium=organic_social&utm_campaign=first_100_visitors&utm_content=wordpress_guide"
+    },
+    {
+      "order": 5,
+      "status": "scheduled",
+      "scheduledAt": "2026-09-14T23:30:00Z",
+      "text": "I added a free UTM builder to VisitorPing. Give each community or post a distinct campaign label before sharing your link, so you can tell which source sent the visit.\n\nhttps://visitorping.com/tools/utm-builder?utm_source=x&utm_medium=organic_social&utm_campaign=first_100_visitors&utm_content=utm_builder"
+    },
+    {
+      "order": 6,
+      "status": "scheduled",
+      "scheduledAt": "2026-09-11T13:00:00Z",
+      "text": "VisitorPing is now on The Runway. It shows website visitors live and sends iPhone alerts. If that would help with your site, take a look\u2014there's a no-signup sample demo on VisitorPing.\n\nhttps://launchfree.io/listings/visitorping.html"
+    }
+  ]
+}

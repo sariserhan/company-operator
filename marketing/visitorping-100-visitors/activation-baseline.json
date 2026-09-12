@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-09-12T18:16:33.590Z",
+  "productionVerified": true,
+  "scope": "candidate_external_workspaces_excluding_owner_baseline",
+  "workspaces": 0,
+  "email_verified": 0,
+  "site_added": 0,
+  "tracker_verified": 0,
+  "first_browser_visit": 0,
+  "notification_accepted_or_delivered": 0,
+  "limitation": "Independent lifetime stages, not a campaign cohort or proof of real people. Excludes the owner-confirmed baseline and application internal-account exclusions. New unmatched workspaces require review before being called customers."
+}

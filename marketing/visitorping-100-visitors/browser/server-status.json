@@ -1,0 +1,8 @@
+{
+  "pid": 692205,
+  "startedAt": "2026-09-11T14:26:18.007Z",
+  "listen": "127.0.0.1:4600",
+  "debugListen": "127.0.0.1:9224",
+  "profile": "/tmp/visitorping-publishing-browser",
+  "expiresAt": "2026-09-11T22:26:18.007Z"
+}

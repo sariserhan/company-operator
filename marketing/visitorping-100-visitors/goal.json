@@ -1,0 +1,29 @@
+{
+  "objective": "Bring 100 additional real people to visitorping.com, $0 spend",
+  "replaces": "Previous $1,000,000 MRR objective cancelled by user",
+  "startedAt": "2026-09-10T22:26:53.000Z",
+  "target": 100,
+  "spendLimitUsd": 0,
+  "status": "active",
+  "completionRule": "At least 100 defensible human visitors after start; known bots, our tests and fabricated traffic excluded. Browser identifiers are estimates, not proof of distinct people.",
+  "formalGoalToolNote": "create_goal retried September 11 and rejected because the cancelled revenue goal remains unfinished. Cannot mark that unachieved goal complete to bypass the restriction.",
+  "lastExecutionAt": "2026-09-11T03:44:00Z",
+  "automaticWork": {
+    "bufferPostsUtc": [
+      "2026-09-11T13:00:00Z",
+      "2026-09-12T13:00:00Z",
+      "2026-09-12T23:30:00Z",
+      "2026-09-13T23:30:00Z",
+      "2026-09-14T23:30:00Z"
+    ],
+    "monitorUntil": "2026-09-15T01:16:58.684Z",
+    "scope": "Scheduled posts and 30-minute read-only measurement with owner email on new candidate workspaces. Reply inbox is not connected; no automatic follow-ups or adaptive agent loop."
+  },
+  "nearTermExperiment": {
+    "record": "../visitorping-agencies/first-customer-experiment.json",
+    "contacts": 10,
+    "firstMilestone": "One independently verified installation, then a paid subscription",
+    "verifiedCustomers": 0,
+    "ownerBaselineExcluded": true
+  }
+}

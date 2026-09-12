@@ -1,0 +1,5 @@
+{
+  "status": "not_submitted",
+  "reason": "Normal submit button remained disabled; Playwright click timed out. Form includes Turnstile. No force click, bypass, or direct POST attempted.",
+  "fee": 0
+}

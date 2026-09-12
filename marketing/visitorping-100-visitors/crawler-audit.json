@@ -1,0 +1,532 @@
+{
+  "capturedAt": "2026-09-11T02:38:42.170Z",
+  "target": "5819c6f7-5e7c-4c55-93ed-1db2c26b4fe4",
+  "productionVerified": true,
+  "targetSessions": [
+    {
+      "id": "5819c6f7-5e7c-4c55-93ed-1db2c26b4fe4",
+      "visitor_id": "1428d8eb-fb7c-4c0b-bb5c-3dd3aa468a7d",
+      "started_at": "2026-09-11T02:36:59.784Z",
+      "last_activity_at": "2026-09-11T02:36:59.784Z",
+      "ended_at": null,
+      "landing_page": "/demo",
+      "current_page": "/demo",
+      "referrer": "https://bing.com/",
+      "utm_source": "github",
+      "utm_medium": "showcase_neon",
+      "utm_campaign": "first_100_visitors",
+      "page_count": 1,
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "country": "US",
+      "bot_classification": "likely_human",
+      "bot_name": null,
+      "bot_score": null,
+      "user_agent_category": "browser",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "network_organization": "Palo Alto Networks, Inc"
+    }
+  ],
+  "targetEvents": [
+    {
+      "session_id": "5819c6f7-5e7c-4c55-93ed-1db2c26b4fe4",
+      "event_type": "page_view",
+      "path": "/demo",
+      "occurred_at": "2026-09-11T02:36:59.784Z",
+      "duration_ms": null,
+      "exit_reason": null
+    }
+  ],
+  "cohorts": [
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Google LLC",
+      "visitors": 14,
+      "sessions": 14,
+      "multi_page_sessions": 1
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Palo Alto Networks, Inc",
+      "visitors": 6,
+      "sessions": 6,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "macOS",
+      "device_type": "desktop",
+      "network_organization": "Verizon Business",
+      "visitors": 3,
+      "sessions": 5,
+      "multi_page_sessions": 3
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "macOS",
+      "device_type": "desktop",
+      "network_organization": "Google LLC",
+      "visitors": 3,
+      "sessions": 3,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Linux",
+      "device_type": "desktop",
+      "network_organization": "Google LLC",
+      "visitors": 3,
+      "sessions": 3,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Android",
+      "device_type": "mobile",
+      "network_organization": "Palo Alto Networks, Inc",
+      "visitors": 2,
+      "sessions": 2,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "iOS",
+      "device_type": "mobile",
+      "network_organization": "HostRoyale Technologies Pvt Ltd",
+      "visitors": 2,
+      "sessions": 2,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "macOS",
+      "device_type": "desktop",
+      "network_organization": "Google LLC",
+      "visitors": 2,
+      "sessions": 2,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "IPG",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Ip range for Dialupservice in HCM City",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "JSC Kazakhtelecom",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Karaganda",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Amazon Technologies Inc.",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "SIME DARBY BERHAD",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "U Mobile Sdn Bhd",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Vodafone Idea Ltd",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Web2Objects LLC",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Linux",
+      "device_type": "desktop",
+      "network_organization": "Amazon Technologies Inc.",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Linux",
+      "device_type": "desktop",
+      "network_organization": "Amazon Data Services Northern Virginia",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Edge",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Google LLC",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "iOS",
+      "device_type": "mobile",
+      "network_organization": "Google LLC",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "iOS",
+      "device_type": "mobile",
+      "network_organization": "truview LLC",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "iOS",
+      "device_type": "mobile",
+      "network_organization": "Palo Alto Networks, Inc",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Safari",
+      "os": "iOS",
+      "device_type": "mobile",
+      "network_organization": "Vodafone Australia Pty Ltd",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "Google Ireland Limited",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    },
+    {
+      "bot_classification": "likely_human",
+      "bot_classification_reason": "browser_shaped_user_agent",
+      "user_agent_category": "browser",
+      "browser": "Chrome",
+      "os": "Windows",
+      "device_type": "desktop",
+      "network_organization": "GGC SERVERS POP KLN",
+      "visitors": 1,
+      "sessions": 1,
+      "multi_page_sessions": 0
+    }
+  ],
+  "durations": [
+    {
+      "source": "unattributed",
+      "duration_ms": "1800000",
+      "events": 2
+    },
+    {
+      "source": "github",
+      "duration_ms": "10396",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "11869",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "14364",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "16889",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "16913",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "19291",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "19694",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "22043",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "24079",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "26454",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "29223",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "47897",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "6896",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "7556",
+      "events": 1
+    },
+    {
+      "source": "github",
+      "duration_ms": "8863",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "10505",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "1121395",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "1264",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "1272",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "1614491",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "1652",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "17580",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "200862",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "2016",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "20174",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "2408",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "2755",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "27931",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "30298",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "3577",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "3610",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "3628",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "3653",
+      "events": 1
+    },
+    {
+      "source": "unattributed",
+      "duration_ms": "4253",
+      "events": 1
+    }
+  ]
+}

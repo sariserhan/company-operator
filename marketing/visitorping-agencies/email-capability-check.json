@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-10T17:19:14.667Z",
+  "provider": "Resend",
+  "results": [
+    {
+      "path": "/domains",
+      "status": 200,
+      "domains": [
+        {
+          "name": "visitorping.com",
+          "status": "verified",
+          "capabilities": {
+            "sending": "enabled",
+            "receiving": "disabled"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/emails/receiving?limit=1",
+      "status": 200,
+      "returnedCount": 0,
+      "hasMore": false
+    }
+  ]
+}

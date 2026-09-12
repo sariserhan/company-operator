@@ -1,21 +1,36 @@
 import type { Env, IntegrationResult, Source } from "../business/types";
 import { ReadOnlyHttp, IntegrationError, type Fetcher } from "./http";
 import { collectStripe } from "./stripe";
-import { collectPosthog } from "./posthog";
+import { collectVisitorping } from "./visitorping";
 import { collectSearchConsole } from "./search-console";
 import { collectGithub } from "./github";
 import { collectVercel } from "./vercel";
 export const integrationRequirements = {
   stripe: ["STRIPE_READ_ONLY_KEY"],
-  posthog: [
-    "POSTHOG_PERSONAL_API_KEY",
-    "POSTHOG_PROJECT_ID",
-    "POSTHOG_EVENT_MAP",
-  ],
-  search_console: ["GOOGLE_ACCESS_TOKEN", "GOOGLE_SEARCH_CONSOLE_SITE"],
+  visitorping: ["VISITORPING_ANALYTICS_TOKEN"],
+  search_console: ["GOOGLE_SEARCH_CONSOLE_SITE"],
   github: ["GITHUB_READ_ONLY_TOKEN", "GITHUB_REPOSITORY"],
   vercel: ["VERCEL_READ_ONLY_TOKEN", "VERCEL_PROJECT_ID"],
 } as const;
+export function integrationConfiguration(env: Env) {
+  return Object.entries(integrationRequirements).map(([source, keys]) => {
+    const missing: string[] = keys.filter((key) => !env[key]);
+    if (source === "search_console") {
+      const renewal = [
+        "GOOGLE_CLIENT_ID",
+        "GOOGLE_CLIENT_SECRET",
+        "GOOGLE_REFRESH_TOKEN",
+      ];
+      if (renewal.some((key) => Boolean(env[key])))
+        missing.push(...renewal.filter((key) => !env[key]));
+      else if (!env.GOOGLE_ACCESS_TOKEN)
+        missing.push(
+          "GOOGLE_ACCESS_TOKEN (temporary) or GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET + GOOGLE_REFRESH_TOKEN",
+        );
+    }
+    return { source, configured: missing.length === 0, missing };
+  });
+}
 export async function collectIntegrations(
   env: Env,
   currency: string,
@@ -24,7 +39,7 @@ export async function collectIntegrations(
 ): Promise<IntegrationResult[]> {
   const collectors = {
     stripe: (h: ReadOnlyHttp) => collectStripe(env, h, now, currency),
-    posthog: (h: ReadOnlyHttp) => collectPosthog(env, h, now),
+    visitorping: (h: ReadOnlyHttp) => collectVisitorping(env, h, now),
     search_console: (h: ReadOnlyHttp) => collectSearchConsole(env, h, now),
     github: (h: ReadOnlyHttp) => collectGithub(env, h, now),
     vercel: (h: ReadOnlyHttp) => collectVercel(env, h, now),

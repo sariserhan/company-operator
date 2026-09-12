@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-09-10T22:25:21.294451+00:00",
+  "route": "https://shareyourstartup.com/submit.html",
+  "status": "blocked_before_submission",
+  "evidence": "Ordinary Playwright click timed out after30 seconds because Post it button disabled; Cloudflare Turnstile hidden response field present. No bypass attempted.",
+  "published": false,
+  "trafficClaim": null
+}

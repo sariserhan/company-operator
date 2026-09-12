@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-10T19:19:05.816Z",
+  "to": "partners@visitorping.com",
+  "httpStatus": 200,
+  "id": "3a64de7d-ca96-46b7-9237-60effc1fd8b0",
+  "status": "accepted_by_resend",
+  "error": null,
+  "deliveryCheck": {
+    "at": "2026-09-10T19:19:20.862Z",
+    "httpStatus": 200,
+    "lastEvent": "delivered",
+    "limit": "Provider event does not verify arrival in the destination Gmail inbox"
+  }
+}

@@ -1,0 +1,17 @@
+Hello,
+
+Your Grow care plan includes monthly reports. I wondered whether seeing visits arrive between those reports would be useful on your own agency site.
+
+I built VisitorPing: see visits live in a web dashboard and get arrival alerts on iPhone. Would you try it on your own website? Reply with your platform and I can help with the installation steps by email.
+
+Here is the sample demo, with no signup needed:
+https://visitorping.com/demo?utm_source=anchor&utm_medium=personal_email&utm_campaign=first_customer_studios
+
+The Starter trial is 14 days with no credit card required; continuing costs US$19/month. It requires a tracking script and shows existing visits; it does not bring traffic to your site.
+
+If you would not use this, which is the main reason: no need for alerts, installation effort, or price? A one-line answer would help me decide what to improve.
+
+If this is not relevant, reply “no thanks” and I will not follow up.
+
+VisitorPing
+partners@visitorping.com

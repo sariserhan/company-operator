@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:16.455Z",
+  "name": "SmartersWeb",
+  "to": "hello@smartersweb.com",
+  "source": "https://smartersweb.com/website-maintenance/",
+  "status": 200,
+  "accepted": true,
+  "id": "d6de2518-aa4f-4757-8621-567da24eb355",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:18.577Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

@@ -1,5 +1,8 @@
 import { v } from "convex/values";
-import { paginationOptsValidator } from "convex/server";
+import {
+  paginationOptsValidator,
+  paginationResultValidator,
+} from "convex/server";
 import {
   mutation,
   query,
@@ -7,7 +10,7 @@ import {
   internalQuery,
 } from "./_generated/server";
 import { internal } from "./_generated/api";
-import { ownedCompany } from "./access";
+import { operator, ownedCompany } from "./access";
 import { objectiveSchema, snapshotSchema, DAY } from "../lib/business/types";
 import { PROMPT_VERSION } from "../lib/ai/prompts";
 import { objectiveFields, providerV, runStatusV, usageV } from "./schema";
@@ -235,11 +238,7 @@ export const list = query({
     companyId: v.id("companies"),
     paginationOpts: paginationOptsValidator,
   },
-  returns: v.object({
-    page: v.array(summaryV),
-    isDone: v.boolean(),
-    continueCursor: v.string(),
-  }),
+  returns: paginationResultValidator(summaryV),
   handler: async (ctx, { companyId, paginationOpts }) => {
     await ownedCompany(ctx, companyId);
     const result = await ctx.db
@@ -268,11 +267,13 @@ export const list = query({
 });
 export const detail = query({
   args: { runId: v.id("runs") },
-  returns: v.string(),
+  returns: v.union(v.string(), v.null()),
   handler: async (ctx, { runId }) => {
+    const user = await operator(ctx);
     const run = await ctx.db.get(runId);
-    if (!run) throw new Error("Run not found");
-    await ownedCompany(ctx, run.companyId);
+    if (!run) return null;
+    const company = await ctx.db.get(run.companyId);
+    if (!company || company.ownerId !== user) return null;
     const [events, usage] = await Promise.all([
       ctx.db
         .query("events")

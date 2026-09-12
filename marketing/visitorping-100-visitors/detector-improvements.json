@@ -1,0 +1,47 @@
+{
+  "commit": "4977a292821f1700dc8f619589f0a78a5536a3a7",
+  "target": "https://visitorping.com/tools/tracking-detector",
+  "changes": [
+    "Specific supported-tool search description",
+    "Blank website input",
+    "Actionable results and honest detection limits",
+    "Results precede contextual website-trial offer",
+    "Trial terms visible",
+    "UTM parameters preserved into signup",
+    "Optional URL-free detector funnel events",
+    "Existing measurement includes detector events"
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "eslint": "passed",
+    "signatureTests": 2,
+    "mockedBrowserScenarios": 12,
+    "viewportWidths": [
+      1440,
+      390,
+      320
+    ],
+    "pageErrors": 0,
+    "horizontalOverflow": false
+  },
+  "searchBaseline": {
+    "start": "2026-08-11",
+    "end": "2026-09-08",
+    "impressions": 64,
+    "clicks": 0,
+    "averagePosition": 79.671875,
+    "indexed": true
+  },
+  "independentWorkspacesAtCheck": 0,
+  "spendUsd": 0,
+  "production": {
+    "state": "READY",
+    "verifiedAt": "2026-09-11T04:49:47.632Z",
+    "checks": {
+      "http": 200,
+      "specificDescription": true,
+      "noSignupCopy": true,
+      "canonical": true
+    }
+  }
+}

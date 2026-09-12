@@ -1,0 +1,128 @@
+{
+  "createdAt": "2026-09-11T03:43:11.347Z",
+  "hypothesis": "Website studios may pay for immediate awareness of visits on their own sites.",
+  "targetContacts": 10,
+  "existingContacts": [
+    "TinyFirm",
+    "BMECOM"
+  ],
+  "newContacts": [
+    {
+      "slug": "anchor",
+      "name": "Anchor Web Digital",
+      "to": "hello@anchorwebdigital.com",
+      "source": "https://www.anchorwebdigital.com/services/website-maintenance",
+      "opening": "Your Grow care plan includes monthly reports. I wondered whether seeing visits arrive between those reports would be useful on your own agency site."
+    },
+    {
+      "slug": "arise",
+      "name": "Arise Technology",
+      "to": "hello@arisetechco.com",
+      "source": "https://arisetechco.com/website-care/",
+      "opening": "Your Care plan is aimed at businesses that update and promote their sites. I am testing whether immediate visitor awareness is useful alongside that ongoing work."
+    },
+    {
+      "slug": "weekone",
+      "name": "Week One Sites",
+      "to": "hello@weekonesites.com",
+      "source": "https://weekonesites.com/services",
+      "opening": "Your seven-day website launch service caught my attention. The moment after a launch is exactly when I want to notice the first arrivals."
+    },
+    {
+      "slug": "banana",
+      "name": "BananaSystems",
+      "to": "hello@bananasystems.co.uk",
+      "source": "https://bananasystems.co.uk/",
+      "opening": "You offer managed websites and custom tools for Southampton businesses. I would value your assessment of a small visitor-alert tool on your own site."
+    },
+    {
+      "slug": "copper",
+      "name": "Copper Lane",
+      "to": "hello@copperlane.co.uk",
+      "source": "https://copperlane.co.uk/services/",
+      "opening": "Your services include local SEO and missed-call text-back for owners away from their desks. I am exploring a related question: would they also value noticing website visits on their phone?"
+    },
+    {
+      "slug": "temple",
+      "name": "Matthew Temple Consulting",
+      "to": "hello@matthewtemple.co.uk",
+      "source": "https://matthewtemple.co.uk/services/website-care-plans/",
+      "opening": "Your website care plans cover hosting, updates, backups, and security. I would like to test a separate visitor-awareness tool on a studio site like yours."
+    },
+    {
+      "slug": "smarters",
+      "name": "SmartersWeb",
+      "to": "hello@smartersweb.com",
+      "source": "https://smartersweb.com/website-maintenance/",
+      "opening": "You offer WordPress help and website care for small businesses and lean teams. I am looking for a website owner comfortable adding a small tracking script to evaluate a visitor-alert tool."
+    },
+    {
+      "slug": "webquick",
+      "name": "WebQuick",
+      "to": "hello@webquick.com.au",
+      "source": "https://webquick.com.au/website-care/",
+      "opening": "Your care plans support sites whether WebQuick built them or not. I would value your view of the installation experience for a small visitor-alert tool on your own site."
+    }
+  ],
+  "offer": "Existing 14-day Starter trial, no card required, USD19/month if continued; installation help by email.",
+  "success": "Independent owner installs on their own site, receives a visit, and subsequently pays; all must be verified.",
+  "stopRule": "Review substantive replies and independent installs after five business days before expanding this audience. No automatic follow-ups without checking replies and opt-outs.",
+  "spendUsd": 0,
+  "deliverySummary": [
+    {
+      "name": "Anchor Web Digital",
+      "at": "2026-09-11T03:44:14.184Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "Arise Technology",
+      "at": "2026-09-11T03:44:14.906Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "Week One Sites",
+      "at": "2026-09-11T03:44:15.641Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "BananaSystems",
+      "at": "2026-09-11T03:44:16.356Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "Copper Lane",
+      "at": "2026-09-11T03:44:17.061Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "Matthew Temple Consulting",
+      "at": "2026-09-11T03:44:17.774Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "SmartersWeb",
+      "at": "2026-09-11T03:44:18.577Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    },
+    {
+      "name": "WebQuick",
+      "at": "2026-09-11T03:44:19.326Z",
+      "status": 200,
+      "lastEvent": "delivered"
+    }
+  ],
+  "results": {
+    "verifiedCustomers": 0,
+    "verifiedInstalls": 0,
+    "verifiedRevenueUsd": 0,
+    "replyStatus": "Inbox access unavailable; no replies verified"
+  },
+  "reviewAt": "2026-09-18T12:00:00Z"
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-10T21:12:18.395Z",
+  "to": "lou@appaddict.app",
+  "replyTo": "partners@visitorping.com",
+  "status": "accepted_by_resend",
+  "httpStatus": 200,
+  "id": "ce84bbc4-630a-4866-9a03-12e7cafb43c1",
+  "error": null,
+  "accessIssued": false,
+  "deliveryCheck": {
+    "at": "2026-09-10T21:12:32.777Z",
+    "httpStatus": 200,
+    "lastEvent": "delivered"
+  }
+}

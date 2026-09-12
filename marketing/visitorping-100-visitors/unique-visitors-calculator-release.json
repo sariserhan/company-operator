@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-11T15:44:44.215Z",
+  "commit": "41822a4",
+  "url": "https://visitorping.com/calculator#unique-visitors",
+  "baseline": {
+    "query": "unique visitors per month calculator",
+    "start": "2026-08-11",
+    "end": "2026-09-08",
+    "impressions": 78,
+    "clicks": 0,
+    "position": 78.84615384615384
+  },
+  "checks": {
+    "viewports": [
+      1440,
+      390,
+      320
+    ],
+    "inputCasesPerViewport": 7,
+    "typescript": "passed",
+    "eslint": "passed",
+    "overflow": false,
+    "pageErrors": 0
+  },
+  "limitation": "Estimate requires an average visit frequency. It does not measure visitors or identify people.",
+  "spendUsd": 0,
+  "status": "Live",
+  "verifiedAt": "2026-09-11T15:47:05.598Z"
+}

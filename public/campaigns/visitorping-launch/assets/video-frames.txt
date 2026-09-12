@@ -1,0 +1,9 @@
+file '/home/ssari/projects/company-operator/public/campaigns/visitorping-launch/assets/frame-arrival.png'
+duration 3
+file '/home/ssari/projects/company-operator/public/campaigns/visitorping-launch/assets/frame-notification.png'
+duration 4
+file '/home/ssari/projects/company-operator/public/campaigns/visitorping-launch/assets/frame-dashboard.png'
+duration 5
+file '/home/ssari/projects/company-operator/public/campaigns/visitorping-launch/assets/frame-cta.png'
+duration 3
+file '/home/ssari/projects/company-operator/public/campaigns/visitorping-launch/assets/frame-cta.png'

@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:14.880Z",
+  "name": "Copper Lane",
+  "to": "hello@copperlane.co.uk",
+  "source": "https://copperlane.co.uk/services/",
+  "status": 200,
+  "accepted": true,
+  "id": "6af78eea-b846-4e82-9bfc-a19a0ab8aa95",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:17.061Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

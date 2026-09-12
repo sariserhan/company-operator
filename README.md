@@ -75,17 +75,19 @@ The frontend uses Convex's typed `ConvexProviderWithAuth` bridge with Better Aut
 
 ## Company integrations
 
+For this local anonymous deployment, run `npm run env:sync` after saving credentials in `.env.local`. The command verifies its target and prints no secret values.
+
 All secrets belong in the Convex environment. `.env.example` lists names; setting them only in Next.js `.env.local` does not configure the backend.
 
 | Source         | Variables                                                                                      | Scope and behavior                                                                                                                                                                                         |
 | -------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stripe         | `STRIPE_READ_ONLY_KEY`                                                                         | Restricted read permissions for Customers, Subscriptions, Prices, Invoices. No mutation API.                                                                                                               |
-| PostHog        | `POSTHOG_PERSONAL_API_KEY`, `POSTHOG_PROJECT_ID`, `POSTHOG_EVENT_MAP`, optional `POSTHOG_HOST` | Structured HogQL queries. Hosts: `https://us.posthog.com`, `https://eu.posthog.com`, `https://app.posthog.com`. Map your actual event names.                                                               |
-| Search Console | `GOOGLE_ACCESS_TOKEN`, `GOOGLE_SEARCH_CONSOLE_SITE`                                            | OAuth scope `https://www.googleapis.com/auth/webmasters.readonly`. Site URL must exactly match the property, including `sc-domain:` when appropriate. Refresh the access token externally when it expires. |
+| VisitorPing | `VISITORPING_ANALYTICS_TOKEN`, optional `VISITORPING_ANALYTICS_URL` | Native aggregate endpoint; see [integration setup](docs/integrations.md). |
+| Search Console | `GOOGLE_SEARCH_CONSOLE_SITE` plus `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` (or temporary `GOOGLE_ACCESS_TOKEN`) | Read-only OAuth; refreshes automatically once per collection when renewal credentials are configured. |
 | GitHub         | `GITHUB_READ_ONLY_TOKEN`, `GITHUB_REPOSITORY`                                                  | `owner/repo`; fine-grained Contents, Metadata, Issues and Pull Requests read permissions.                                                                                                                  |
 | Vercel         | `VERCEL_READ_ONLY_TOKEN`, `VERCEL_PROJECT_ID`, optional `VERCEL_TEAM_ID`                       | Minimum available token scope; deployment GET endpoints only.                                                                                                                                              |
 
-PostHog mapping keys: `signup_started`, `signup_completed`, `tracking_installed`, `pricing_page_views`, `trial_started`, `paid_conversion`, and `activation_event` for weekly retention. Values must match your actual event taxonomy. `$pageview` is used for visitors. Event totals count distinct people, sessions count session IDs, installation rate uses the same signup cohort with installation following signup inside the observation window. Recent users have less follow-up time; weekly activity retention is not subscription retention.
+VisitorPing uses its own tracker and database, not PostHog. The active collector reads native traffic and workspace activation aggregates. Website visitors and workspaces are distinct populations, and activation uses only the same new-workspace cohort. Historical PostHog snapshots remain readable. See [integration setup](docs/integrations.md) for endpoint deployment and Google renewal.
 
 Stripe gross MRR includes active/past-due licensed recurring prices, normalized monthly by quantity and billing interval; excludes trials, canceled/unpaid subscriptions, metered usage, taxes and discounts. This explicitly differs from some Stripe dashboard policies. USD only in V1. Mixed currencies, tiered/custom pricing, incomplete subscription items and pagination caps fail explicitly. Revenue is gross paid invoice receipts by payment date, before refunds/tax adjustment. No payment-card details are expanded or persisted.
 
@@ -127,3 +129,7 @@ Unit and Convex integration fixtures are isolated from application data. There i
 - [Anthropic structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs).
 - [Stripe subscription analytics](https://docs.stripe.com/billing/subscriptions/analytics).
 - [Search Console query API](https://developers.google.com/webmaster-tools/v1/searchanalytics/query).
+
+### Vercel AI Gateway
+
+Set `AI_GATEWAY_API_KEY` in `.env.local` and run `npm run env:sync` for the local backend. In Settings choose **Vercel AI Gateway** and a namespaced model ID such as `anthropic/claude-sonnet-4.6`. The gateway uses its own key and credit balance, not the direct Anthropic/OpenAI keys. Structured JSON, evidence validation, bounded retries, and the critic apply unchanged. Gateway-reported `usage.cost` is persisted when available; otherwise configured pricing or an explicit unknown cost is used. API contract: [Vercel structured outputs](https://vercel.com/docs/ai-gateway/sdks-and-apis/openai-chat-completions/structured-outputs).

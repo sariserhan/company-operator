@@ -1,0 +1,72 @@
+{
+  "status": "draft_awaiting_authenticated_publishing_access",
+  "spend_cap_usd": 0,
+  "paid_campaigns_enabled": false,
+  "channels": [
+    "X",
+    "Reddit"
+  ],
+  "handles": {
+    "x": "serhansarii",
+    "reddit": "serhansari83"
+  },
+  "goal": "Five website owners install tracking and record a first visitor; target, not forecast",
+  "posts": [
+    {
+      "platform": "X",
+      "id": "x_demo",
+      "text": "Your website gets a visitor. Your iPhone pings.\n\nI built VisitorPing to show live website activity and send visitor notifications to your iPhone.\n\nHere’s a 15-second preview using example data.",
+      "url": "https://visitorping.com/?utm_source=x&utm_medium=organic_social&utm_campaign=first_visitors_free&utm_content=demo",
+      "asset": "assets/visitorping-demo.mp4"
+    },
+    {
+      "platform": "X",
+      "id": "x_question",
+      "text": "Website owners: when someone visits your site, would you want an iPhone notification—or do you prefer checking a dashboard?\n\nI’m building VisitorPing around both. Curious which you’d actually use.",
+      "url": null,
+      "asset": null
+    },
+    {
+      "platform": "X",
+      "id": "x_install",
+      "text": "VisitorPing works with SaaS websites, WordPress pages and Shopify stores.\n\nAdd your website, install the tracker, and connect your iPhone for visitor notifications.\n\nBuilt it? Now see when someone visits.",
+      "url": "https://visitorping.com/?utm_source=x&utm_medium=organic_social&utm_campaign=first_visitors_free&utm_content=setup",
+      "asset": "assets/ad-refreshing.png"
+    },
+    {
+      "platform": "Reddit — r/SideProject",
+      "id": "reddit_sideproject",
+      "title": "VisitorPing - Live website visitors and iPhone notifications",
+      "text": "I built VisitorPing for website owners who want to notice visits as they happen.\n\nIt shows visitor activity in a live web dashboard and sends notifications to your iPhone. It works with SaaS websites, WordPress pages, Shopify stores and other supported sites.\n\nThe demo uses example data. Visitors are anonymous by default; it doesn’t reveal someone’s name just because they visited.\n\nThe product is working, but reaching the people who want it is the part I’m figuring out. If you run a website, would you use the live dashboard, the phone notifications, or both?\n\nI’m the creator. Website: https://visitorping.com/",
+      "url": "https://visitorping.com/",
+      "asset": "assets/visitorping-demo.mp4"
+    }
+  ],
+  "sequence": [
+    "Publish X demo after account/history check",
+    "Submit one r/SideProject introduction if account eligible",
+    "Read responses before any follow-up",
+    "Use the X question or setup post only when it adds new context"
+  ],
+  "rules_checked": "2026-09-10",
+  "excluded": [
+    "r/SaaS: disallows AI-generated text and restricts promotion",
+    "r/startups: not approved as a generic launch destination"
+  ],
+  "measurement": "UTMs identify X landing sessions; Reddit uses a clean URL. Campaign-to-activation attribution is not verified. No claims that aggregate signups came from a post.",
+  "publication_report": {
+    "source": "owner",
+    "statement": "Owner reports completing launch steps but no traffic",
+    "verified_post_urls": [],
+    "post_impressions": null,
+    "post_link_clicks": null
+  },
+  "latest_diagnostic": {
+    "landing_http_status": 200,
+    "tagged_landing_http_status": 200,
+    "aggregate_period": "2026-09-03 through 2026-09-09 UTC",
+    "aggregate_visitors": 65,
+    "aggregate_sessions": 81,
+    "limitation": "Operator aggregate endpoint ends at UTC midnight and excludes current-day activity; cannot attribute visits to these posts."
+  }
+}

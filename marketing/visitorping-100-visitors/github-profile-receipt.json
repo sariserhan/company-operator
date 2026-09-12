@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-09-10T22:28:52.491Z",
+  "account": "sariserhan",
+  "before": {
+    "bio": null,
+    "blog": ""
+  },
+  "requested": {
+    "bio": "Building VisitorPing: live website visitors and iPhone alerts.",
+    "blog": "https://visitorping.com/?utm_source=github&utm_medium=profile&utm_campaign=100_human_visitors"
+  },
+  "status": "blocked",
+  "error": "Error: Command failed: gh api --method PATCH user -f bio=Building VisitorPing: live website visitors and iPhone alerts. -f blog=https://visitorping.com/?utm_source=github&utm_medium=profile&utm_campaign=100_human_visitors\ngh: Not Found (HTTP 404)\ngh: This API operation needs the \"user\" scope. To request it, run:  gh auth refresh -h github.com -s user\n",
+  "completedAt": "2026-09-10T22:28:52.690Z"
+}

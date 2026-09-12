@@ -36,13 +36,17 @@ export function validateAnalysis(
     throw new Error("Experiment references an absent hypothesis");
   if (e.baseline !== null) {
     const metric = snapshot.metrics.find((m) => m.key === e.baselineEvidence);
-    if (
-      !metric ||
-      metric.metric !== e.successMetric ||
-      Math.abs(metric.value - e.baseline) > 1e-8
-    )
+    if (!metric)
       throw new Error(
-        "Experiment baseline is not grounded in the named metric",
+        "Experiment baselineEvidence must exactly match a snapshot metric key",
+      );
+    if (metric.metric !== e.successMetric)
+      throw new Error(
+        "Experiment successMetric must exactly match the metric field, without source prefixes, units or labels",
+      );
+    if (Math.abs(metric.value - e.baseline) > 1e-8)
+      throw new Error(
+        "Experiment baseline must equal the selected metric value without rounding or conversion",
       );
   } else if (e.baselineEvidence !== null)
     throw new Error("Unknown baseline cannot have evidence");

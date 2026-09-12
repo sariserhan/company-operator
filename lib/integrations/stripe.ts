@@ -211,7 +211,7 @@ export async function collectStripe(
   return {
     metrics,
     context: [
-      `Subscription prices: ${[...new Set(subs.flatMap((s) => s.items.data.map((i) => `${i.price.id}: ${i.price.unit_amount ?? "custom"} minor units ${i.price.currency}/${i.price.recurring?.interval_count} ${i.price.recurring?.interval}`)))].slice(0, 40).join("; ")}`,
+      `Prices observed on existing subscriptions only (the product/price catalog was not queried; an empty list does not imply missing prices or broken checkout): ${[...new Set(subs.flatMap((s) => s.items.data.map((i) => `${i.price.id}: ${i.price.unit_amount ?? "custom"} minor units ${i.price.currency}/${i.price.recurring?.interval_count} ${i.price.recurring?.interval}`)))].slice(0, 40).join("; ")}`,
     ],
     missingInformation: [
       "Stripe revenue represents gross paid invoice receipts, not net accounting revenue.",

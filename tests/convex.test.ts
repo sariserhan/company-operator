@@ -94,7 +94,7 @@ it("persists a full reviewed run and evidence relationships atomically", async (
   }));
   expect(result.run?.status).toBe("completed");
   expect(result.experiments[0].status).toBe("proposed");
-  expect(result.observations[0].evidence[0].source).toBe("posthog");
+  expect(result.observations[0].evidence[0].source).toBe("visitorping");
   expect(result.beliefs).toHaveLength(1);
   await expect(
     t.mutation(internal.runs.snapshot, {
@@ -185,103 +185,211 @@ it("marks stalled runs failed", async () => {
   expect((await t.run((ctx) => ctx.db.get(runId)))?.status).toBe("failed");
 });
 
-it("runs collection through provider stages and critic into durable proposed state", async () => {
-  const { t, owner } = setup(),
-    { runId } = await runFixture(t, owner);
-  vi.spyOn(Date, "now").mockReturnValue(now);
-  vi.stubEnv("STRIPE_READ_ONLY_KEY", "fixture");
-  vi.stubEnv("POSTHOG_PERSONAL_API_KEY", "fixture");
-  vi.stubEnv("POSTHOG_PROJECT_ID", "1");
-  vi.stubEnv(
-    "POSTHOG_EVENT_MAP",
-    '{"signup_completed":"registered","tracking_installed":"installed"}',
-  );
-  vi.stubEnv("OPENAI_API_KEY", "fixture");
-  const a = fixtureAnalysis();
-  const fetcher = vi.fn<typeof fetch>(async (input, init) => {
-    const url = new URL(String(input));
-    if (url.hostname === "api.stripe.com") {
-      expect(init?.method).toBe("GET");
-      return Response.json({
-        data: url.pathname.endsWith("subscriptions")
-          ? [
-              {
-                id: "s",
-                status: "active",
-                customer: "c",
-                created: 0,
-                canceled_at: null,
-                items: {
-                  data: [
-                    {
-                      quantity: 12,
-                      price: {
-                        id: "p",
-                        currency: "usd",
-                        unit_amount: 1900,
-                        billing_scheme: "per_unit",
-                        recurring: {
-                          interval: "month",
-                          interval_count: 1,
-                          usage_type: "licensed",
+it.each(["openai", "vercel_gateway"] as const)(
+  "runs collection through %s stages and critic into durable proposed state",
+  async (providerName) => {
+    const { t, owner } = setup(),
+      { runId } = await runFixture(t, owner);
+    vi.spyOn(Date, "now").mockReturnValue(now);
+    vi.stubEnv("STRIPE_READ_ONLY_KEY", "fixture");
+    vi.stubEnv("VISITORPING_ANALYTICS_TOKEN", "fixture");
+    vi.stubEnv("OPENAI_API_KEY", "fixture");
+    vi.stubEnv("AI_GATEWAY_API_KEY", "fixture");
+    if (providerName === "vercel_gateway")
+      await t.run((ctx) =>
+        ctx.db.patch(runId, {
+          provider: providerName,
+          model: "anthropic/claude-sonnet-4.6",
+        }),
+      );
+    const a = fixtureAnalysis();
+    const fetcher = vi.fn<typeof fetch>(async (input, init) => {
+      const url = new URL(String(input));
+      if (url.hostname === "api.stripe.com") {
+        expect(init?.method).toBe("GET");
+        return Response.json({
+          data: url.pathname.endsWith("subscriptions")
+            ? [
+                {
+                  id: "s",
+                  status: "active",
+                  customer: "c",
+                  created: 0,
+                  canceled_at: null,
+                  items: {
+                    data: [
+                      {
+                        quantity: 12,
+                        price: {
+                          id: "p",
+                          currency: "usd",
+                          unit_amount: 1900,
+                          billing_scheme: "per_unit",
+                          recurring: {
+                            interval: "month",
+                            interval_count: 1,
+                            usage_type: "licensed",
+                          },
                         },
                       },
-                    },
-                  ],
+                    ],
+                  },
                 },
-              },
-            ]
-          : [],
-        has_more: false,
-      });
-    }
-    const body = JSON.parse(String(init?.body));
-    if (url.hostname === "us.posthog.com")
+              ]
+            : [],
+          has_more: false,
+        });
+      }
+      if (url.hostname === "visitorping.com")
+        return Response.json({
+          schemaVersion: 1,
+          capturedAt: now,
+          siteDomain: "visitorping.com",
+          periods: [0, 1].map((previous) => ({
+            start: now - (previous + 1) * 7 * 86400000,
+            end: now - previous * 7 * 86400000,
+            websiteVisitors: 100,
+            websiteSessions: 120,
+            newWorkspaces: 38,
+            activatedNewWorkspaces: 9,
+            checkoutStartedWorkspaces: 2,
+            subscriptionStartedWorkspaces: 1,
+          })),
+        });
+      const body = JSON.parse(String(init?.body));
+      expect(url.href).toBe(
+        providerName === "vercel_gateway"
+          ? "https://ai-gateway.vercel.sh/v1/chat/completions"
+          : "https://api.openai.com/v1/responses",
+      );
+      const stage =
+        providerName === "vercel_gateway"
+          ? body.response_format.json_schema.name
+          : body.text.format.name;
+      const result =
+        stage === "observations"
+          ? { observations: a.observations, missingInformation: [] }
+          : stage === "diagnosis"
+            ? a
+            : stage === "experiment"
+              ? a.recommendedExperiment
+              : {
+                  accepted: true,
+                  severity: "none",
+                  issues: [],
+                  suggestedRevision: null,
+                };
+      if (providerName === "vercel_gateway")
+        return Response.json({
+          choices: [
+            {
+              finish_reason: "stop",
+              message: { content: JSON.stringify(result) },
+            },
+          ],
+          usage: { prompt_tokens: 100, completion_tokens: 20, cost: 0.02 },
+        });
       return Response.json({
-        results: body.query.query.startsWith("SELECT uniqExact")
-          ? [[12]]
-          : body.query.query.startsWith("SELECT count()")
-            ? [[38, 9]]
-            : [
-                ["registered", 38],
-                ["installed", 9],
-              ],
+        status: "completed",
+        output: [
+          {
+            type: "message",
+            content: [{ type: "output_text", text: JSON.stringify(result) }],
+          },
+        ],
+        usage: { input_tokens: 100, output_tokens: 20 },
       });
-    expect(url.href).toBe("https://api.openai.com/v1/responses");
-    const stage = body.text.format.name;
-    const result =
-      stage === "observations"
-        ? { observations: a.observations, missingInformation: [] }
-        : stage === "diagnosis"
-          ? a
-          : stage === "experiment"
-            ? a.recommendedExperiment
-            : {
-                accepted: true,
-                severity: "none",
-                issues: [],
-                suggestedRevision: null,
-              };
-    return Response.json({
-      status: "completed",
-      output: [
-        {
-          type: "message",
-          content: [{ type: "output_text", text: JSON.stringify(result) }],
-        },
-      ],
-      usage: { input_tokens: 100, output_tokens: 20 },
+    });
+    vi.stubGlobal("fetch", fetcher);
+    try {
+      await t.action(internal.companyCycle.runCompanyCycle, { runId });
+      const run = await t.run((ctx) => ctx.db.get(runId));
+      expect(run?.status).toBe("completed");
+      expect(run?.inputTokens).toBe(400);
+      if (providerName === "vercel_gateway")
+        expect(run?.costUsd).toBeCloseTo(0.08);
+      expect(run?.analysisJson).toContain("Test simplified installation");
+    } finally {
+      vi.unstubAllGlobals();
+      vi.restoreAllMocks();
+    }
+  },
+);
+
+it("accepts gateway provider/model IDs while rejecting malformed IDs", async () => {
+  const { owner } = setup();
+  const companyId = await owner.mutation(api.companies.create, {
+    websiteUrl: "https://visitorping.com",
+  });
+  await owner.mutation(api.companies.updateSettings, {
+    companyId,
+    ...objective,
+    provider: "vercel_gateway",
+    model: "anthropic/claude-sonnet-4.6",
+  });
+  expect(
+    await owner.query(api.companies.settings, { companyId }),
+  ).toMatchObject({
+    provider: "vercel_gateway",
+    model: "anthropic/claude-sonnet-4.6",
+  });
+  await expect(
+    owner.mutation(api.companies.updateSettings, {
+      companyId,
+      ...objective,
+      provider: "vercel_gateway",
+      model: "https://attacker.example/model",
+    }),
+  ).rejects.toThrow("Invalid model ID");
+});
+it("paginates run summaries through populated and empty pages without leaking run internals", async () => {
+  const { t, owner, stranger } = setup();
+  const { companyId, runId } = await runFixture(t, owner);
+  const secondId = await t.run(async (ctx) => {
+    const original = (await ctx.db.get(runId))!;
+    const { _id, _creationTime, ...fields } = original;
+    void _id;
+    void _creationTime;
+    return ctx.db.insert("runs", {
+      ...fields,
+      snapshotJson: "private snapshot",
     });
   });
-  vi.stubGlobal("fetch", fetcher);
-  try {
-    await t.action(internal.companyCycle.runCompanyCycle, { runId });
-    const run = await t.run((ctx) => ctx.db.get(runId));
-    expect(run?.status).toBe("completed");
-    expect(run?.inputTokens).toBe(400);
-    expect(run?.analysisJson).toContain("Test simplified installation");
-  } finally {
-    vi.unstubAllGlobals();
-    vi.restoreAllMocks();
-  }
+  const first = await owner.query(api.runs.list, {
+    companyId,
+    paginationOpts: { numItems: 1, cursor: null },
+  });
+  expect(first.page).toHaveLength(1);
+  expect(first.page[0]._id).toBe(secondId);
+  expect(first.page[0]).not.toHaveProperty("snapshotJson");
+  const second = await owner.query(api.runs.list, {
+    companyId,
+    paginationOpts: { numItems: 1, cursor: first.continueCursor },
+  });
+  expect(second.page.map((r) => r._id)).toEqual([runId]);
+  const empty = await owner.query(api.runs.list, {
+    companyId,
+    paginationOpts: { numItems: 1, cursor: second.continueCursor },
+  });
+  expect(empty.page).toEqual([]);
+  expect(empty.isDone).toBe(true);
+  await expect(
+    stranger.query(api.runs.list, {
+      companyId,
+      paginationOpts: { numItems: 1, cursor: null },
+    }),
+  ).rejects.toThrow("Company not found");
+});
+it("returns unavailable for another owner's or deleted run without exposing its details", async () => {
+  const { t, owner, stranger } = setup();
+  const { runId } = await runFixture(t, owner);
+  expect(
+    JSON.parse((await owner.query(api.runs.detail, { runId }))!).run._id,
+  ).toBe(runId);
+  expect(await stranger.query(api.runs.detail, { runId })).toBeNull();
+  await expect(t.query(api.runs.detail, { runId })).rejects.toThrow(
+    "Unauthorized",
+  );
+  await t.run((ctx) => ctx.db.delete(runId));
+  expect(await owner.query(api.runs.detail, { runId })).toBeNull();
 });

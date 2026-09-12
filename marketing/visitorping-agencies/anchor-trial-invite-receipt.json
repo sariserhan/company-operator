@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:11.723Z",
+  "name": "Anchor Web Digital",
+  "to": "hello@anchorwebdigital.com",
+  "source": "https://www.anchorwebdigital.com/services/website-maintenance",
+  "status": 200,
+  "accepted": true,
+  "id": "29586ca5-ad29-49a0-a86a-c61e4e7f89ba",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:14.184Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

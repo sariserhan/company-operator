@@ -1,9 +1,14 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-export const providerV = v.union(v.literal("openai"), v.literal("anthropic"));
+export const providerV = v.union(
+  v.literal("openai"),
+  v.literal("anthropic"),
+  v.literal("vercel_gateway"),
+);
 export const sourceV = v.union(
   v.literal("stripe"),
   v.literal("posthog"),
+  v.literal("visitorping"),
   v.literal("search_console"),
   v.literal("github"),
   v.literal("vercel"),

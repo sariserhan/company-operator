@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-09-10T22:25:18.580Z",
+  "published": 0,
+  "spentUsd": 0,
+  "routes": [
+    {
+      "url": "https://www.launchingnext.com/submit/",
+      "status": "blocked",
+      "evidence": "Ordinary Playwright navigation returned HTTP403 Cloudflare Performing security verification. No bypass or POST attempted.",
+      "reviewRequired": true
+    },
+    {
+      "url": "https://submityourstartup.now/submit",
+      "status": "authentication_required",
+      "finalUrl": "https://submityourstartup.now/submit",
+      "visibleText": "LIVE\nLAUNCHES\n34\nVOTES\n15\nSHIPPED TODAY\n7\n10 Sep 2026 22:25:18\nS/\nsubmityourstartup\nIndex\nLeaderboard\nArchive\nSearch\nChecklist\nSubmit\nSIGN IN\n\nSIGN IN REQUIRED\n\nContinue as founder\n\nWe use GitHub to verify founders. No password required.\n\nCONTINUE WITH GITHUB →\n\nS/\n\nThe launch index for early-stage startups. Open submission, no pay-to-rank.\n\nINDEX\nLEADERBOARD\nARCHIVE\nSEARCH\nSUBMIT\nRSS\nABOUT\nPRIVACY\nCONTACT\n© 2026 SUBMIT YOUR STARTUP · SUBMITYOURSTARTUP.NOW\nV0.4 / THE LAUNCH INDEX"
+    },
+    {
+      "url": "https://productreveal.online/products",
+      "status": "rejected_low_evidence",
+      "evidence": "Rendered public products list empty; form requires500word review and editorial queue. No submission."
+    },
+    {
+      "url": "https://freeboard.lol/submit",
+      "status": "requires_verification",
+      "evidence": "Public form requires email code or live backlink. No email inbox access and no backlink trade pursued."
+    }
+  ]
+}

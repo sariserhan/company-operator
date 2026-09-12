@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-11T05:20:16.124Z",
+  "version": "1.3.2",
+  "wordpressVersion": "7.1",
+  "pluginCheckVersion": "2.1.0",
+  "runtimeChecks": 8,
+  "runtimeChecksPassed": 8,
+  "pluginCheckErrors": 0,
+  "pluginCheckWarnings": 3,
+  "githubReleaseVerified": true,
+  "sha256": "374eadbfb8f954aaa4df93de4f5fea1768cc8f6dbc0d7177f41b27d0f4ac791d",
+  "productCommit": "7374062",
+  "publicPluginCommit": "16cb242",
+  "directorySubmitted": true,
+  "blocker": null,
+  "spendUsd": 0,
+  "websiteReleaseVerified": true,
+  "websiteVerifiedAt": "2026-09-11T05:22:32.230Z",
+  "submittedAt": "2026-09-11T15:00:50.801Z",
+  "directoryStatus": "Awaiting Review",
+  "wordpressAccount": "ssari83",
+  "assignedSlug": "visitorping",
+  "automatedSubmissionScan": "Pass",
+  "reviewEmail": "serhan.sari@yahoo.com",
+  "submittedZipSha256": "1320b3d6c53ca42cc1e03e6f1e269d14c72715f9202474f9bc637d0906fba4e3",
+  "submissionMetadataChanges": [
+    "Contributors: ssari83",
+    "Plugin URI: https://github.com/sariserhan/visitorping-wordpress"
+  ]
+}

@@ -71,7 +71,19 @@ export async function analyzeCompany(
     const experiment = await provider.generate(
       "experiment",
       stages.experiment,
-      { ...input, ...base, highestRankedOpportunity: opportunities[0] },
+      {
+        ...input,
+        ...base,
+        highestRankedOpportunity: opportunities[0],
+        availableBaselines: snapshot.metrics.map((metric) => ({
+          successMetric: metric.metric,
+          baseline: metric.value,
+          baselineEvidence: metric.key,
+          unit: metric.unit,
+          periodStart: metric.periodStart,
+          periodEnd: metric.periodEnd,
+        })),
+      },
       experimentSchema,
       (e) => validateAnalysis({ ...base, recommendedExperiment: e }, snapshot),
     );

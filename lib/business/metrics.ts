@@ -16,10 +16,14 @@ export function normalizeSnapshot(
   const missingInformation = integrations.flatMap((i) => i.missingInformation);
   // Distinct-user event totals are NOT a cohort funnel: do not divide them into an activation rate.
   for (const m of metrics.filter(
-    (m) => m.source === "posthog" && m.metric === "signup_completed_cohort",
+    (m) =>
+      ["posthog", "visitorping"].includes(m.source) &&
+      m.metric === "signup_completed_cohort",
   )) {
     const installed = metrics.find(
       (x) =>
+        x.source === m.source &&
+        x.unit === m.unit &&
         x.metric === "tracking_installed_cohort" &&
         x.periodStart === m.periodStart &&
         x.periodEnd === m.periodEnd,

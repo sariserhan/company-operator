@@ -227,7 +227,17 @@ export function AnalysisView({ run }: { run: Doc<"runs"> }) {
 }
 export function RunDetail({ runId }: { runId: Id<"runs"> }) {
   const raw = useQuery(api.runs.detail, { runId });
-  if (!raw) return <Skeleton className="h-32 w-full" />;
+  if (raw === undefined) return <Skeleton className="h-32 w-full" />;
+  if (raw === null)
+    return (
+      <section>
+        <h1>Run unavailable</h1>
+        <p className="muted">
+          This run does not exist or is not available in your workspace.
+        </p>
+        <Link href="/runs">← Back to your runs</Link>
+      </section>
+    );
   const { run, events, usage } = JSON.parse(raw) as {
     run: Doc<"runs">;
     events: Doc<"events">[];

@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T02:43:50.564Z",
+  "reason": "Browser-shaped user agents do not establish real-person acquisition. Prior estimated_human_visitors values are unverified browser identifiers.",
+  "targetSession": "5819c6f7-5e7c-4c55-93ed-1db2c26b4fe4",
+  "targetFinding": "Palo Alto Networks; one demo page view; no subsequent activity. Possible security scanning, not conclusively a bot.",
+  "verifiedRealPeople": null,
+  "goalComplete": false,
+  "measurementVersion": 2,
+  "productionClassifierChanged": false,
+  "campaignChecks": {
+    "buffer": "Two sent and four scheduled posts verified",
+    "launchfree": "Listing live; requested logo and tagged destination still pending"
+  }
+}

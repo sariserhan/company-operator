@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-11T03:43:14.101Z",
+  "name": "BananaSystems",
+  "to": "hello@bananasystems.co.uk",
+  "source": "https://bananasystems.co.uk/",
+  "status": 200,
+  "accepted": true,
+  "id": "0e5c493b-baa3-4108-8af0-448136a46e53",
+  "deliveryCheck": {
+    "at": "2026-09-11T03:44:16.356Z",
+    "status": 200,
+    "lastEvent": "delivered"
+  }
+}

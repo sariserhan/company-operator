@@ -11,7 +11,7 @@ export type Usage = {
   costUsd: number | null;
 };
 export interface ReasoningProvider {
-  provider: "openai" | "anthropic";
+  provider: "openai" | "anthropic" | "vercel_gateway";
   model: string;
   generate<T>(
     stage: string,
@@ -23,6 +23,40 @@ export interface ReasoningProvider {
 }
 export type UsageSink = (usage: Usage) => Promise<void>;
 export class ProviderError extends Error {}
+// Only known validator messages may appear in stored errors or retry instructions.
+function validationFeedback(error: unknown): string {
+  if (error instanceof z.ZodError)
+    return error.issues
+      .map((issue) => {
+        const bound =
+          "maximum" in issue
+            ? ` maximum=${issue.maximum}`
+            : "minimum" in issue
+              ? ` minimum=${issue.minimum}`
+              : "";
+        return `Schema constraint ${issue.code}${bound}`;
+      })
+      .join("; ");
+  const known = [
+    "Invalid diagnosis references",
+    "Experiment baselineEvidence must exactly match a snapshot metric key",
+    "Experiment successMetric must exactly match the metric field, without source prefixes, units or labels",
+    "Experiment baseline must equal the selected metric value without rounding or conversion",
+    "Hypothesis references an absent observation",
+    "Opportunity references an absent hypothesis",
+    "Experiment references an absent hypothesis",
+    "Experiment baseline is not grounded in the named metric",
+    "Unknown baseline cannot have evidence",
+    "Experiment target does not improve its baseline",
+    "Experiment must test the highest-ranked opportunity",
+  ];
+  if (error instanceof Error) {
+    if (known.includes(error.message)) return error.message;
+    if (error.message.startsWith("Unsupported evidence reference:"))
+      return "Evidence must use exact metric keys from the snapshot";
+  }
+  return "Invalid JSON or response validation failed";
+}
 function providerSchema(schema: z.ZodType) {
   const json = z.toJSONSchema(schema, { target: "draft-7" }) as Record<
     string,
@@ -53,7 +87,8 @@ function providerSchema(schema: z.ZodType) {
   return strip(json);
 }
 export abstract class JsonProvider implements ReasoningProvider {
-  abstract provider: "openai" | "anthropic";
+  protected requestTimeoutMs = 45_000;
+  abstract provider: "openai" | "anthropic" | "vercel_gateway";
   constructor(
     public model: string,
     protected env: Env,
@@ -65,7 +100,13 @@ export abstract class JsonProvider implements ReasoningProvider {
     instruction: string,
     input: unknown,
     schema: unknown,
-  ): Promise<{ text: string; input: number; output: number; cached: number }>;
+  ): Promise<{
+    text: string;
+    input: number;
+    output: number;
+    cached: number;
+    costUsd?: number;
+  }>;
   async generate<T>(
     stage: string,
     instruction: string,
@@ -73,6 +114,8 @@ export abstract class JsonProvider implements ReasoningProvider {
     schema: z.ZodType<T>,
     validate?: (result: T) => void,
   ): Promise<T> {
+    let repair:
+      { previousOutput: string; validationFeedback: string } | undefined;
     for (let attempt = 1; attempt <= 2; attempt++) {
       const started = Date.now();
       const response = await this.request(
@@ -81,7 +124,7 @@ export abstract class JsonProvider implements ReasoningProvider {
           (attempt === 2
             ? " Your prior output failed validation. Correct schema, evidence, references, units and baseline; return strict JSON."
             : ""),
-        input,
+        repair ? { originalInput: input, ...repair } : input,
         providerSchema(schema),
       );
       const inputRate = this.env.LLM_INPUT_USD_PER_MILLION,
@@ -91,13 +134,14 @@ export abstract class JsonProvider implements ReasoningProvider {
         v === undefined || v.trim() === "" ? NaN : Number(v),
       );
       const costUsd =
-        this.env.LLM_PRICING_MODEL === `${this.provider}/${this.model}` &&
+        response.costUsd ??
+        (this.env.LLM_PRICING_MODEL === `${this.provider}/${this.model}` &&
         rates.every((v) => Number.isFinite(v) && v >= 0)
           ? ((response.input - response.cached) * rates[0] +
               response.cached * rates[2] +
               response.output * rates[1]) /
             1e6
-          : null;
+          : null);
       await this.onUsage({
         stage,
         attempt,
@@ -111,10 +155,15 @@ export abstract class JsonProvider implements ReasoningProvider {
         const result = schema.parse(JSON.parse(response.text));
         validate?.(result);
         return result;
-      } catch {
+      } catch (error) {
+        const feedback = validationFeedback(error);
+        repair = {
+          previousOutput: response.text,
+          validationFeedback: feedback,
+        };
         if (attempt === 2)
           throw new ProviderError(
-            `${stage}: structured output or evidence validation failed twice`,
+            `${stage}: structured output or evidence validation failed twice: ${feedback}`,
           );
       }
     }
@@ -131,14 +180,31 @@ export abstract class JsonProvider implements ReasoningProvider {
         method: "POST",
         headers: { ...headers, "Content-Type": "application/json" },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(45_000),
+        signal: AbortSignal.timeout(this.requestTimeoutMs),
         redirect: "error",
       });
     } catch {
       throw new ProviderError(`${this.provider}: request failed or timed out`);
     }
-    if (!response.ok)
+    if (!response.ok) {
+      if (this.provider === "vercel_gateway" && response.status === 402)
+        throw new ProviderError(
+          "Vercel AI Gateway credit is exhausted. Add gateway credit, then run again.",
+        );
+      // Inspect known codes only; raw provider errors may echo sensitive input.
+      if (this.provider === "openai" && response.status === 429) {
+        const error = await response.json().catch(() => null);
+        if (
+          error?.error?.code === "credit_balance_exhausted" ||
+          error?.error?.code === "insufficient_quota" ||
+          error?.error?.type === "insufficient_quota"
+        )
+          throw new ProviderError(
+            "OpenAI API credit or quota is exhausted. Add API credit or use a funded project key, then run again.",
+          );
+      }
       throw new ProviderError(`${this.provider}: HTTP ${response.status}`);
+    }
     return response.json() as Promise<unknown>;
   }
   protected system = SYSTEM_PROMPT;

@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-10T21:44:36.256846+00:00",
+  "status": "approved_and_submitted",
+  "recipient": "Sensussoft",
+  "url": "https://sensussoft.com/partnership-inquiry",
+  "fields": {
+    "name": "Serhan Sari",
+    "company": "VisitorPing",
+    "email": "partners@visitorping.com",
+    "website": "https://visitorping.com",
+    "partnershipType": "Technology Partnership",
+    "scope": "Open to discussion"
+  },
+  "draft": "sensussoft-inquiry.txt",
+  "submissionExecuted": true,
+  "receipt": "sensussoft-receipt.json"
+}

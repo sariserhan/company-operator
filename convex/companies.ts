@@ -110,7 +110,14 @@ export const updateSettings = mutation({
     const objective = objectiveSchema.parse(args);
     if (objective.currency !== "USD")
       throw new Error("V1 supports USD objectives");
-    if (!/^[a-zA-Z0-9._:-]{1,100}$/.test(args.model))
+    if (
+      !(
+        args.provider === "vercel_gateway"
+          ? /^[a-zA-Z0-9._:-]+\/[a-zA-Z0-9._:-]+$/
+          : /^[a-zA-Z0-9._:-]+$/
+      ).test(args.model) ||
+      args.model.length > 150
+    )
       throw new Error("Invalid model ID");
     const old = await ctx.db
       .query("objectives")

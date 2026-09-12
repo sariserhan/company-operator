@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-09-10T17:10:30.434Z",
+  "source": "Stripe subscriptions list; all statuses; fully paginated",
+  "subscription_count": 0,
+  "status_counts": {},
+  "mrr_usd": 0,
+  "note": "No subscriptions returned by configured Stripe account.",
+  "stripe_mode": "live"
+}

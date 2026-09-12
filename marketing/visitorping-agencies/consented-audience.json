@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-09-10T17:21:22.166Z",
+  "source": "Configured primary database; read-only product_update_subscribers aggregate",
+  "groups": [],
+  "eligibleProductUpdateRecipients": 0,
+  "deploymentVerification": "Unverified: this configured database has no exact VisitorPing marketing-site match. Its empty subscriber list must not be presented as the production audience count."
+}

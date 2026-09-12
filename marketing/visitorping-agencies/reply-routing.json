@@ -1,0 +1,7 @@
+{
+  "replyTo": "partners@visitorping.com",
+  "routing": "Cloudflare Email Routing",
+  "forwardDestination": "serhan.sari83@gmail.com",
+  "destinationSource": "User supplied",
+  "mailboxReadAccess": false
+}
