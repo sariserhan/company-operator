@@ -269,3 +269,12 @@ instruction; all work here is distribution. No directories, spend or traffic che
 - Fourteen public prospect candidates recorded with evidence and limitations; six existing-network contacts missing. Creator audience sizes and exact launch dates are not verified. Seven candidates are held for contact/access limitations.
 - Live-event runbook ready, but host/time/platform and verified live checkout/activation are missing. Event not announced.
 - No app modifications, directories, spending, traffic monitoring or claimed conversions. Full status: `first-owners/README.md`.
+
+
+## Fresh public showcase and editorial pitches — September 12, 2026
+
+Published a new project post in Tailwind CSS **Show and tell**, with an actual-app preview image, screen recording, technical explanation of the preview container sizing, and a tracked direct link to the live preview: https://github.com/tailwindlabs/tailwindcss/discussions/20489. Read-back matches reviewed body, category and author; public image returns HTTP 200. No support issue or duplicate Take The Wall thread created.
+
+Two personalized editorial tips accepted by the email provider: Andy Baio / Waxy (`7ab152e6-310d-412e-adb0-2a2b9ec5b381`) and Rob Beschizza / Boing Boing (`b836334d-7dc3-495b-8b19-9f361195121f`). Both official sites publish editorial contact routes; pitches reference their specific shared-browser-experiment coverage and attach the real preview clip. No delivery, reply or editorial-coverage claim. This is editorial outreach, not a directory submission.
+
+DEV and Indie Hackers publication URLs require sign-in in the available session; neither received a post. Existing pending outreach and tomorrow's X video not duplicated. No app changes, spending, traffic queries or monitors. Drafts, sources and receipts: `editorial-wave-two/`.

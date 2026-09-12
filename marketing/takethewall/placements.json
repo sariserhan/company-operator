@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T21:48:15.553275+00:00",
+  "checkedAt": "2026-09-12T22:28:21.458843+00:00",
   "spendUsd": 0,
   "placements": [
     {
@@ -83,6 +83,15 @@
       "spendUsd": 0,
       "receipt": "video-publication.json",
       "verification": "Buffer Sent article shows matching caption, video preview and Go to post link."
+    },
+    {
+      "channel": "Tailwind CSS Show and tell",
+      "status": "published",
+      "url": "https://github.com/tailwindlabs/tailwindcss/discussions/20489",
+      "publishedAt": "2026-09-12T22:27:35Z",
+      "campaign": "preview_design",
+      "receipt": "editorial-wave-two/tailwind-showcase-receipt.json",
+      "spendUsd": 0
     }
   ],
   "scheduled": [
