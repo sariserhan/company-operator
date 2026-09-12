@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T18:26:07.736021+00:00",
+  "checkedAt": "2026-09-12T19:04:05.432161+00:00",
   "project": "Take The Wall",
   "spendUsd": 0,
   "submissions": [
@@ -26,7 +26,31 @@
       "httpStatus": 403,
       "error": "Cloudflare 1010 browser_signature_banned; no retry",
       "published": false
+    },
+    {
+      "publisher": "OpenWeird",
+      "url": "https://openweird.com/about/",
+      "status": "received_for_review",
+      "confirmation": "Your response has been recorded",
+      "confirmationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfvQ1gu9NAPArlcxMgFGbmZhsUqStishpiVV9UM6L7M5gAU7A/formResponse",
+      "published": false,
+      "backlinkPromised": false
+    },
+    {
+      "publisher": "StumblingOn",
+      "url": "https://stumblingon.com/",
+      "status": "submission_unconfirmed",
+      "error": "The public form displayed Failed to fetch. No retry.",
+      "published": false
+    },
+    {
+      "publisher": "WackyWebs",
+      "url": "https://www.wackywebs.com/",
+      "status": "email_accepted_by_provider",
+      "notes": "Form did not confirm. Used its documented email fallback once; email discloses possible duplicate. Personal Reply-To removed after approval review; sent only from project business address.",
+      "receipt": "wackywebs-email-receipt.json",
+      "published": false
     }
   ],
-  "incrementalVisitors": "Not yet measured; submissions are not visits."
+  "incrementalVisitors": "Measured separately in latest-traffic.json. Submissions and publications do not count as visits."
 }

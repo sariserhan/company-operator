@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-12T19:02:26.494Z",
+  "recipient": "hello@wackywebs.com",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "41e8774d-bd45-4245-8ca6-2532fb1726e1",
+  "error": null,
+  "published": false,
+  "spendUsd": 0,
+  "deliveryCheckedAt": "2026-09-12T19:06:02.624Z",
+  "deliveryStatus": "sent",
+  "deliveryCheckHttpStatus": 200
+}

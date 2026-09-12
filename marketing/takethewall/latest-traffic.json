@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-12T19:04:57.572Z",
+  "startedAt": "2026-09-12T18:40:50.000Z",
+  "target": 100,
+  "total": {
+    "source": null,
+    "estimated_browsers": 0,
+    "high_confidence_browsers": 0,
+    "first_seen": null,
+    "last_seen": null,
+    "is_total": 1
+  },
+  "sources": [],
+  "verifiedPeople": null,
+  "goalComplete": false,
+  "limitations": "Distinct browser identifiers with a page view, excluding classified bots, identifiable automation, labeled tests and paid source labels. Estimates are not proof of individual people; owner IDs have not yet been identified."
+}

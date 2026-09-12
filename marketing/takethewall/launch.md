@@ -49,7 +49,7 @@ Random Daily URLs: https://randomdailyurls.com/submit explicitly says not to sub
 Internet Intro: https://internetintro.com/submit/ asks to skip stores and sales pages; do not certify eligibility for this commercial page.
 No purchased traffic, fake votes, mass submissions, unsolicited bulk email, or automated social-account creation.
 
-## Social draft — not posted
+## Initial social draft — superseded by published wall_100 post
 
 I made a website with one page and one owner.
 
@@ -79,3 +79,35 @@ recipient sites were presented.
 
 Structured receipt: `submission-receipts.json`. No money spent. No incremental
 visits claimed. Do not resubmit Weird Revenue while it is awaiting review.
+
+## 100-visitor campaign — September 12, 18:40 UTC onward
+
+Current objective: 100 new external unpaid visitors to Take The Wall. See `goal.json`.
+GitHub profile placement published in sariserhan/sariserhan commit 21403c1.
+X post published via connected free Buffer account:
+https://x.com/serhansarii/status/2098848099712012578
+
+OpenWeird confirmed receipt for review. StumblingOn returned Failed to fetch.
+WackyWebs form did not confirm; its documented business-email fallback was sent once
+and accepted by the provider. No publication is claimed for any of these directories.
+
+Measurement: run `node marketing/takethewall/measure.mjs` sparingly (about hourly while
+actively reviewing the campaign); no background database polling. Count distinct browser
+identifiers with page views, excluding classified bots and identifiable tests. Owner
+identifiers remain unknown, so browser estimates are not verified individual people.
+Do not count public display-counter additions, submissions, or our checks as visitors.
+
+The browser needs the extracted libraries in
+`/tmp/company-operator-browser-libs/extracted/usr/lib/x86_64-linux-gnu` and
+`FONTCONFIG_FILE=/tmp/ttw-fonts.conf`. Missing fonts caused crashes/blank screens.
+Do not commit authenticated browser profiles or raw session data.
+
+Follow-up X post: scheduled through Buffer for 2026-09-14 16:00 UTC (12:00 New York).
+Queue verification shows the matching post at that time. See `placements.json`.
+Latest measurement at 19:04 UTC: 0 qualifying new browser identifiers; goal remains open.
+WackyWebs email provider reports sent, not delivered or reviewed.
+
+Next review: check actual X referrals and curator responses after they have had time
+to arrive; do not duplicate pending submissions. Use observed source performance to
+choose the next placement. The Buffer follow-up is scheduled; no autonomous background
+posting agent or database monitor was started for this campaign.

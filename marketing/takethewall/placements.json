@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-09-12T19:04:05.432161+00:00",
+  "spendUsd": 0,
+  "placements": [
+    {
+      "channel": "GitHub profile",
+      "url": "https://github.com/sariserhan",
+      "status": "published",
+      "repository": "sariserhan/sariserhan",
+      "commit": "21403c1",
+      "verification": "README read back through GitHub API contains tracked Take The Wall links",
+      "campaign": "wall_100"
+    },
+    {
+      "channel": "X through Buffer",
+      "url": "https://x.com/serhansarii/status/2098848099712012578",
+      "providerUrl": "https://x.com/945742017409232896/status/2098848099712012578",
+      "status": "published",
+      "publishedAt": "2026-09-12T18:55:00Z",
+      "verification": "Buffer Sent tab shows matching text and Go to post link for connected serhansarii account",
+      "plan": "Free",
+      "campaign": "wall_100"
+    },
+    {
+      "channel": "VisitorPing footer",
+      "url": "https://visitorping.com/",
+      "status": "published",
+      "commit": "2516b9b",
+      "campaign": "wall_launch"
+    }
+  ],
+  "scheduled": [
+    {
+      "channel": "X through Buffer",
+      "account": "serhansarii",
+      "status": "scheduled",
+      "scheduledAt": "2026-09-14T16:00:00Z",
+      "localTime": "September 14, 12:00 PM America/New_York",
+      "verification": "Buffer Queue contains matching Take The Wall article at this time; queue increased from 3 to 4 posts.",
+      "text": "A homepage that belongs to whoever takes it over next.\n\nI built Take The Wall to see what people choose to put there: a project, a message, a profile, something unexpected.\n\nSee the current wall:\nhttps://takethewall.com/?utm_source=x&utm_medium=organic_social&utm_campaign=wall_100&utm_content=current_wall",
+      "spendUsd": 0
+    }
+  ]
+}

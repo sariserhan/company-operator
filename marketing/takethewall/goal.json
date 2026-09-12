@@ -1,0 +1,12 @@
+{
+  "objective": "Bring 100 new unpaid external visitors to takethewall.com",
+  "startedAt": "2026-09-12T18:40:50.000Z",
+  "target": 100,
+  "budgetUsd": 0,
+  "siteId": "ca77b849-ffff-4b44-9d67-ffa2577da2e2",
+  "domain": "takethewall.com",
+  "excludedVisitorIds": [],
+  "status": "in_progress",
+  "measurement": "Distinct browser identifiers with a page view, excluding classified bots, identifiable automation, labeled tests and paid source labels. Estimates are not proof of individual people; owner IDs have not yet been identified.",
+  "supersedes": "The old VisitorPing revenue objective is no longer the current task. The tool-level goal remains blocked because its API cannot replace an unfinished objective. It was not marked achieved."
+}
