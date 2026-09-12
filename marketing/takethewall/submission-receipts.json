@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T19:18:59.730461+00:00",
+  "checkedAt": "2026-09-12T20:41:19.263158+00:00",
   "project": "Take The Wall",
   "spendUsd": 0,
   "submissions": [
@@ -74,7 +74,59 @@
       "status": "blocked_before_submission",
       "notes": "Browser showed Cloudflare security verification. No form submission or bypass attempted.",
       "published": false
+    },
+    {
+      "publisher": "Hype Star",
+      "url": "https://hypestar.org/submit",
+      "status": "blocked_before_submission",
+      "notes": "TLS hostname certificate mismatch; certificate verification not disabled.",
+      "published": false
+    },
+    {
+      "publisher": "Ignlab",
+      "url": "https://launch.ignlab.net/submit.html",
+      "status": "human_verification_required",
+      "notes": "Math CAPTCHA; not submitted.",
+      "published": false
+    },
+    {
+      "publisher": "Launching Next",
+      "url": "https://www.launchingnext.com/submit/",
+      "status": "human_verification_required",
+      "notes": "Quick Check human-verification question; not submitted.",
+      "published": false
+    },
+    {
+      "publisher": "Share Your Startup",
+      "url": "https://shareyourstartup.com/submit.html",
+      "status": "blocked_before_submission",
+      "notes": "Filled form, but Post it remained disabled and Playwright click timed out without dispatching submission. Form loads Cloudflare Turnstile. No bypass or forced click.",
+      "published": false
+    },
+    {
+      "publisher": "Bored A Lot",
+      "url": "https://boredalot.com/",
+      "status": "unavailable",
+      "notes": "DNS resolution failed; not submitted.",
+      "published": false
+    },
+    {
+      "publisher": "Bored Button",
+      "url": "https://www.boredbutton.com/add",
+      "status": "received_for_review",
+      "confirmation": "Thank you! We\u2019ll review your suggestion right away.",
+      "published": false,
+      "spendUsd": 0,
+      "submittedAt": "2026-09-12T20:41:19.263158+00:00",
+      "receipt": "boredbutton-submission.json"
+    },
+    {
+      "publisher": "BORED",
+      "url": "https://www.bored.com/about/",
+      "status": "blocked_before_submission",
+      "published": false,
+      "notes": "Submit feedback button did not open a form, popup, or frame. No message sent."
     }
   ],
-  "incrementalVisitors": "Measured separately in latest-traffic.json. Submissions and publications do not count as visits."
+  "incrementalVisitors": "Not checked. User and VisitorPing own measurement. Submissions and publications do not count as visits."
 }

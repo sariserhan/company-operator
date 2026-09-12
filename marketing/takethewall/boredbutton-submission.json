@@ -1,0 +1,14 @@
+{
+  "publisher": "Bored Button",
+  "submittedAt": "2026-09-12T20:41:19.263158+00:00",
+  "status": "received_for_review",
+  "published": false,
+  "url": "https://www.boredbutton.com/add",
+  "confirmation": "Thank you! We\u2019ll review your suggestion right away.",
+  "fields": {
+    "site": "https://takethewall.com/",
+    "description": "One page. One owner. Each takeover replaces the last with a message, project, or surprise. Free to watch; publishing a takeover is paid.",
+    "email": "contact@takethewall.com"
+  },
+  "spendUsd": 0
+}

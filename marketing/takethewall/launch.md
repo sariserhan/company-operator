@@ -170,3 +170,22 @@ Sent LaunchFree a transparent fit inquiry using contact@takethewall.com. Its rul
 exclude gambling, so the inquiry explains the paid-placement/milestone mechanism and
 asks whether the project fits. Provider accepted the email; no directory submission,
 approval, delivery, or publication is claimed. No money spent or traffic queried.
+
+## Additional curator distribution — September 12
+
+Bored Button confirmed receipt of Take The Wall through its official Add a Website
+form: “Thank you! We’ll review your suggestion right away.” This is a review
+submission, not a published listing. Receipt and exact copy are in
+`boredbutton-submission.json`. Used only contact@takethewall.com; spent $0.
+
+Share Your Startup form filled, but its Post it button stayed disabled. Public
+HTML loads Cloudflare Turnstile. Playwright timed out before clicking; no submission
+was dispatched, and no verification bypass was attempted. Launching Next and Ignlab
+require human verification. Hype Star failed TLS hostname verification. Bored A Lot
+failed DNS resolution. BORED's feedback button opened no form; no message sent.
+
+Convex's get-convex/convex-js repository has discussions disabled, so no showcase
+was posted there. Freeboard requires verified email or an on-site backlink; not
+submitted and no backlink added. Existing pending placements were not duplicated.
+No traffic queries or background monitors ran. No new public placement or visitor
+increase is claimed for this batch.
