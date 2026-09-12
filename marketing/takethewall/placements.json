@@ -27,6 +27,14 @@
       "status": "published",
       "commit": "2516b9b",
       "campaign": "wall_launch"
+    },
+    {
+      "channel": "GitHub project page",
+      "url": "https://github.com/sariserhan/takethewall",
+      "status": "published",
+      "commit": "db43e5f",
+      "changes": "Replaced stale Vercel homepage URL with takethewall.com, added description and relevant topics, published prominent live-site README link.",
+      "verification": "Git push succeeded; GitHub API confirms homepage, description and topics."
     }
   ],
   "scheduled": [

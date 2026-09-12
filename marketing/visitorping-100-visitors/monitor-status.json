@@ -1,12 +1,14 @@
 {
-  "status": "running",
+  "status": "stopped",
   "pid": 3619059,
   "startedAt": "2026-09-11T03:43:51.185Z",
   "expiresAt": "2026-09-15T01:16:58.684Z",
   "intervalMinutes": 30,
   "scope": "Read-only traffic checks; one owner email when the monitoring window ends; browser counts do not trigger a human milestone. New candidate workspace counts trigger owner review emails. No automatic public posts or replies.",
-  "lastCheckAt": "2026-09-12T18:16:34.041Z",
+  "lastCheckAt": "2026-09-12T19:16:38.514Z",
   "lastCheckSucceeded": true,
   "consecutiveFailures": 0,
-  "nextCheckAt": "2026-09-12T18:46:34.041Z"
+  "nextCheckAt": null,
+  "stoppedAt": "2026-09-12T19:17:11.829230+00:00",
+  "reason": "User assigned traffic measurement to themselves and VisitorPing; assistant focuses on distribution."
 }

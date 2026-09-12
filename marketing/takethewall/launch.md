@@ -111,3 +111,13 @@ Next review: check actual X referrals and curator responses after they have had 
 to arrive; do not duplicate pending submissions. Use observed source performance to
 choose the next placement. The Buffer follow-up is scheduled; no autonomous background
 posting agent or database monitor was started for this campaign.
+
+## Distribution-only instruction
+
+The user owns traffic measurement with VisitorPing. Do not run campaign measurement
+scripts or start monitoring. Stopped the old assistant-owned VisitorPing monitor.
+Focus future work on actual distribution, publishing, and relevant discovery placements.
+
+Published GitHub project-page improvements in sariserhan/takethewall commit db43e5f:
+canonical website URL, description, relevant topics, and a prominent live-wall README link.
+Oddweb form attempted once without success confirmation; recorded as unconfirmed.

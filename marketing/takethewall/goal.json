@@ -8,5 +8,6 @@
   "excludedVisitorIds": [],
   "status": "in_progress",
   "measurement": "Distinct browser identifiers with a page view, excluding classified bots, identifiable automation, labeled tests and paid source labels. Estimates are not proof of individual people; owner IDs have not yet been identified.",
-  "supersedes": "The old VisitorPing revenue objective is no longer the current task. The tool-level goal remains blocked because its API cannot replace an unfinished objective. It was not marked achieved."
+  "supersedes": "The old VisitorPing revenue objective is no longer the current task. The tool-level goal remains blocked because its API cannot replace an unfinished objective. It was not marked achieved.",
+  "measurementOwner": "User and VisitorPing. Do not run assistant traffic checks or create monitors."
 }
