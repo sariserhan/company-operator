@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T20:41:19.263158+00:00",
+  "checkedAt": "2026-09-12T20:51:53.831047+00:00",
   "project": "Take The Wall",
   "spendUsd": 0,
   "submissions": [
@@ -100,7 +100,7 @@
       "publisher": "Share Your Startup",
       "url": "https://shareyourstartup.com/submit.html",
       "status": "blocked_before_submission",
-      "notes": "Filled form, but Post it remained disabled and Playwright click timed out without dispatching submission. Form loads Cloudflare Turnstile. No bypass or forced click.",
+      "notes": "Filled form, but Post it remained disabled and Playwright click timed out without dispatching submission. Form loads Cloudflare Turnstile. No bypass or forced click. Follow-up inspection found the URL input adds its own https:// prefix. Corrected the field to https://takethewall.com and confirmed all visible values; button still disabled. No submission dispatched.",
       "published": false
     },
     {
@@ -126,6 +126,15 @@
       "status": "blocked_before_submission",
       "published": false,
       "notes": "Submit feedback button did not open a form, popup, or frame. No message sent."
+    },
+    {
+      "publisher": "Freeboard",
+      "url": "https://freeboard.lol/submit",
+      "status": "published",
+      "published": true,
+      "listingUrl": "https://freeboard.lol/site/takethewall.com",
+      "receipt": "freeboard-submission.json",
+      "spendUsd": 0
     }
   ],
   "incrementalVisitors": "Not checked. User and VisitorPing own measurement. Submissions and publications do not count as visits."

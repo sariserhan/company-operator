@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T19:04:05.432161+00:00",
+  "checkedAt": "2026-09-12T20:52:33.982032+00:00",
   "spendUsd": 0,
   "placements": [
     {
@@ -63,6 +63,14 @@
       "originallyScheduledAt": "2026-09-14T16:00:00Z",
       "publishedAt": "2026-09-12T20:01:00Z",
       "url": "https://x.com/serhansarii/status/2098864519275483494"
+    },
+    {
+      "channel": "Freeboard directory",
+      "url": "https://freeboard.lol/site/takethewall.com",
+      "status": "published",
+      "verification": "Official form confirmed live. Public directory search returned Take The Wall with backlink-verified status and matching description.",
+      "receipt": "freeboard-submission.json",
+      "spendUsd": 0
     }
   ],
   "scheduled": [],

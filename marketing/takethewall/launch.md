@@ -189,3 +189,25 @@ was posted there. Freeboard requires verified email or an on-site backlink; not
 submitted and no backlink added. Existing pending placements were not duplicated.
 No traffic queries or background monitors ran. No new public placement or visitor
 increase is claimed for this batch.
+
+## Freeboard published — September 12
+
+Live listing: https://freeboard.lol/site/takethewall.com
+Official submission form confirmed: “You're live. Your backlink remains verified
+as an ownership check.” Public directory search confirms the name, domain,
+curiosity-led description, Entertainment & Humour category and verified status.
+The outgoing tracking link was not clicked; no campaign traffic was queried.
+
+Added a plain nofollow Freeboard directory link to the existing Take The Wall footer.
+Source commit 448226a was pushed and deployed successfully to production. Exact patch
+is in patches/freeboard-footer.patch. Targeted lint, typecheck and diff checks passed;
+production HTML contains the link. No backend code changed. The first form attempt
+could not click a disabled button; allowing hydration to finish before filling the
+form made its normal button available, and the verified submission succeeded.
+
+Share Your Startup follow-up found its URL field automatically prefixes https://.
+Corrected the duplicate prefix and verified the visible fields; Post it remained
+disabled. No forced click, verification bypass or submission took place.
+
+Spent $0. Freeboard publication is a new distribution placement, not evidence that
+the 100-person traffic goal has been reached.

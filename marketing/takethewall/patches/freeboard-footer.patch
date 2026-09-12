@@ -1,0 +1,14 @@
+diff --git a/components/public-footer.tsx b/components/public-footer.tsx
+index f78b4b6..cffee30 100644
+--- a/components/public-footer.tsx
++++ b/components/public-footer.tsx
+@@ -29,6 +29,9 @@ export function PublicFooter({ home = false }: { home?: boolean }) {
+               {label}
+             </Link>
+           ))}
++          <a href="https://freeboard.lol" rel="nofollow noopener">
++            Freeboard directory ↗
++          </a>
+         </nav>
+         <nav className="milestone-footer" aria-label="Milestone walls">
+           <span>PERMANENT WALLS</span>

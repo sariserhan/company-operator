@@ -1,0 +1,29 @@
+{
+  "publisher": "Freeboard",
+  "url": "https://freeboard.lol/submit",
+  "status": "published",
+  "published": true,
+  "spendUsd": 0,
+  "sourceCommit": "448226a5abd98999ff80912fec7554663dcc3909",
+  "deploymentUrl": "https://vercel.com/ssari/takethewall/HW5HtU9yAtgCco4a43nWrFi4S7K2",
+  "verificationMethod": "public backlink",
+  "verificationLink": "https://freeboard.lol",
+  "linkText": "Freeboard directory \u2197",
+  "listing": {
+    "url": "https://takethewall.com/",
+    "name": "Take The Wall",
+    "description": "One page. One owner. Each takeover replaces the last with a new message, project, or surprise. See who owns the wall.",
+    "category": "Entertainment & Humour"
+  },
+  "validation": [
+    "Targeted ESLint passed",
+    "TypeScript no-emit check passed",
+    "git diff --check passed",
+    "Vercel production deployment succeeded"
+  ],
+  "notes": "Production footer backlink verified in returned HTML. Freeboard confirmed publication; public directory search returned matching name, domain, description, category and backlink-verified status. Outbound tracking link was not clicked; no traffic measurement run.",
+  "confirmedAt": "2026-09-12T20:51:53.831047+00:00",
+  "confirmation": "You're live. Your backlink remains verified as an ownership check.",
+  "listingUrl": "https://freeboard.lol/site/takethewall.com",
+  "listingId": 659
+}
