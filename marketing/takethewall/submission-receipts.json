@@ -67,6 +67,13 @@
       "category": "Entertainment & Media",
       "published": true,
       "spendUsd": 0
+    },
+    {
+      "publisher": "FartDump Internet Stumbler",
+      "url": "https://www.fartdump.com/submit_site.php",
+      "status": "blocked_before_submission",
+      "notes": "Browser showed Cloudflare security verification. No form submission or bypass attempted.",
+      "published": false
     }
   ],
   "incrementalVisitors": "Measured separately in latest-traffic.json. Submissions and publications do not count as visits."

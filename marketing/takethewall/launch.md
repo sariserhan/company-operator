@@ -137,3 +137,18 @@ Buffer confirmed the replacement text and original schedule. No duplicate post c
 Next creative improvement: social link previews still inherit the site's price-led
 Open Graph metadata. Review the preview before future creative publication so the
 image and headline support the requested reward/curiosity hook.
+
+## Social preview shipped
+
+Take The Wall commit 939d640 changes the root and homepage metadata and generated
+Open Graph image to a curiosity hook. Deployed successfully; production metadata
+verified. New image attached to the existing September 14 reward post in Buffer.
+See `assets/social-preview.png`, `patches/social-preview.patch`, and placements.json.
+
+Browser plugin unavailable; regular Playwright used for Buffer. The generated image
+was inspected directly. Local metadata assertions, targeted lint and typecheck passed.
+Local full-homepage rendering lacked Convex configuration, so no full UI pass is claimed.
+The temporary development server was stopped. No visitor analytics were queried.
+
+FartDump submission blocked by security verification; not sent. Cloudhiker requires
+an account and a flag for AI-assisted sites; no account created or submission made.

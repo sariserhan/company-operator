@@ -53,7 +53,23 @@
       "localTime": "September 14, 12:00 PM America/New_York",
       "verification": "Edited existing post in Buffer; queue article confirms reward copy and unchanged September 14, 12:00 PM America/New_York schedule.",
       "text": "Takeover #100 has a $100 milestone reward for its eligible owner.\n\nOne page. One owner. Who will claim it?\n\nSee the wall:\nhttps://takethewall.com/?utm_source=x&utm_medium=organic_social&utm_campaign=wall_100&utm_content=milestone_reward\n\nReward rules apply.",
-      "spendUsd": 0
+      "spendUsd": 0,
+      "image": "assets/social-preview.png",
+      "imageVerification": "Buffer queue confirms attached media preview on the existing September 14 reward post."
     }
-  ]
+  ],
+  "socialPreview": {
+    "status": "deployed",
+    "sourceRepository": "sariserhan/takethewall",
+    "commit": "939d640",
+    "deployment": "https://vercel.com/ssari/takethewall/3Gv7yB3XuH1Uf316UmduuDeVEeWj",
+    "verification": "GitHub Vercel check success. Production HTML serves the new Open Graph and Twitter title and new image URL.",
+    "checks": [
+      "Targeted ESLint passed",
+      "TypeScript passed",
+      "Generated 1200x630 PNG rendered and visually inspected",
+      "Local and production metadata inspected"
+    ],
+    "limitations": "Local homepage UI smoke test was not completed: isolated checkout has no Convex environment configuration. Verification covered the changed image route and metadata; no backend or checkout changes."
+  }
 }
