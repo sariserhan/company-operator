@@ -1,0 +1,10 @@
+{
+  "recipient": "log@waxy.org",
+  "subject": "One web page that the next visitor can take over",
+  "text": "Hi Andy,\n\nI saw your One Million Chessboards link. The shared-state part — one person changes what everybody sees — is why I thought this small web experiment might fit Waxy.\n\nTake The Wall has one public page and one featured owner. A new takeover replaces the previous project or message for everyone who visits. The question is simple: what would you put there, knowing somebody can replace it?\n\nWatching and previewing are free. Publishing costs $3.99, with no guaranteed audience or duration. It is early; I am not claiming a crowd or a successful social experiment yet.\n\nhttps://takethewall.com/?utm_source=waxy&utm_medium=editorial&utm_campaign=shared_page&utm_content=story_pitch\n\nI attached a 15-second recording of the actual preview screen, using example content. It shows no payment or activation. You can use that clip in editorial coverage of the project.\n\nWould this be interesting for a short link or post? This is an editorial tip, with no request for a sponsored placement.\n\nTake The Wall\ncontact@takethewall.com\n",
+  "contactSource": "https://waxy.org/about/",
+  "fitSource": "https://waxy.org/2025/04/one-million-chessboards/",
+  "status": "accepted_by_email_provider",
+  "trackingUrl": "https://takethewall.com/?utm_source=waxy&utm_medium=editorial&utm_campaign=shared_page&utm_content=story_pitch",
+  "attachment": "marketing/takethewall/assets/app-preview.mp4"
+}

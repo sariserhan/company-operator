@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-12T22:26:12.302Z",
+  "recipient": "rob@boingboing.net",
+  "status": "accepted_by_email_provider",
+  "emailId": "b836334d-7dc3-495b-8b19-9f361195121f",
+  "httpStatus": 200,
+  "error": null,
+  "spendUsd": 0
+}

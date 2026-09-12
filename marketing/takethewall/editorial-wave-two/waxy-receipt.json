@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-12T22:25:33.218Z",
+  "recipient": "log@waxy.org",
+  "status": "accepted_by_email_provider",
+  "emailId": "7ab152e6-310d-412e-adb0-2a2b9ec5b381",
+  "httpStatus": 200,
+  "error": null,
+  "spendUsd": 0
+}
