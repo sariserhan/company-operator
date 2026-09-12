@@ -6,7 +6,7 @@ Started 2026-09-12. Budget: $0. Success means external visits, not directory sub
 
 One page. One owner. Anyone can take it over.
 
-Take The Wall is a public internet experiment. Browsing is free. A one-time $3.99 payment replaces the current owner's website, app, social profile, or message. It remains until the next takeover. No guaranteed audience or duration. Do not market prizes, revenue, fabricated popularity, or guaranteed exposure.
+Take The Wall is a public internet experiment. Browsing is free. A one-time $3.99 payment replaces the current owner's website, app, social profile, or message. It remains until the next takeover. No guaranteed audience or duration. Lead with curiosity or verified milestone rewards under the updated user instruction. Do not fabricate popularity, revenue, guaranteed earnings, or guaranteed exposure.
 
 ## Live-channel work
 
@@ -121,3 +121,19 @@ Focus future work on actual distribution, publishing, and relevant discovery pla
 Published GitHub project-page improvements in sariserhan/takethewall commit db43e5f:
 canonical website URL, description, relevant topics, and a prominent live-wall README link.
 Oddweb form attempted once without success confirmation; recorded as unconfirmed.
+
+## Reward-led distribution update
+
+Zearches published Take The Wall in Entertainment & Media and its latest-site feed.
+No donation was made. The submission was sent before the user's instruction to avoid
+price-led public copy; future public hooks should follow the updated instruction.
+
+Verified public production rewards configuration: promotion enabled, #100 -> $100,
+then #1,000 -> $1,000 and higher configured milestones. This checks product facts,
+not visitor counts. Claim eligibility and payout review remain required.
+Edited the existing September 14 X post to lead with the $100 milestone reward.
+Buffer confirmed the replacement text and original schedule. No duplicate post created.
+
+Next creative improvement: social link previews still inherit the site's price-led
+Open Graph metadata. Review the preview before future creative publication so the
+image and headline support the requested reward/curiosity hook.

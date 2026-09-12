@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-09-12T18:16:32.464Z",
+  "capturedAt": "2026-09-12T19:16:36.351Z",
   "start": "2026-09-10T22:26:53.000Z",
   "target": 100,
   "siteDomain": "visitorping.com",
@@ -14,7 +14,7 @@
   "campaign_browser_ids": 64,
   "measurementVersion": 2,
   "activation": {
-    "capturedAt": "2026-09-12T18:16:33.590Z",
+    "capturedAt": "2026-09-12T19:16:38.187Z",
     "productionVerified": true,
     "scope": "candidate_external_workspaces_excluding_owner_baseline",
     "workspaces": 0,

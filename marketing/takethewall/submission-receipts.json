@@ -57,6 +57,16 @@
       "status": "unconfirmed",
       "notes": "Completed public form and clicked Submit site once. No success confirmation appeared. Do not resubmit without checking submission status.",
       "published": false
+    },
+    {
+      "publisher": "Zearches",
+      "url": "https://zearches.com/",
+      "status": "published",
+      "confirmation": "Thank you! Your website has been submitted.",
+      "verification": "Post-submit homepage showed Take The Wall and its destination in the latest websites section.",
+      "category": "Entertainment & Media",
+      "published": true,
+      "spendUsd": 0
     }
   ],
   "incrementalVisitors": "Measured separately in latest-traffic.json. Submissions and publications do not count as visits."

@@ -35,6 +35,13 @@
       "commit": "db43e5f",
       "changes": "Replaced stale Vercel homepage URL with takethewall.com, added description and relevant topics, published prominent live-site README link.",
       "verification": "Git push succeeded; GitHub API confirms homepage, description and topics."
+    },
+    {
+      "channel": "Zearches directory",
+      "url": "https://zearches.com/directory.php?slug=entertainment-media",
+      "status": "published",
+      "verification": "Submission redirected to status=ok and homepage latest entries displayed Take The Wall with live destination link.",
+      "spendUsd": 0
     }
   ],
   "scheduled": [
@@ -44,8 +51,8 @@
       "status": "scheduled",
       "scheduledAt": "2026-09-14T16:00:00Z",
       "localTime": "September 14, 12:00 PM America/New_York",
-      "verification": "Buffer Queue contains matching Take The Wall article at this time; queue increased from 3 to 4 posts.",
-      "text": "A homepage that belongs to whoever takes it over next.\n\nI built Take The Wall to see what people choose to put there: a project, a message, a profile, something unexpected.\n\nSee the current wall:\nhttps://takethewall.com/?utm_source=x&utm_medium=organic_social&utm_campaign=wall_100&utm_content=current_wall",
+      "verification": "Edited existing post in Buffer; queue article confirms reward copy and unchanged September 14, 12:00 PM America/New_York schedule.",
+      "text": "Takeover #100 has a $100 milestone reward for its eligible owner.\n\nOne page. One owner. Who will claim it?\n\nSee the wall:\nhttps://takethewall.com/?utm_source=x&utm_medium=organic_social&utm_campaign=wall_100&utm_content=milestone_reward\n\nReward rules apply.",
       "spendUsd": 0
     }
   ]
