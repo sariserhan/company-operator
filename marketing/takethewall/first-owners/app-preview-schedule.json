@@ -1,0 +1,15 @@
+{
+  "status": "scheduled",
+  "verifiedAt": "2026-09-12T21:48:15.553275+00:00",
+  "scheduledAt": "2026-09-13T16:00:00Z",
+  "displayedTime": "Sep 13, 12:00 PM (America/New York)",
+  "account": "serhansarii",
+  "channel": "X through Buffer",
+  "queueUrl": "https://publish.buffer.com/channels/6aa33900cd8b9c702c4808c1/schedule",
+  "caption": "What would your takeover look like?\n\nHere\u2019s the real app preview. One page, one owner, until somebody replaces it.\n\nBrowse free. Publishing costs $3.99; no guaranteed audience or duration.\n\nhttps://takethewall.com/?utm_source=x&utm_medium=social&utm_campaign=first_owners&utm_content=app_preview",
+  "asset": "../assets/app-preview.mp4",
+  "assetSha256": "531ab9eb49356c581da66d7198d3e0520ff115edcb7f468986138333f75994fd",
+  "verification": "Reopened Buffer Queue: article titled Post scheduled for serhansarii twitter channel on Sep 13, 12:00 PM (America/New York), matching caption and attached Video preview. Drafts 0.",
+  "publishedUrl": null,
+  "spendUsd": 0
+}

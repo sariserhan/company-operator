@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T21:08:05.483925+00:00",
+  "checkedAt": "2026-09-12T21:48:15.553275+00:00",
   "spendUsd": 0,
   "placements": [
     {
@@ -85,7 +85,17 @@
       "verification": "Buffer Sent article shows matching caption, video preview and Go to post link."
     }
   ],
-  "scheduled": [],
+  "scheduled": [
+    {
+      "channel": "X through Buffer",
+      "account": "serhansarii",
+      "status": "scheduled",
+      "scheduledAt": "2026-09-13T16:00:00Z",
+      "campaign": "first_owners",
+      "receipt": "first-owners/app-preview-schedule.json",
+      "spendUsd": 0
+    }
+  ],
   "socialPreview": {
     "status": "deployed",
     "sourceRepository": "sariserhan/takethewall",

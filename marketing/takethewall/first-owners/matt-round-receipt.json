@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-12T21:37:36.454Z",
+  "recipient": "matt@mattround.com",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "64b18c44-0237-4a5e-9a1d-9c13e820e571",
+  "error": null,
+  "spendUsd": 0
+}

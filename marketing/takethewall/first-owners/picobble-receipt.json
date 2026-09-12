@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-12T21:38:09.352Z",
+  "recipient": "admin@picobble.com",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "ec2c7f50-5b3c-4ba6-9ad1-a4fbdbcfee90",
+  "error": null,
+  "spendUsd": 0
+}

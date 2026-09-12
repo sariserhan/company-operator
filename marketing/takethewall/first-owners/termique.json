@@ -1,0 +1,9 @@
+{
+  "recipient": "hello@termique.app",
+  "subject": "An invitation for Termique to take over one page",
+  "text": "Hi Rafi,\n\nI read your Termique founder story and the explanation of encrypting credentials locally before sync. The solo-built SSH tool could make a clear, focused takeover.\n\nI built Take The Wall: one public page with one featured owner. Would you be interested in trying it with Termique? Your project replaces the current content and stays until somebody else takes over.\n\nBrowsing and previewing are free; publishing costs $3.99. This is an early experiment, with no guaranteed audience or duration.\n\nhttps://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=termique\n\nNo need to reply if it’s not for you; I won’t send follow-up reminders.\n\nTake The Wall\ncontact@takethewall.com\n",
+  "publicContactSource": "https://termique.app/contact/",
+  "status": "accepted_by_email_provider",
+  "trackingUrl": "https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=termique",
+  "spendUsd": 0
+}

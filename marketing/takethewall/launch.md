@@ -257,3 +257,15 @@ route. Full sources, reasons, copy and receipts are in creator-outreach/.
 
 User assigns website implementation to another agent. Recorded hands-off website
 instruction; all work here is distribution. No directories, spend or traffic checks.
+
+
+## First-owner launch kit execution — September 12, 2026
+
+- Recorded and validated a 15-second **actual app preview** (mobile/desktop example). Not a payment/activation demonstration. Asset: `assets/app-preview.mp4`.
+- Scheduled the preview video through Buffer for **September 13, 16:00 UTC**, verified in Queue with the matching caption, date and video. Receipt: `first-owners/app-preview-schedule.json`. This is currently the one upcoming Take The Wall post.
+- Six personal invitations accepted by Resend: Picobble, Lynen, Termique, Tim Holman, Matt Round, Martin O’Leary. No delivery, reply or purchase claims. Separate receipts in `first-owners/`; previous editorial pitches not duplicated.
+- Kinapod contact form explicitly failed; not counted as sent.
+- Two Reddit drafts prepared after rule review. Submit page returned a network-security block; no Reddit post created.
+- Fourteen public prospect candidates recorded with evidence and limitations; six existing-network contacts missing. Creator audience sizes and exact launch dates are not verified. Seven candidates are held for contact/access limitations.
+- Live-event runbook ready, but host/time/platform and verified live checkout/activation are missing. Event not announced.
+- No app modifications, directories, spending, traffic monitoring or claimed conversions. Full status: `first-owners/README.md`.

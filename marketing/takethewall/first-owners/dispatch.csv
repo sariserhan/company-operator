@@ -1,0 +1,9 @@
+id,date,channel,status,public_url,tracking_url,receipt,visits,replies,paid_owners
+kinapod,2026-09-12T21:41:20.713Z,contact_form,failed,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=kinapod,kinapod-receipt.json,,,
+lynen,2026-09-12T21:37:40.025Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=lynen,lynen-receipt.json,,,
+martin-oleary,2026-09-12T21:43:35.001Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=martin-oleary,martin-oleary-receipt.json,,,
+matt-round,2026-09-12T21:37:36.454Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=matt-round,matt-round-receipt.json,,,
+picobble,2026-09-12T21:38:09.352Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=picobble,picobble-receipt.json,,,
+termique,2026-09-12T21:40:41.089Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=termique,termique-receipt.json,,,
+tim-holman,2026-09-12T21:37:24.639Z,email,accepted_by_email_provider,,https://takethewall.com/?utm_source=personal&utm_medium=outreach&utm_campaign=first_owners&utm_content=tim-holman,tim-holman-receipt.json,,,
+app-preview,2026-09-13T16:00:00Z,X,scheduled,,https://takethewall.com/?utm_source=x&utm_medium=social&utm_campaign=first_owners&utm_content=app_preview,app-preview-schedule.json,,,

@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-12T21:37:24.639Z",
+  "recipient": "timothy.w.holman@gmail.com",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "5cf6f2ab-5007-494d-a0ef-3729acb40440",
+  "error": null,
+  "spendUsd": 0
+}

@@ -10,5 +10,5 @@
 - The live reward configuration checked September 12, 2026 has promotion enabled and a $100 reward at takeover #100 (not visitor #100 and not takeover #10). Eligibility review applies. Verify reward configuration again before materially new prize claims; this is product fact checking, not traffic monitoring.
 - Do not submit Take The Wall to directory websites. User stopped this channel and requested removal of the Freeboard footer backlink. Do not add directory badges or reciprocal links. Existing receipts are historical, not a queue to continue.
 - Do not duplicate pending or unconfirmed outreach, bypass access controls, or use prohibited submission categories.
-- Use the connected Buffer account for X publishing. The former September 14 reward post was published early on September 12 at 20:01 UTC. No Take The Wall post currently remains scheduled. Check placements.json before creating another post.
+- Use the connected Buffer account for X publishing. The former September 14 reward post was published early on September 12 at 20:01 UTC. An actual app preview video is now scheduled for September 13, 2026 at 16:00 UTC (12:00 America/New_York); receipt: first-owners/app-preview-schedule.json. Do not duplicate it. Check placements.json before creating another post.
 - Use project business contact addresses for submissions. Do not add personal reply addresses.

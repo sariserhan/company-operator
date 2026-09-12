@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-12T21:43:35.001Z",
+  "recipient": "hello@mewo2.com",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "3fa6b574-babf-4504-80bd-03f1fde17f09",
+  "error": null,
+  "spendUsd": 0
+}
