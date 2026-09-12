@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-12T21:25:09.963Z",
+  "recipient": "jason@kottke.org",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "2798e812-e604-4035-b2c0-b606b650c3d7",
+  "error": null,
+  "published": false,
+  "spendUsd": 0
+}

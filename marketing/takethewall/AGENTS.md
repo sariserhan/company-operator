@@ -1,5 +1,7 @@
 # Take The Wall distribution
 
+- Website implementation belongs to another agent. Do not edit or deploy Take The Wall website/backend code. Own awareness, original marketing assets, public conversations, and tailored creator/editorial outreach.
+
 - Current assignment: bring unpaid external visitors to takethewall.com. No spending.
 - The user and VisitorPing own traffic measurement. Do not run traffic queries, campaign measurement scripts, or background monitors.
 - Continue authorized distribution without repeatedly asking the user to approve routine steps. Never promise unattended work that is not actually scheduled.

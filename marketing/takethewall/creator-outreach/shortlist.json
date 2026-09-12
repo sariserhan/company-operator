@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-09-12T21:27:10.394865+00:00",
+  "spendUsd": 0,
+  "sent": 2,
+  "publishedCoverageConfirmed": false,
+  "candidates": [
+    {
+      "creator": "Matt Muir / Web Curios",
+      "status": "accepted_by_email_provider",
+      "receipt": "webcurios-receipt.json",
+      "permissionSource": "https://webcurios.co.uk/contact/",
+      "fitSource": "https://webcurios.co.uk/webcurios-21-04-23/",
+      "fit": "Covered The 24h Homepage; openly invites creator submissions."
+    },
+    {
+      "creator": "Jason Kottke / kottke.org",
+      "status": "accepted_by_email_provider",
+      "receipt": "kottke-receipt.json",
+      "permissionSource": "https://kottke.org/about/",
+      "fit": "Explicitly welcomes project and video links; covers technology, design and internet nonsense."
+    },
+    {
+      "creator": "Scott Beale / Laughing Squid editorial team",
+      "status": "excluded_by_submission_policy",
+      "source": "https://laughingsquid.com/laughing-squid-submissions/",
+      "reason": "Explicitly prohibits promotions related to products or services. Requires form, not email. No contact made."
+    },
+    {
+      "creator": "Kai Brach / Dense Discovery",
+      "status": "excluded_low_fit",
+      "source": "https://www.densediscovery.com/",
+      "policySource": "https://www.densediscovery.com/read.php?show=ai",
+      "reason": "Editorial focus resists attention merchants. My fit judgement: a paid homepage takeover project is a poor match. Not an explicit universal submission ban. No contact made."
+    },
+    {
+      "creator": "Paul Strauss / The Awesomer",
+      "status": "human_verification_required",
+      "source": "https://theawesomer.com/tellmesomethinggood/",
+      "formUrl": "https://form.jotform.com/81323720739153",
+      "reason": "Official embedded form welcomes website/video suggestions but requires a visual anti-spam challenge and first/last name. No form submitted or alternative channel used."
+    }
+  ],
+  "otherResearchNotContacted": [
+    {
+      "name": "Andy Baio / Waxy",
+      "reason": "Relevant internet-culture coverage; did not verify a current submission contact route."
+    },
+    {
+      "name": "Garbage Day",
+      "reason": "Internet-culture editorial fit; did not verify a current submission contact route."
+    },
+    {
+      "name": "Matty McTech",
+      "reason": "Could not verify a creator-owned contact route in the searches used."
+    },
+    {
+      "name": "Hayls World",
+      "reason": "Found business/shop contacts, but did not establish an unpaid editorial suggestion route and specific fit."
+    },
+    {
+      "name": "Swissmiss",
+      "reason": "Official site returned 403; not contacted."
+    },
+    {
+      "name": "Recomendo",
+      "reason": "Found subscriber chat; no verified editorial email route in this check."
+    },
+    {
+      "name": "Boing Boing",
+      "reason": "Current contact page provides general/corrections contact; story-submission route not confirmed."
+    },
+    {
+      "name": "Neatorama",
+      "reason": "Old link-tip invitation found, but current homepage unavailable (403); not contacted."
+    },
+    {
+      "name": "Geeks are Sexy",
+      "reason": "Contact page unavailable; not contacted."
+    }
+  ],
+  "notes": "One personalized email per accepted route, business sender only, original 15-second video attached. Provider acceptance is not delivery, reply or coverage. No directory submissions, website edits, spending or traffic queries."
+}

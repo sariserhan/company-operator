@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-12T21:24:04.684Z",
+  "recipient": "matt@webcurios.co.uk",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "ebf65d04-aab1-4884-b716-a5517e99fbfd",
+  "error": null,
+  "published": false,
+  "spendUsd": 0
+}

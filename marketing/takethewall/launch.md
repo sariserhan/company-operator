@@ -240,3 +240,20 @@ Committed MP4 plus editable render script and publication receipt. Checked sampl
 frames visually and decoded all 360 frames successfully. Spent $0. No website
 or backend changes, production purchases, directory submissions, or traffic queries.
 The traffic goal remains open; publication is not proof of external visitors.
+
+## Creator/editorial outreach — September 12
+
+Checked five primary candidates: Matt Muir (Web Curios), Jason Kottke,
+Scott Beale's Laughing Squid, Kai Brach (Dense Discovery), and Paul Strauss
+(The Awesomer). Sent individual pitches to the first two, who explicitly invite
+project suggestions. Both emails were accepted by Resend; delivery, replies and
+coverage are not confirmed. Each includes the labeled 15-second demo attachment,
+source-specific site link, accurate participation terms, and an editorial ask.
+
+Laughing Squid prohibits product promotions. Dense Discovery was excluded on
+editorial fit. The Awesomer requires a visual anti-spam challenge; no submission
+or bypass. Additional exploratory leads were not contacted without a verified
+route. Full sources, reasons, copy and receipts are in creator-outreach/.
+
+User assigns website implementation to another agent. Recorded hands-off website
+instruction; all work here is distribution. No directories, spend or traffic checks.
