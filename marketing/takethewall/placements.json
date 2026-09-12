@@ -70,7 +70,9 @@
       "status": "published",
       "verification": "Official form confirmed live. Public directory search returned Take The Wall with backlink-verified status and matching description.",
       "receipt": "freeboard-submission.json",
-      "spendUsd": 0
+      "spendUsd": 0,
+      "campaignStatus": "discontinued_by_user",
+      "notes": "User requested no directory submissions and removal of footer backlink. Listing removal was not requested; no ongoing verification or promotion planned."
     }
   ],
   "scheduled": [],
@@ -87,5 +89,6 @@
       "Local and production metadata inspected"
     ],
     "limitations": "Local homepage UI smoke test was not completed: isolated checkout has no Convex environment configuration. Verification covered the changed image route and metadata; no backend or checkout changes."
-  }
+  },
+  "directorySubmissionsEnabled": false
 }

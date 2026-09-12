@@ -211,3 +211,18 @@ disabled. No forced click, verification bypass or submission took place.
 
 Spent $0. Freeboard publication is a new distribution placement, not evidence that
 the 100-person traffic goal has been reached.
+
+## Directory channel stopped at user request
+
+Removed the Freeboard footer backlink in Take The Wall commit bac75fb, pushed and
+successfully deployed. Parsed production homepage HTML confirms no Freeboard anchor.
+No external listing deletion was requested or attempted. Existing directory records
+are historical, not an active submission queue. Standing instructions now prohibit
+directory submissions and reciprocal links.
+
+Assessed existing takeover sharing: public pages, downloadable cards, native sharing,
+and post-payment share UI already exist. More share controls do not solve a lack of
+initial external participants. Prepared a 15-second visual-demo experiment instead
+in visual-demo-experiment.md. This is a storyboard, not a rendered or scheduled video.
+It uses clearly labeled example takeovers, no invented customers or audience counts,
+and a curiosity-led website CTA. No traffic queries, purchases, or spending.

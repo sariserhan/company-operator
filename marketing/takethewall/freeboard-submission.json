@@ -21,9 +21,14 @@
     "git diff --check passed",
     "Vercel production deployment succeeded"
   ],
-  "notes": "Production footer backlink verified in returned HTML. Freeboard confirmed publication; public directory search returned matching name, domain, description, category and backlink-verified status. Outbound tracking link was not clicked; no traffic measurement run.",
+  "notes": "Production footer backlink verified in returned HTML. Freeboard confirmed publication; public directory search returned matching name, domain, description, category and backlink-verified status. Outbound tracking link was not clicked; no traffic measurement run. User subsequently stopped directory submissions and requested footer backlink removal. Historical publication receipt retained; listing removal not requested.",
   "confirmedAt": "2026-09-12T20:51:53.831047+00:00",
   "confirmation": "You're live. Your backlink remains verified as an ownership check.",
   "listingUrl": "https://freeboard.lol/site/takethewall.com",
-  "listingId": 659
+  "listingId": 659,
+  "campaignStatus": "discontinued_by_user",
+  "backlinkRemovalCommit": "bac75fb",
+  "backlinkStatus": "removed_from_production",
+  "removalDeploymentUrl": "https://vercel.com/ssari/takethewall/2BNiGnpYxGG3Fwvr41WSRo6JFJYk",
+  "removalVerification": "Vercel success; parsed production homepage HTML contains no Freeboard anchor."
 }
