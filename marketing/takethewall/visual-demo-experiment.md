@@ -28,7 +28,8 @@ paid takeover participation is free. The destination explains purchase terms.
 ## Distribution
 
 Prepare the video first; publish through the existing connected X account using
-Buffer. This file is a storyboard only: no video rendered or post scheduled yet.
+Buffer. Rendered and published September 12: https://x.com/serhansarii/status/2098881087174803759
+See video-publication.json and assets/takeover-demo.mp4.
 Do not claim access to TikTok, Instagram, or YouTube accounts. Adapt for those
 channels only if an authorized publishing connection becomes available.
 

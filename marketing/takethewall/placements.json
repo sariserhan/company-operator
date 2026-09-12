@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T20:52:33.982032+00:00",
+  "checkedAt": "2026-09-12T21:08:05.483925+00:00",
   "spendUsd": 0,
   "placements": [
     {
@@ -73,6 +73,16 @@
       "spendUsd": 0,
       "campaignStatus": "discontinued_by_user",
       "notes": "User requested no directory submissions and removal of footer backlink. Listing removal was not requested; no ongoing verification or promotion planned."
+    },
+    {
+      "channel": "X through Buffer",
+      "url": "https://x.com/serhansarii/status/2098881087174803759",
+      "status": "published",
+      "publishedAt": "2026-09-12T21:06:00Z",
+      "campaign": "wall_demo",
+      "spendUsd": 0,
+      "receipt": "video-publication.json",
+      "verification": "Buffer Sent article shows matching caption, video preview and Go to post link."
     }
   ],
   "scheduled": [],

@@ -1,0 +1,30 @@
+{
+  "status": "published",
+  "channel": "X through Buffer",
+  "account": "serhansarii",
+  "url": "https://x.com/serhansarii/status/2098881087174803759",
+  "providerUrl": "https://twitter.com/serhansarii/status/2098881087174803759",
+  "publishedAt": "2026-09-12T21:06:00Z",
+  "confirmedAt": "2026-09-12T21:08:05.483925+00:00",
+  "confirmation": "Buffer Sent article shows matching caption, video preview and Go to post link.",
+  "asset": "assets/takeover-demo.mp4",
+  "assetSha256": "9244e2f25f6c1a02c9608548777839082be9f26a3abdbe047691925340b24c94",
+  "format": {
+    "durationSeconds": 15,
+    "width": 960,
+    "height": 1200,
+    "fps": 24,
+    "codec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audio": false
+  },
+  "validation": [
+    "Opening, replacement and final frames visually inspected",
+    "Full MP4 decode succeeded: 360 frames",
+    "Render script syntax check passed",
+    "git diff --check passed"
+  ],
+  "campaign": "wall_demo",
+  "spendUsd": 0,
+  "notes": "Original typographic animation. Example takeovers labeled throughout. No production purchase or fake customer activity; no directory submissions; no traffic queries."
+}

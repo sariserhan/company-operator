@@ -226,3 +226,17 @@ initial external participants. Prepared a 15-second visual-demo experiment inste
 in visual-demo-experiment.md. This is a storyboard, not a rendered or scheduled video.
 It uses clearly labeled example takeovers, no invented customers or audience counts,
 and a curiosity-led website CTA. No traffic queries, purchases, or spending.
+
+## Visual takeover demo published — September 12, 21:06 UTC
+
+Published a 15-second original animated explanation through the connected Buffer
+X account: https://x.com/serhansarii/status/2098881087174803759
+The first example message is replaced by a second; example/demo labels remain
+visible throughout. Ends with the live-site CTA. No price-led hook, prize claim,
+fake customers, or invented traffic. Caption links to the wall_demo campaign URL.
+
+Buffer Sent confirms matching text, video preview, and the public post URL.
+Committed MP4 plus editable render script and publication receipt. Checked sample
+frames visually and decoded all 360 frames successfully. Spent $0. No website
+or backend changes, production purchases, directory submissions, or traffic queries.
+The traffic goal remains open; publication is not proof of external visitors.
