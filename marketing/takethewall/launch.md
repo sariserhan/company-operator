@@ -152,3 +152,21 @@ The temporary development server was stopped. No visitor analytics were queried.
 
 FartDump submission blocked by security verification; not sent. Cloudhiker requires
 an account and a flag for AI-assisted sites; no account created or submission made.
+
+## Community distribution — September 12, 20:00 UTC
+
+Published a Take The Wall showcase in the Next.js Show and tell community:
+https://github.com/vercel/next.js/discussions/98601
+The category explicitly invites projects; checked its conduct policy and searched
+for duplicates before posting. The source-backed explanation covers verified webhook
+activation and event deduplication. Copy and receipt are committed alongside this log.
+
+Published the existing scheduled reward/image post immediately via Buffer:
+https://x.com/serhansarii/status/2098864519275483494
+This replaces the September 14 schedule, rather than creating a duplicate. Confirmed
+in Buffer Sent. No future Take The Wall post remains in the queue.
+
+Sent LaunchFree a transparent fit inquiry using contact@takethewall.com. Its rules
+exclude gambling, so the inquiry explains the paid-placement/milestone mechanism and
+asks whether the project fits. Provider accepted the email; no directory submission,
+approval, delivery, or publication is claimed. No money spent or traffic queried.

@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-12T20:03:21.198Z",
+  "recipient": "hello@launchfree.io",
+  "sender": "contact@takethewall.com",
+  "status": "accepted_by_email_provider",
+  "httpStatus": 200,
+  "emailId": "237fcada-c614-4905-915d-d81c77936d5d",
+  "error": null,
+  "published": false,
+  "spendUsd": 0
+}

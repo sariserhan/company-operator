@@ -42,22 +42,30 @@
       "status": "published",
       "verification": "Submission redirected to status=ok and homepage latest entries displayed Take The Wall with live destination link.",
       "spendUsd": 0
-    }
-  ],
-  "scheduled": [
+    },
+    {
+      "channel": "Next.js Show and tell",
+      "url": "https://github.com/vercel/next.js/discussions/98601",
+      "status": "published",
+      "verification": "GitHub createDiscussion response and REST read-back confirm category, author and published title.",
+      "receipt": "nextjs-showcase-receipt.json",
+      "spendUsd": 0
+    },
     {
       "channel": "X through Buffer",
       "account": "serhansarii",
-      "status": "scheduled",
-      "scheduledAt": "2026-09-14T16:00:00Z",
-      "localTime": "September 14, 12:00 PM America/New_York",
-      "verification": "Edited existing post in Buffer; queue article confirms reward copy and unchanged September 14, 12:00 PM America/New_York schedule.",
+      "status": "published",
+      "verification": "Buffer Sent tab confirms reward text and Go to post URL. Published the existing scheduled item; no September 14 Take The Wall post remains queued.",
       "text": "Takeover #100 has a $100 milestone reward for its eligible owner.\n\nOne page. One owner. Who will claim it?\n\nSee the wall:\nhttps://takethewall.com/?utm_source=x&utm_medium=organic_social&utm_campaign=wall_100&utm_content=milestone_reward\n\nReward rules apply.",
       "spendUsd": 0,
       "image": "assets/social-preview.png",
-      "imageVerification": "Buffer queue confirms attached media preview on the existing September 14 reward post."
+      "imageVerification": "Buffer queue confirms attached media preview on the existing September 14 reward post.",
+      "originallyScheduledAt": "2026-09-14T16:00:00Z",
+      "publishedAt": "2026-09-12T20:01:00Z",
+      "url": "https://x.com/serhansarii/status/2098864519275483494"
     }
   ],
+  "scheduled": [],
   "socialPreview": {
     "status": "deployed",
     "sourceRepository": "sariserhan/takethewall",

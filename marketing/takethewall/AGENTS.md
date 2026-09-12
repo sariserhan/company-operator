@@ -7,5 +7,5 @@
 - Public posts should lead with curiosity or a verified milestone reward, not the purchase price. Never claim paid participation is free or imply guaranteed earnings. Answer explicit cost questions accurately and keep entry/claim terms accessible.
 - The live reward configuration checked September 12, 2026 has promotion enabled and a $100 reward at takeover #100 (not visitor #100 and not takeover #10). Eligibility review applies. Verify reward configuration again before materially new prize claims; this is product fact checking, not traffic monitoring.
 - Read submission-receipts.json before contacting a directory. Do not duplicate pending or unconfirmed submissions, bypass access controls, or use prohibited submission categories.
-- Use the connected Buffer account for X publishing. One follow-up is scheduled for September 14 at 16:00 UTC; edit it rather than creating a duplicate.
+- Use the connected Buffer account for X publishing. The former September 14 reward post was published early on September 12 at 20:01 UTC. No Take The Wall post currently remains scheduled. Check placements.json before creating another post.
 - Use project business contact addresses for submissions. Do not add personal reply addresses.
