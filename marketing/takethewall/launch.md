@@ -294,3 +294,8 @@ Published `creator-collaboration/HOST-PACK.md`: a five-minute audience sentence 
 Greg Technology's personalized invitation was accepted by Resend at 01:33 UTC, ID `4df1cd9a-eb79-41a0-beac-6e4899eafee2`. Adnan Aga's official contact form closed and redirected to his homepage after submission, without an explicit success receipt; recorded as submitted unconfirmed and will not be retried. Neither collaboration is confirmed. Sources, exact messages and receipts are in `creator-collaboration/`.
 
 Spent $0. No website edits, duplicate pending invitations, directory submissions or traffic monitoring.
+
+
+## Outreach correction — September 13, 2026
+
+User supplied apparent spam-related feedback on the Greg Technology invitation. Formal provider complaint not verified. Marked Greg do-not-contact and paused new cold emails and cold-email follow-ups in the distribution instructions. No response or additional email sent. The original invitation was overly long and asked for unpaid promotional work before establishing interest; this is an editorial assessment, not a verified cause of filtering. Public distribution remains available.

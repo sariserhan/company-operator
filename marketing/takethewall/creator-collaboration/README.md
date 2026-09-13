@@ -9,6 +9,10 @@
 
 Exact invitations and receipts are alongside this file. Spend: $0. No website changes or traffic queries. Existing invitations to Matty McTech and other creators/editors were not duplicated.
 
+## Recipient feedback — September 13
+
+The user supplied an apparent reply saying the Greg invitation was reported as spam. A formal provider complaint has not been verified. Greg is now **do-not-contact**, no reply was sent, and further cold email outreach is paused. Historical provider acceptance remains a transmission receipt only. See `greg-technology-feedback.json`.
+
 ## Selection evidence
 
 - Greg publishes his email on https://greg.technology/. Nolen Royalty credits Greg on Talk Paper Scissors at https://eieio.games/. The invitation references this project.
