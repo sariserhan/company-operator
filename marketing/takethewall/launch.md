@@ -299,3 +299,12 @@ Spent $0. No website edits, duplicate pending invitations, directory submissions
 ## Outreach correction — September 13, 2026
 
 User supplied apparent spam-related feedback on the Greg Technology invitation. Formal provider complaint not verified. Marked Greg do-not-contact and paused new cold emails and cold-email follow-ups in the distribution instructions. No response or additional email sent. The original invitation was overly long and asked for unpaid promotional work before establishing interest; this is an editorial assessment, not a verified cause of filtering. Public distribution remains available.
+
+
+## Current product campaign refresh — September 13, 2026
+
+Verified production price ($4.99 plus applicable tax), free email entry, two rewards per milestone and current designer against rendered production rules version 2026-09-13.1. Updated reusable creator kit and marked stale first-owner drafts superseded; historical sent messages remain intact. Current facts: CURRENT-FACTS.md.
+
+Replaced the queued old-price video post with a new actual preview image and creative prompt, then published it early: https://x.com/serhansarii/status/2099102910428717080. Buffer Sent confirms publication. No duplicate post scheduled by this action. Updated the existing Tailwind Show and tell body with current price, free-entry link and current screenshot; mutation response matches revised copy.
+
+Spend $0; no cold email, app code changes, purchases or traffic queries. No new visitor result claimed.
