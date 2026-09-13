@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-13T01:33:06.502Z",
+  "recipient": "hi@greg.technology",
+  "status": "accepted_by_email_provider",
+  "emailId": "4df1cd9a-eb79-41a0-beac-6e4899eafee2",
+  "error": null,
+  "collaborationConfirmed": false,
+  "spendUsd": 0
+}

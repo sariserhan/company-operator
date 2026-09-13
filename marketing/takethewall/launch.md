@@ -285,3 +285,12 @@ DEV and Indie Hackers publication URLs require sign-in in the available session;
 - B3ta official newsletter project form confirmed receipt at `/mailus/thanks/`. Used the project-promotion category; no paid placement or directory listing. No editorial acceptance claimed.
 - Matty McTech creator pitch accepted by Resend, email ID `eef3868f-11f6-4ff0-84ab-443ffaf63309`. Contact verified from the Email link on his official linked profile, https://solo.to/setupspawn. Attached actual app preview and offered use in editorial/video coverage. No reply or coverage confirmed.
 - Sources, exact copy and receipts: `creator-discovery/`. No spending, app changes, duplicate pitches, traffic queries or monitors.
+
+
+## Creator collaboration proposals — September 13, 2026
+
+Published `creator-collaboration/HOST-PACK.md`: a five-minute audience sentence prompt and preview segment, with the actual-app clip, caption and tracked preview links. Suggestions/preview are free; publishing terms remain accurate. No host or date announced.
+
+Greg Technology's personalized invitation was accepted by Resend at 01:33 UTC, ID `4df1cd9a-eb79-41a0-beac-6e4899eafee2`. Adnan Aga's official contact form closed and redirected to his homepage after submission, without an explicit success receipt; recorded as submitted unconfirmed and will not be retried. Neither collaboration is confirmed. Sources, exact messages and receipts are in `creator-collaboration/`.
+
+Spent $0. No website edits, duplicate pending invitations, directory submissions or traffic monitoring.
