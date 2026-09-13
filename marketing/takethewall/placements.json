@@ -92,17 +92,26 @@
       "campaign": "preview_design",
       "receipt": "editorial-wave-two/tailwind-showcase-receipt.json",
       "spendUsd": 0
+    },
+    {
+      "channel": "X through Buffer",
+      "url": "https://x.com/serhansarii/status/2099102910428717080",
+      "status": "published",
+      "campaign": "wall_designer",
+      "receipt": "current-preview-publication.json",
+      "spendUsd": 0
     }
   ],
   "scheduled": [
     {
       "channel": "X through Buffer",
       "account": "serhansarii",
-      "status": "scheduled",
+      "status": "replaced_and_published",
       "scheduledAt": "2026-09-13T16:00:00Z",
       "campaign": "first_owners",
       "receipt": "first-owners/app-preview-schedule.json",
-      "spendUsd": 0
+      "spendUsd": 0,
+      "replacementReceipt": "current-preview-publication.json"
     }
   ],
   "socialPreview": {

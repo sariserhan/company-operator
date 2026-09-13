@@ -1,3 +1,5 @@
+> Superseded draft: do not publish this older copy. See [current facts](../CURRENT-FACTS.md) for the updated price, free entry and dual rewards.
+
 # Thirty-minute live launch
 
 **Not announced or scheduled.** Host, platform, date, timezone, and verified live checkout/webhook evidence are missing. The app team's `docs/OWNER_EXPERIENCE.md` records test-mode checks; that is not live activation proof. No purchase was made for this campaign. The existing traffic target remains separate from the twenty-owner target.

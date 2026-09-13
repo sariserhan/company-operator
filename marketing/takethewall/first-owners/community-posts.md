@@ -1,3 +1,5 @@
+> Superseded draft: do not publish this older copy. See [current facts](../CURRENT-FACTS.md) for the updated price, free entry and dual rewards.
+
 # Community posts
 
 Prepared September 12, 2026. Two Reddit drafts are **not published**. The X item is tracked separately in `app-preview-schedule.json`.
