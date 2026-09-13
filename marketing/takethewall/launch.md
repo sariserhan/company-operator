@@ -278,3 +278,10 @@ Published a new project post in Tailwind CSS **Show and tell**, with an actual-a
 Two personalized editorial tips accepted by the email provider: Andy Baio / Waxy (`7ab152e6-310d-412e-adb0-2a2b9ec5b381`) and Rob Beschizza / Boing Boing (`b836334d-7dc3-495b-8b19-9f361195121f`). Both official sites publish editorial contact routes; pitches reference their specific shared-browser-experiment coverage and attach the real preview clip. No delivery, reply or editorial-coverage claim. This is editorial outreach, not a directory submission.
 
 DEV and Indie Hackers publication URLs require sign-in in the available session; neither received a post. Existing pending outreach and tomorrow's X video not duplicated. No app changes, spending, traffic queries or monitors. Drafts, sources and receipts: `editorial-wave-two/`.
+
+
+## Creator and newsletter discovery — September 13, 2026
+
+- B3ta official newsletter project form confirmed receipt at `/mailus/thanks/`. Used the project-promotion category; no paid placement or directory listing. No editorial acceptance claimed.
+- Matty McTech creator pitch accepted by Resend, email ID `eef3868f-11f6-4ff0-84ab-443ffaf63309`. Contact verified from the Email link on his official linked profile, https://solo.to/setupspawn. Attached actual app preview and offered use in editorial/video coverage. No reply or coverage confirmed.
+- Sources, exact copy and receipts: `creator-discovery/`. No spending, app changes, duplicate pitches, traffic queries or monitors.
