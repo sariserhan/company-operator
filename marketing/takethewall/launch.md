@@ -308,3 +308,10 @@ Verified production price ($4.99 plus applicable tax), free email entry, two rew
 Replaced the queued old-price video post with a new actual preview image and creative prompt, then published it early: https://x.com/serhansarii/status/2099102910428717080. Buffer Sent confirms publication. No duplicate post scheduled by this action. Updated the existing Tailwind Show and tell body with current price, free-entry link and current screenshot; mutation response matches revised copy.
 
 Spend $0; no cold email, app code changes, purchases or traffic queries. No new visitor result claimed.
+
+
+## Founder pilot recruitment — September 14, 2026
+
+Published a three-founder opt-in invitation and linked it prominently from the existing project GitHub README. Readback verifies the public recruitment block. No confirmed participants or start date; no reserved placements or extra prizes. Current production rules verified, including contact@takethewall.com free-entry address.
+
+Reddit remains blocked by network security; Indie Hackers requires sign-in. Neither received a submission. Prepared tailored launch drafts and a video capture plan; no new video or PH/HN launch claimed. No cold email, paid ads, purchases, website/backend changes or traffic monitoring. Receipt and runbook: founder-pilot/.

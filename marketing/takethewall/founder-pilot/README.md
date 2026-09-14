@@ -19,3 +19,5 @@ Agree on the 48-hour sharing window only after three people are ready; it does n
 ## User-owned results worksheet
 
 Keep aggregate campaign results only: source, external visits, preview engagement, checkout starts, verified paid takeovers, repeat purchasers, valid free entries. Use the user's VisitorPing reports; do not start monitoring. Denominators must match the same attribution period and source. Report paid conversion separately from free participation and existing-owner traffic. No numerical success threshold or traffic result is assumed.
+
+Public recruitment: https://github.com/sariserhan/takethewall#try-the-three-founder-pilot . Exact receipt in publication-receipt.json.
