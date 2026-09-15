@@ -1,0 +1,8 @@
+{
+  "slug": "codrops",
+  "url": "https://tympanus.net/codrops/contact/",
+  "subject": "Editorial demo suggestion: one canvas, changing authors",
+  "text": "Hi Codrops team,\n\nAn interactive demo suggestion for your editorial coverage: I make Take The Wall, a shared webpage where the next activated takeover replaces the current featured message. Its free browser designer lets a reader compose their version and compare desktop and mobile previews before deciding whether to publish anything.\n\nThe interesting design constraint is giving different authors the same finite canvas while preserving a legible composition at smaller sizes. The preview uses container-relative typography, and the implementation is public.\n\nTry it: https://www.takethewall.com/?take=1\nCSS: https://github.com/sariserhan/takethewall/blob/main/app/globals.css\n\nWould this fit a future Collective link or interactive-demo story? This is an editorial suggestion rather than a Webzibition listing request.\n\nTake The Wall\ncontact@takethewall.com",
+  "status": "submission_confirmation_visible",
+  "spendUsd": 0
+}

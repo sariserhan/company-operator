@@ -1,0 +1,21 @@
+{
+  "previousAttempt": {
+    "at": "2026-09-15T03:59:40.581Z",
+    "url": "https://tympanus.net/codrops/contact/",
+    "status": "not_submitted",
+    "spendUsd": 0,
+    "coverageConfirmed": false,
+    "error": "locator.click: Error: strict mode violation: getByRole('button', { name: 'Submit', exact: true }) resolved to 2 elements:\n    1) <input id=\"go\" value=\"\" type=\"submit\" class=\"ct-search-submit\"/> aka locator('#go')\n    2) <button type=\"submit\" class=\"acf-button af-submit-button\">Submit</button> aka getByText('Submit', { exact: true })\n\nCall log:\n\u001b[2m",
+    "note": "Locator strict-mode error occurred before a click or form request. Safe to make the first actual submission with a scoped button."
+  },
+  "at": "2026-09-15T04:00:57.444Z",
+  "url": "https://tympanus.net/codrops/contact/",
+  "status": "submission_confirmation_visible",
+  "spendUsd": 0,
+  "coverageConfirmed": false,
+  "finalUrl": "https://tympanus.net/codrops/contact/",
+  "confirmation": [
+    "Thank you for your message!"
+  ],
+  "pageExcerpt": "All Posts\nCreative Hub\nWebzibition\nGet in touch\n\nThank you for your message!\n\nExplore the site\nhome\ncreative hub\nwebzibition\ncase studies\nmotion highlights\nall posts\ntutorials\nstudio spotlights\ndesigner spotlights\ndeveloper spotlights\nabout\nget in touch\nadvertise\nprivacy policy\nlicense\nFollow Codrops\nlinkedin\ninstagram\nfacebook\nx (twitter)\nbluesky\ntelegram\nrss feed\ngithub\nContent delivered by\n© Codrops 2026\nSupport us on"
+}

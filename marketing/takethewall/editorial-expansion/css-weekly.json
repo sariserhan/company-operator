@@ -1,0 +1,8 @@
+{
+  "slug": "css-weekly",
+  "url": "https://css-weekly.com/contact",
+  "subject": "CSS demo suggestion: a preview that scales inside its own frame",
+  "text": "Hi Zoran,\n\nI have a small working example for your CSS resources: Take The Wall has a message designer with desktop and mobile preview frames inside a dialog. The preview uses container-type: inline-size and cqw typography, so switching the frame changes the composition without resizing the browser.\n\nTry the designer: https://www.takethewall.com/?take=1\nInspect the CSS: https://github.com/sariserhan/takethewall/blob/main/app/globals.css (look for .preview-device and .preview-creative).\n\nI make the project. The designer is free to try; activating a public takeover is a separate step. Would the live example be useful as a CSS Weekly resource?\n\nTake The Wall\ncontact@takethewall.com",
+  "status": "submitted_unconfirmed",
+  "spendUsd": 0
+}
