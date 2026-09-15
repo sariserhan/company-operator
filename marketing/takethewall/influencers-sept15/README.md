@@ -25,3 +25,9 @@ Exact messages and receipts are in this directory. Neither message asks for paid
 - OpenWeird and other directories: excluded by user instruction.
 
 Spend: $0. No website/backend changes, purchases or traffic checks. Form receipts prove submission status only; they do not prove audience reach or visitors.
+
+## Additional creator contact
+
+Alex Trost / Frontend Horse: submitted a tailored creative-web suggestion referencing issue 78's retro UI example and the app's container-sized preview. Official https://frontend.horse/contact/ explicitly welcomes topic suggestions. Submit redirected to `contact?success=true`; recorded as submission confirmed by redirect, not coverage or collaboration. No retry.
+
+Chris Coyier: verified public contact at https://chriscoyier.net/ but automatic approval review rejected sending, citing older cold-email pause and personal Gmail address. No email sent or workaround attempted. Exact proposed message is in chris-coyier-held.json for user review.

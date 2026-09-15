@@ -322,3 +322,8 @@ Reddit remains blocked by network security; Indie Hackers requires sign-in. Neit
 User reopened tailored influencer contact. Kevin Stratvert's official video-request form confirmed receipt of a specific preview/designer tutorial suggestion. Hayls World's official business contact form was submitted but did not show confirmation and displayed hCaptcha; marked unconfirmed with no retry. No creator agreement, coverage or traffic claim. Exact copy, source checks and receipts: influencers-sept15/.
 
 Excluded do-not-contact Greg, all prior recipients, closed brand-deal routes and unverifiable contacts. No SMS or direct email sent in this batch; both were official form messages. No spending, app changes or traffic monitoring.
+
+
+## Frontend creator outreach continuation — September 15, 2026
+
+Frontend Horse / Alex Trost topic suggestion submitted through the official form, which explicitly welcomes suggestions. Redirected to contact?success=true. No response or coverage claimed. Chris Coyier email was rejected by automatic approval review and not sent; held draft and reasons recorded. No spend, duplicate outreach, app edits or traffic checks.

@@ -1,0 +1,7 @@
+{
+  "name": "Alex Trost / Frontend Horse",
+  "contactSource": "https://frontend.horse/contact/",
+  "fitSource": "https://frontend.horse/issues/78/",
+  "status": "submission_confirmed_by_redirect",
+  "text": "Hi Alex,\n\nThe retro-style UI example in Frontend Horse issue 78 prompted this suggestion. I make Take The Wall: a shared page where the next activated takeover replaces the previous owner.\n\nIts free designer lets people arrange a message or project and switch desktop/mobile previews. The CSS angle is container-sized typography: a preview inside a dialog needs to respond to its own width, not the browser viewport.\n\nhttps://www.takethewall.com/?take=1\n\nCould the designer fit a creative-web feature? This is a topic suggestion, not a paid placement request. Previewing is free; live publication uses paid checkout or reviewed free email entry. No promised display duration or audience.\n\nTake The Wall\ncontact@takethewall.com"
+}
