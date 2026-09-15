@@ -14,3 +14,5 @@
 - Use project business contact addresses for submissions. Do not add personal reply addresses.
 
 - September 13 outreach correction: cold email outreach is paused following user-reported negative/spam feedback on the Greg Technology invitation. Do not send new cold emails or cold-email follow-ups. Greg (`hi@greg.technology`) is do-not-contact; no apology email or retry. Provider acceptance in historical receipts is not recipient interest or consent. Continue permitted public distribution; inbound positive replies may be handled individually.
+
+- September 15: user explicitly authorized finding influencers and texting/emailing them, reopening tailored new creator outreach. Earlier do-not-contact exclusions and no-duplicate rules remain. Use verified public business/submission routes, no paid commitments or automatic follow-ups.

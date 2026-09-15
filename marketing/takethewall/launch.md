@@ -315,3 +315,10 @@ Spend $0; no cold email, app code changes, purchases or traffic queries. No new 
 Published a three-founder opt-in invitation and linked it prominently from the existing project GitHub README. Readback verifies the public recruitment block. No confirmed participants or start date; no reserved placements or extra prizes. Current production rules verified, including contact@takethewall.com free-entry address.
 
 Reddit remains blocked by network security; Indie Hackers requires sign-in. Neither received a submission. Prepared tailored launch drafts and a video capture plan; no new video or PH/HN launch claimed. No cold email, paid ads, purchases, website/backend changes or traffic monitoring. Receipt and runbook: founder-pilot/.
+
+
+## New influencer outreach — September 15, 2026
+
+User reopened tailored influencer contact. Kevin Stratvert's official video-request form confirmed receipt of a specific preview/designer tutorial suggestion. Hayls World's official business contact form was submitted but did not show confirmation and displayed hCaptcha; marked unconfirmed with no retry. No creator agreement, coverage or traffic claim. Exact copy, source checks and receipts: influencers-sept15/.
+
+Excluded do-not-contact Greg, all prior recipients, closed brand-deal routes and unverifiable contacts. No SMS or direct email sent in this batch; both were official form messages. No spending, app changes or traffic monitoring.
