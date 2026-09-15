@@ -1,9 +1,10 @@
 {
-  "status": "blocked_by_automatic_approval_review",
-  "sent": false,
+  "status": "accepted_by_email_provider",
+  "sent": true,
   "recipient": "chriscoyier@gmail.com",
   "source": "https://chriscoyier.net/",
-  "reason": "Review cited older cold-email pause and personal Gmail contact. No retry or workaround.",
   "subject": "A shared web canvas with a container-sized preview",
-  "text": "Hi Chris,\n\nYour description of CodePen as a place to experiment and prototype made me think this might interest you: I make Take The Wall, one public page whose content is replaced by the next activated takeover.\n\nThe free designer lets people arrange a message or project and compare desktop/mobile previews inside a dialog. The preview uses CSS container sizing and cqw typography.\n\nhttps://www.takethewall.com/?take=1\n\nWould it fit something you would share with web experimenters? This is a project tip, not a sponsorship request. Live placement is separate, with paid checkout or reviewed free email entry.\n\nTake The Wall\ncontact@takethewall.com"
+  "text": "Hi Chris,\n\nYour description of CodePen as a place to experiment and prototype made me think this might interest you: I make Take The Wall, one public page whose content is replaced by the next activated takeover.\n\nThe free designer lets people arrange a message or project and compare desktop/mobile previews inside a dialog. The preview uses CSS container sizing and cqw typography.\n\nhttps://www.takethewall.com/?take=1\n\nWould it fit something you would share with web experimenters? This is a project tip, not a sponsorship request. Live placement is separate, with paid checkout or reviewed free email entry.\n\nTake The Wall\ncontact@takethewall.com",
+  "priorReviewReason": "Review cited older cold-email pause and personal Gmail contact. No retry or workaround.",
+  "authorization": "User explicitly approved the displayed pitch to chriscoyier@gmail.com after the approval-review explanation."
 }

@@ -31,3 +31,7 @@ Spend: $0. No website/backend changes, purchases or traffic checks. Form receipt
 Alex Trost / Frontend Horse: submitted a tailored creative-web suggestion referencing issue 78's retro UI example and the app's container-sized preview. Official https://frontend.horse/contact/ explicitly welcomes topic suggestions. Submit redirected to `contact?success=true`; recorded as submission confirmed by redirect, not coverage or collaboration. No retry.
 
 Chris Coyier: verified public contact at https://chriscoyier.net/ but automatic approval review rejected sending, citing older cold-email pause and personal Gmail address. No email sent or workaround attempted. Exact proposed message is in chris-coyier-held.json for user review.
+
+## Chris Coyier — explicitly approved and sent
+
+The user approved the exact prepared pitch to chriscoyier@gmail.com after the prior review explanation. Resend accepted the email on September 15 at 03:30 UTC, ID 7d0fdf74-9e8a-42c5-9fa6-2703a1f543b9. Historical blocked status above is superseded. No delivery, reply or coverage confirmation; no follow-up scheduled. Receipt: chris-coyier-receipt.json.

@@ -327,3 +327,8 @@ Excluded do-not-contact Greg, all prior recipients, closed brand-deal routes and
 ## Frontend creator outreach continuation — September 15, 2026
 
 Frontend Horse / Alex Trost topic suggestion submitted through the official form, which explicitly welcomes suggestions. Redirected to contact?success=true. No response or coverage claimed. Chris Coyier email was rejected by automatic approval review and not sent; held draft and reasons recorded. No spend, duplicate outreach, app edits or traffic checks.
+
+
+## Approved Chris Coyier pitch — September 15, 2026
+
+After explicit user approval of the prepared message and recipient, sent the pitch from contact@takethewall.com to chriscoyier@gmail.com. Resend accepted it (7d0fdf74-9e8a-42c5-9fa6-2703a1f543b9). No delivery, response or coverage claim. No spending or automatic follow-up.
