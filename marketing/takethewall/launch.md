@@ -332,3 +332,8 @@ Frontend Horse / Alex Trost topic suggestion submitted through the official form
 ## Approved Chris Coyier pitch — September 15, 2026
 
 After explicit user approval of the prepared message and recipient, sent the pitch from contact@takethewall.com to chriscoyier@gmail.com. Resend accepted it (7d0fdf74-9e8a-42c5-9fa6-2703a1f543b9). No delivery, response or coverage claim. No spending or automatic follow-up.
+
+
+## Frontend Focus editorial suggestion — September 15, 2026
+
+Sent a specific CSS preview demo suggestion to the verified Cooperpress editorial address. Frontend Focus explicitly invites link suggestions. Resend accepted it (d666c88f-2d7d-4e21-a7a6-ce032f167866); no coverage or visitor claim. Exact copy and receipt in editorial-sept15/. No spend, duplicate outreach, app edits or traffic monitoring.

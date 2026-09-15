@@ -1,0 +1,8 @@
+{
+  "recipient": "editor@cooperpress.com",
+  "subject": "Frontend Focus suggestion: a container-sized wall preview",
+  "source": "https://cooperpress.com/contact/",
+  "invitationSource": "https://frontendfoc.us/issues/757",
+  "status": "accepted_by_email_provider",
+  "text": "Hi Frontend Focus team,\n\nA demo suggestion for your CSS coverage: I make Take The Wall, a shared webpage with a free designer for messages and projects. Its desktop/mobile preview lives inside a dialog, using container sizing and cqw typography so it responds to the preview frame rather than the browser viewport.\n\nTry it: https://www.takethewall.com/?take=1\nSource: https://github.com/sariserhan/takethewall/blob/main/app/globals.css\n\nThe live wall changes owner with each activated takeover. Previewing is free; publishing uses paid checkout or reviewed free email entry. This is an editorial suggestion, not an advertising inquiry.\n\nTake The Wall\ncontact@takethewall.com"
+}
